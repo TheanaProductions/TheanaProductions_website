@@ -1,6 +1,7 @@
 // Json file to intantiate the common elements of the website
 
 create_logoSmall();
+create_separatorImage();
 create_divNav();
 
 // Insantiate banner images
@@ -16,12 +17,21 @@ function create_logoSmall() {
     document.getElementById('bannerHeader').appendChild(logoBig);
 }
 
+// Instantiate separator image
+function create_separatorImage() {
+    let separatorImg = document.createElement('img');
+    separatorImg.src = 'images/separatorImg.png';
+    separatorImg.id = 'separatorImg';
+    document.getElementById('separatorDiv').appendChild(separatorImg);
+}
+
 // Instantiate header nav
 function create_divNav() {
 
     // Home link
     let divIndex = document.createElement('div');
     divIndex.id = 'indexDiv';
+    divIndex.className = 'navDivHeader';
     document.getElementById('navHeader').appendChild(divIndex);
 
     let indexLink = document.createElement('a');
@@ -33,11 +43,11 @@ function create_divNav() {
     // Games link
     let divGames = document.createElement('div');
     divGames.id = 'gamesDiv';
+    divGames.className = 'navDivHeader';
     document.getElementById('navHeader').appendChild(divGames);
 
     let gamesLink = document.createElement('a');
     gamesLink.innerHTML = 'Games';
-    gamesLink.id = 'gamesLink';
     gamesLink.className = 'linkNavHeader';
     gamesLink.setAttribute('href', ('games.php'));
     document.getElementById('gamesDiv').appendChild(gamesLink);
@@ -45,11 +55,11 @@ function create_divNav() {
     // Apps link
     let divApps = document.createElement('div');
     divApps.id = 'appsDiv';
+    divApps.className = 'navDivHeader';
     document.getElementById('navHeader').appendChild(divApps);
 
     let appsLink = document.createElement('a');
     appsLink.innerHTML = 'Apps';
-    appsLink.id = 'appsLink';
     appsLink.className = 'linkNavHeader';
     appsLink.setAttribute('href', ('apps.php'));
     document.getElementById('appsDiv').appendChild(appsLink);
@@ -57,11 +67,11 @@ function create_divNav() {
     // About link
     let divAbout = document.createElement('div');
     divAbout.id = 'aboutDiv';
+    divAbout.className = 'navDivHeader';
     document.getElementById('navHeader').appendChild(divAbout);
 
     let aboutLink = document.createElement('a');
     aboutLink.innerHTML = 'About us';
-    aboutLink.id = 'aboutLink';
     aboutLink.className = 'linkNavHeader';
     aboutLink.setAttribute('href', ('about.php'));
     document.getElementById('aboutDiv').appendChild(aboutLink);

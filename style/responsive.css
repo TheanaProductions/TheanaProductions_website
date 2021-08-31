@@ -21,11 +21,17 @@
     #img-small {
         display: none;
     }
+
+    .navDivHeader {
+        padding-bottom: 10px;
+    }
 }
 
 @media only screen and (min-width: 530px) /* Tablet size 2 */
 {
-
+    #navHeader{
+        width: 70%;
+    }
 }
 
 
@@ -47,5 +53,9 @@
 {
     #img-big {
         width: 40%;
+    }
+
+    #navHeader{
+        width: 50%;
     }
 }

@@ -19,12 +19,19 @@
 
             </div>
 
+            <div id="separatorDiv">
+
+            </div>
+
             <nav id="navHeader">
 
             </nav>
         </header>
 
         <main>
+            <section id="mainContent">
+
+            </section>
 
         </main>
 
