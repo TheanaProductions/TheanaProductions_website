@@ -13,16 +13,9 @@
 </head>
 
     <body>
-        <header>
-            <img id="img-big" src="images/logoBig.png" alt="Theana Productions logo" />
-            <img id="img-small" src="images/logoSmall.png" alt="Theana Productions logo" />
+        <header id="header">
+            <script defer src="scripts/main.js"></script> <!-- Call the JavaScript file -->
 
-            <nav id="navHeader">
-                <div class="homeLink"><a href="index.php">Home</a></div>
-                <div class="gamesLink"><a href="games.php">Games</a></div>
-                <div class="appLink"><a href="apps.php">Apps</a></div>
-                <div class="aboutLink"><a href="about.php">About us</a></div>
-            </nav>
         </header>
 
         <main>
@@ -33,7 +26,6 @@
 
         </footer>
 
-        <script defer src="scripts/main.js"></script> <!-- Call the JavaScript file -->
     </body>
 
 </html>
