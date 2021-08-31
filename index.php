@@ -13,9 +13,15 @@
 </head>
 
     <body>
-        <header id="header">
+        <header>
             <script defer src="scripts/main.js"></script> <!-- Call the JavaScript file -->
+            <div id="bannerHeader">
 
+            </div>
+
+            <nav id="navHeader">
+
+            </nav>
         </header>
 
         <main>

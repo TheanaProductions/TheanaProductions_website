@@ -1,4 +1,4 @@
-/* Small phone size */
+/* Base size */
 #img-big {
     display: none;
 }
@@ -9,7 +9,7 @@
     margin: auto;
 }
 
-@media only screen and (min-width: 350px) /* Bigger phone size */
+@media only screen and (min-width: 350px) /* Phone size */
 {
     #img-big {
         display: block;
@@ -21,17 +21,11 @@
     #img-small {
         display: none;
     }
-
-    header {
-        height: 130px;
-    }
 }
 
 @media only screen and (min-width: 530px) /* Tablet size 2 */
 {
-    header {
-        height: 150px;
-    }
+
 }
 
 
@@ -40,10 +34,6 @@
     #img-big {
         width: 70%;
     }
-
-    header {
-        height: 200px;
-    }
 }
 
 @media only screen and (min-width: 870px) /* Computer size */
@@ -51,19 +41,11 @@
     #img-big{
         width: 50%;
     }
-
-    header {
-        height: 220px;
-    }
 }
 
 @media only screen and (min-width: 1300px) /* Computer size */
 {
     #img-big {
         width: 40%;
-    }
-
-    header {
-        height: 200px;
     }
 }

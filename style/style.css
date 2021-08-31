@@ -3,10 +3,12 @@ html {
 }
 
 header {
-    height: 130px;
+    height: 100px;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     justify-content: center;
 }
 
@@ -15,5 +17,5 @@ body{
 }
 
 #navHeader{
-
+    display:flex;
 }
