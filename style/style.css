@@ -1,8 +1,26 @@
-/* Phone main size */
+/* Computer main size */
+#img-big {
+    display: block;
+    width: 100%;
+}
 
-@media (min-width: 800px) /* Tablet size */
+#img-small {
+    display: none;
+}
+
+
+@media only screen (min-width: 800px) /* Tablet size */
 {
 
 }
 
-@media(min-width: 1000px) /* Computer size */
+@media only screen (min-width: 400px) /* Phone size */
+{
+    #img-big {
+        display: none;
+    }
+
+    #img-small {
+        width: 100%;
+    }
+}
