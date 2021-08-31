@@ -1,26 +1,15 @@
-/* Computer main size */
-#img-big {
-    display: block;
-    width: 100%;
+html {
+    background-color: #593b6a;
 }
 
-#img-small {
-    display: none;
+header {
+    height: 130px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+body{
 
-@media only screen (min-width: 800px) /* Tablet size */
-{
-
-}
-
-@media only screen (min-width: 400px) /* Phone size */
-{
-    #img-big {
-        display: none;
-    }
-
-    #img-small {
-        width: 100%;
-    }
 }
