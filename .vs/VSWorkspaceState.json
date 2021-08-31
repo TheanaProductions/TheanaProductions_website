@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\images",
-    "\\scripts"
+    "\\scripts",
+    "\\style"
   ],
-  "SelectedNode": "\\images",
+  "SelectedNode": "\\index.php",
   "PreviewInSolutionExplorer": false
 }
