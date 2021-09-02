@@ -1,7 +1,6 @@
 // Json file to intantiate the common elements of the website
 
 create_logoSmall();
-create_separatorImage();
 create_divNav();
 
 // Insantiate banner images
@@ -15,14 +14,6 @@ function create_logoSmall() {
     logoBig.src = 'images/logoBig.png';
     logoBig.id = 'img-big';
     document.getElementById('bannerHeader').appendChild(logoBig);
-}
-
-// Instantiate separator image
-function create_separatorImage() {
-    let separatorImg = document.createElement('img');
-    separatorImg.src = 'images/separatorImg.png';
-    separatorImg.id = 'separatorImg';
-    document.getElementById('separatorDiv').appendChild(separatorImg);
 }
 
 // Instantiate header nav

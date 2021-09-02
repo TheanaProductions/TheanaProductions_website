@@ -5,20 +5,19 @@ header {
     background-color: #593b6a;
 }
 
-/* Separator image*/
-#separatorDiv {
-    display: none;
+/* Nav links */
+#navDiv {
+    width: 100%;
+    background-color: #442D51;
 }
 
-/* Nav links */
 #navHeader {
     display: flex;
     text-align: center;
     justify-content: space-around;
-    width: 90%;
     margin: auto;
     flex-wrap: wrap;
-    background-color: dimgrey;
+    width: 20%;
 }
 
 .navDivHeader {
@@ -27,7 +26,7 @@ header {
 }
 
 .linkNavHeader {
-    color: black;
+    color: white;
     font-family: Arial;
     text-decoration: none;
 }
@@ -48,7 +47,7 @@ header {
 .linkNavHeader:hover:after, .btn-2:hover:before 
 {
     backface-visibility: hidden;
-    border-color: black;
+    border-color: antiquewhite;
     transition: width 350ms ease-in-out;
     width: 70%;
 }
@@ -63,13 +62,16 @@ header {
 /* Banners */
 #img-big {
     display: none;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 #img-small {
     display: block;
     width: 50%;
     margin: auto;
-    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 @media only screen and (min-width: 350px) /* Phone size */
@@ -98,7 +100,7 @@ header {
     }
 
     #navHeader {
-        width: 70%;
+        width: 50%;
     }
 }
 
@@ -107,11 +109,6 @@ header {
 {
     #img-big{
         width: 30%;
-    }
-
-    #separatorDiv {
-        display: block;
-        margin: auto;
     }
 }
 
@@ -123,6 +120,6 @@ header {
 @media only screen and (min-width: 1300px) /* Computer size */
 {
     #navHeader {
-        width: 50%;
+        width: 30%;
     }
 }
