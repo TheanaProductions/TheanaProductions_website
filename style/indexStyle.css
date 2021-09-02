@@ -1,4 +1,16 @@
 /* Base size */
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mainContent {
+    width: 90%;
+    margin: 10px auto;
+    padding: 2px;
+    border: 3px solid #593b6a;
+}
+
 #latestReleased{
     
 }
@@ -25,5 +37,15 @@
 
 @media only screen and (min-width: 1300px) /* Computer size */
 {
+    #mainContent {
+        width: 70%;
+        margin: 15px auto;
+        border: 5px solid #593b6a;
+    }
 
+    #secondaryContent {
+        width: 25%;
+        margin: 15px auto;
+        border: 5px solid #593b6a;
+    }
 }
