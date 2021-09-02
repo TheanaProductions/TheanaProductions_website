@@ -37,7 +37,7 @@ function create_divNav() {
     let indexLink = document.createElement('a');
     indexLink.innerHTML = 'Home';
     indexLink.className = 'linkNavHeader';
-    indexLink.setAttribute('href', ('index.php'));
+    indexLink.setAttribute('href', ('index.html'));
     document.getElementById('indexDiv').appendChild(indexLink);
 
     // Games link
@@ -49,7 +49,7 @@ function create_divNav() {
     let gamesLink = document.createElement('a');
     gamesLink.innerHTML = 'Games';
     gamesLink.className = 'linkNavHeader';
-    gamesLink.setAttribute('href', ('games.php'));
+    gamesLink.setAttribute('href', ('games.html'));
     document.getElementById('gamesDiv').appendChild(gamesLink);
 
     // Apps link
@@ -61,7 +61,7 @@ function create_divNav() {
     let appsLink = document.createElement('a');
     appsLink.innerHTML = 'Apps';
     appsLink.className = 'linkNavHeader';
-    appsLink.setAttribute('href', ('apps.php'));
+    appsLink.setAttribute('href', ('apps.html'));
     document.getElementById('appsDiv').appendChild(appsLink);
 
     // About link
@@ -73,6 +73,6 @@ function create_divNav() {
     let aboutLink = document.createElement('a');
     aboutLink.innerHTML = 'About us';
     aboutLink.className = 'linkNavHeader';
-    aboutLink.setAttribute('href', ('about.php'));
+    aboutLink.setAttribute('href', ('about.html'));
     document.getElementById('aboutDiv').appendChild(aboutLink);
 }
