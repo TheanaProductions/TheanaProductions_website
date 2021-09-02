@@ -1,0 +1,100 @@
+/* Base size */
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #593b6a;
+}
+
+/* Separator image*/
+#separatorDiv {
+    display: none;
+}
+
+/* Nav links */
+#navHeader {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    background-color: dimgrey;
+}
+
+.linkNavHeader {
+    color: black;
+    font-family: Arial;
+    text-decoration: none;
+}
+
+.navDivHeader {
+    flex: 1;
+    padding-top: 10px;
+}
+
+/* Banners */
+#img-big {
+    display: none;
+}
+
+#img-small {
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+@media only screen and (min-width: 350px) /* Phone size */
+{
+    #img-big {
+        display: block;
+        width: 50%;
+        justify-self: center;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    #img-small {
+        display: none;
+    }
+
+    .navDivHeader {
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 530px) /* Tablet size 2 */
+{
+    #img-big{
+        width: 40%;
+    }
+
+    #navHeader {
+        width: 70%;
+    }
+}
+
+
+@media only screen and (min-width: 650px) /* Tablet size 2 */
+{
+    #img-big{
+        width: 30%;
+    }
+
+    #separatorDiv {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 870px) /* Computer size */
+{
+
+}
+
+@media only screen and (min-width: 1300px) /* Computer size */
+{
+    #navHeader {
+        width: 50%;
+    }
+}
