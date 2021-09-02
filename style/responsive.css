@@ -14,8 +14,8 @@
     #img-big {
         display: block;
         width: 70%;
-        margin-left: auto;
-        margin-right: auto;
+        justify-self: center;
+        margin: auto;
     }
 
     #img-small {
@@ -38,7 +38,7 @@
 @media only screen and (min-width: 650px) /* Tablet size 2 */
 {
     #img-big {
-        width: 70%;
+        width: 60%;
     }
 }
 
@@ -52,7 +52,7 @@
 @media only screen and (min-width: 1300px) /* Computer size */
 {
     #img-big {
-        width: 40%;
+        width: 30%;
     }
 
     #navHeader{
