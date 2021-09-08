@@ -11,6 +11,10 @@ main{
     border: 3px solid #593b6a;
 }
 
+#twitterContent {
+    display: none;
+}
+
 #latestReleased{
     
 }
@@ -22,30 +26,44 @@ main{
 
 @media only screen and (min-width: 530px) /* Tablet size 2 */
 {
-
+    #mainContent{
+        width: 85%;
+        margin: 15px auto;
+    }
 }
 
 @media only screen and (min-width: 650px) /* Tablet size 2 */
 {
-
+    #mainContent {
+        width: 80%;
+        margin: 20px auto;
+    }
 }
 
 @media only screen and (min-width: 870px) /* Computer size */
 {
+    #mainContent {
+        width: 65%;
+        margin: 10px auto auto 20px;
+        border: 5px solid #593b6a;
+    }
 
+    #twitterContent {
+        display: block;
+        width: 25%;
+        margin: 10px 20px auto;
+    }
 }
 
 @media only screen and (min-width: 1300px) /* Computer size */
 {
     #mainContent {
-        width: 70%;
-        margin: 15px auto;
-        border: 5px solid #593b6a;
+        width: 75%;
+        margin: 15px auto auto 15px;
     }
 
-    #secondaryContent {
-        width: 25%;
-        margin: 15px auto;
-        border: 5px solid #593b6a;
+    #twitterContent {
+        width: 20%;
+        margin: 15px 15px auto;
     }
 }
