@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-
 /* Base size */
 main{
     display: flex;
@@ -49,61 +47,68 @@ main{
     background-color: rgba(0,0,0,0.8);
 }
 
-#secondaryPart{
+#secondaryPart {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-#aboutTheana {
-    width: 70%;
+#aboutTheana, #socialmedias {
+    width: 90%;
     margin: 20px auto;
     text-align: center;
-}
-
-#socialmedias {
-    width: 25%;
-    margin: 20px auto;
-    text-align: center;
-    background-image: url(../images/background_sections.png);
     background-size: cover;
     border: 5px solid #4A3159;
-    border-radius: 20px;
+    border-radius: 10px;
+}
+    #socialmedias h1, #aboutTheana h1 {
+        margin: 2px auto;
+        padding: 0px 0px 3px 0px;
+        font-family: Arial;
+        font-size: 22px;
+        font-weight: bold;
+        color: black;
+    }
+
+#aboutTheana {
+    background-image: url(../images/background_sections2.png)
 }
 
-#socialmedias h1 {
-    margin: 0px;
-    padding: 0px;
-    color: black;
-    font-family: 'Patrick Hand', cursive;
-    font-size: 35px;
-    font-weight: normal;
-    background-color: #4A3159;
-}
+
+    #socialmedias {
+        background-image: url(../images/background_sections_noTitle.png);
+    }
+
+
 
 #findUs {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    margin: auto;
+    margin: 3px auto;
 }
 
-.sm_icon{
+.sm_icon {
     width: 40px;
     height: 40px;
     margin: 5px auto;
 }
 
-@media only screen and (min-width: 350px) /* Phone size */ {
-}
-
-@media only screen and (min-width: 530px) /* Tablet size 2 */
+@media only screen and (min-width: 530px) /* Tablet size 1 */
 {
     #mainContent{
         width: 85%;
         margin: 15px auto;
     }
+
+    #socialmedias {
+        width: 50%;
+    }
+
+        #socialmedias h1, #aboutTheana h1 {
+            margin: 5px auto;
+        }
 }
 
 @media only screen and (min-width: 650px) /* Tablet size 2 */
@@ -111,6 +116,21 @@ main{
     #mainContent {
         width: 80%;
         margin: 20px auto;
+    }
+
+    #aboutTheana {
+        width: 60%;
+    }
+
+    #socialmedias {
+        width: 35%;
+        background-image: url(../images/background_sections.png);
+    }
+
+    #socialmedias h1 {
+        color: white;
+        margin: 0px;
+        padding: 2px 0px 2px 0px;
     }
 }
 
@@ -126,6 +146,10 @@ main{
         width: 25%;
         margin: 10px 20px auto;
     }
+
+    #socialmedias h1, #aboutTheana h1 {
+        padding: 3px 0px 7px 0px;
+    }
 }
 
 @media only screen and (min-width: 1300px) /* Computer size */
@@ -140,5 +164,15 @@ main{
         margin: 15px 15px auto;
     }
 
+    #aboutTheana {
+        width: 70%;
+    }
 
+    #socialmedias {
+        width: 25%;
+    }
+
+        #socialmedias h1, #aboutTheana h1 {
+            padding: 3px 0px 10px 0px;
+        }
 }
