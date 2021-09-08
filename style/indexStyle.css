@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 /* Base size */
 main{
     display: flex;
@@ -54,30 +56,43 @@ main{
 }
 
 #aboutTheana {
-    width: 55%;
+    width: 70%;
     margin: 20px auto;
     text-align: center;
 }
 
 #socialmedias {
-    width: 40%;
+    width: 25%;
     margin: 20px auto;
     text-align: center;
+    background-image: url(../images/background_sections.png);
+    background-size: cover;
+    border: 5px solid #4A3159;
+    border-radius: 20px;
+}
+
+#socialmedias h1 {
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 35px;
+    font-weight: normal;
+    background-color: #4A3159;
 }
 
 #findUs {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-}
-
-#devSM, #normalSM, #gamesSM{
-    text-align: center;
+    justify-content: space-around;
+    margin: auto;
 }
 
 .sm_icon{
     width: 40px;
     height: 40px;
+    margin: 5px auto;
 }
 
 @media only screen and (min-width: 350px) /* Phone size */ {
