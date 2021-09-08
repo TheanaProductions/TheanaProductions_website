@@ -54,16 +54,4 @@ function create_divNav() {
     appsLink.className = 'linkNavHeader';
     appsLink.setAttribute('href', ('apps.html'));
     document.getElementById('appsDiv').appendChild(appsLink);
-
-    // About link
-    let divAbout = document.createElement('div');
-    divAbout.id = 'aboutDiv';
-    divAbout.className = 'navDivHeader';
-    document.getElementById('navHeader').appendChild(divAbout);
-
-    let aboutLink = document.createElement('a');
-    aboutLink.innerHTML = 'About us';
-    aboutLink.className = 'linkNavHeader';
-    aboutLink.setAttribute('href', ('about.html'));
-    document.getElementById('aboutDiv').appendChild(aboutLink);
 }

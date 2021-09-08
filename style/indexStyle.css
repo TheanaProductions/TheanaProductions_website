@@ -8,7 +8,6 @@ main{
     width: 90%;
     margin: 10px auto;
     padding: 2px;
-
 }
 
 #twitterContent {
@@ -19,12 +18,11 @@ main{
     position: relative;
 }
 
-#img-last-released {
+.bannerLastReleased {
     max-width: 100%;
     cursor: pointer;
 }
 
-/* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -40,15 +38,46 @@ main{
     user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
+}
+
+#secondaryPart{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#aboutTheana {
+    width: 55%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#socialmedias {
+    width: 40%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#findUs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#devSM, #normalSM, #gamesSM{
+    text-align: center;
+}
+
+.sm_icon{
+    width: 40px;
+    height: 40px;
 }
 
 @media only screen and (min-width: 350px) /* Phone size */ {
