@@ -1,18 +1,5 @@
 /* Base size */
-* 
-{
-    margin: 0px;
-    padding: 0px;
-}
 
-html {
-    background-color: #F0F0F0;
-}
-
-main {
-    background-image: url(../images/background_main.png);
-    background-repeat: repeat;
-}
 
 @media only screen and (min-width: 350px) /* Phone size */
 {
