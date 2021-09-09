@@ -6,12 +6,12 @@ create_divNav();
 // Insantiate banner images
 function create_logoSmall() {
     let logoSmall = document.createElement('img');
-    logoSmall.src = '../images/logoSmall.png';
+    logoSmall.src = 'images/logoSmall.png';
     logoSmall.id = 'img-small';
     document.getElementById('bannerHeader').appendChild(logoSmall);
 
     let logoBig = document.createElement('img');
-    logoBig.src = '../images/logoBig.png';
+    logoBig.src = 'images/logoBig.png';
     logoBig.id = 'img-big';
     document.getElementById('bannerHeader').appendChild(logoBig);
 }

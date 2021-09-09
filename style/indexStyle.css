@@ -71,7 +71,7 @@ main{
     }
 
 #aboutTheana {
-    background-image: url(../images/background_sections2.png)
+    background-image: url(images/background_sections2.png)
 }
 
 #aboutUs{
@@ -84,7 +84,7 @@ em {
 }
 
 #socialmedias {
-    background-image: url(../images/background_sections_noTitle.png);
+    background-image: url(images/background_sections_noTitle.png);
     align-self: center;
 }
 
@@ -169,7 +169,7 @@ em {
 
     #socialmedias {
         width: 35%;
-        background-image: url(../images/background_sections.png);
+        background-image: url(images/background_sections.png);
     }
 
         #socialmedias h1 {
