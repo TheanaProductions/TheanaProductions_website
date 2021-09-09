@@ -4,40 +4,60 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Enter meta description here" />
+    <meta name="description" content="Discover all Theana's productions published and in development games" />
 
-    <link rel="stylesheet" href="../style/header.css" />
-    <link rel="stylesheet" href="../style/main.css" />
-    <link rel="stylesheet" href="../style/gamesStyle.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/gamesStyle.css" />
 
     <title> Theana Productions - Our games </title>
 </head>
 
-    <body>
-        <header>
-            <script defer src="../scripts/main.js"></script> <!-- Call the JavaScript file -->
-            <div id="bannerHeader">
+<body>
+    <header>
+        <script defer src="scripts/main.js"></script>
+        <div id="bannerHeader">
 
-            </div>
+        </div>
 
-            <div id="navDiv">
-                <nav id="navHeader">
+        <div id="navDiv">
+            <nav id="navHeader">
 
-                </nav>
-            </div>
-        </header>
+            </nav>
+        </div>
+    </header>
 
-        <main>
-            <section id="mainContent">
+    <main>
+        <section id="mainContent">
+            <div id="categorySection">
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('games')"> Games</button>
+                    <button class="btn" onclick="filterSelection('apps')"> Applications</button>
+                    <button class="btn" onclick="filterSelection('finished')"> Finished</button>
+                    <button class="btn" onclick="filterSelection('indev')"> In development</button>
+                    <button class="btn" onclick="filterSelection('platform')"> Platformer</button>
+                    <button class="btn" onclick="filterSelection('rpg')"> RPG</button>
+                    <button class="btn" onclick="filterSelection('simulation')"> Simulation</button>
+                    <button class="btn" onclick="filterSelection('puzzle')"> Puzzle</button>
+                </div>
 
-            </section>
+                <div class="container">
+                    <div class="filterDiv games indev platform">The Fairy Quest</div>
+                    <div class="filterDiv games indev rpg simulation">Captiny</div>
+                    <div class="filterDiv games indev platform">Make it Right</div>
+                    <div class="filterDiv games finished puzzle">Lead the Way</div>
+                    <div class="filterDiv games finished">Hide and Seek</div>
+                    <div class="filterDiv apps indev">Coeur Diamant</div>
+                </div>
+            </div>      
+        </section>
 
-        </main>
+    </main>
 
-        <footer>
-
-        </footer>
-
-    </body>
+    <footer>
+    </footer>
+    <script defer src="scripts/categories.js"></script>
+</body>
 
 </html>
