@@ -75,17 +75,18 @@ main{
 }
 
 #aboutUs{
-    padding: 0px 0px 0px 10px;
-    text-align: justify;
+    padding: 0px 10px 10px 10px;
+    text-align: left;
 }
 
 em {
     font-weight: bold;
 }
 
-    #socialmedias {
-        background-image: url(../images/background_sections_noTitle.png);
-    }
+#socialmedias {
+    background-image: url(../images/background_sections_noTitle.png);
+    align-self: center;
+}
 
 
 
@@ -108,6 +109,14 @@ em {
 }
 
 #buttonSmall{
+    display: block;
+}
+
+#emailBig{
+    display: none;
+}
+
+#emailSmall{
     display: block;
 }
 
@@ -135,6 +144,14 @@ em {
     }
 
     #buttonSmall {
+        display: none;
+    }
+
+    #emailBig {
+        display: block;
+    }
+
+    #emailSmall {
         display: none;
     }
 }
