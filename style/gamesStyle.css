@@ -20,9 +20,9 @@
 }
 
 .container {
-    margin: 20px auto;
+    margin: auto;
+    padding: 10px;
     overflow: hidden;
-    align-self: center;
 }
 
 .filterDiv {
@@ -56,6 +56,8 @@
     margin: 10px 5px auto;
     background-color: antiquewhite;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
 }
 
     .btn:hover {
