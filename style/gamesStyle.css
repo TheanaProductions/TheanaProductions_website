@@ -15,10 +15,6 @@
     margin: auto;
 }
 
-.myBtnContainer{
-    padding: 10px 0px 0px 0px;
-}
-
 .container {
     margin: 10px auto;
     overflow: hidden;
@@ -43,6 +39,7 @@
     border: none;
     outline: none;
     padding: 12px 16px;
+    margin: 10px auto;
     background-color: #f1f1f1;
     cursor: pointer;
 }
