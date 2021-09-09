@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\html",
     "\\images",
+    "\\images\\screenshots",
+    "\\images\\screenshots\\fairy_quest",
     "\\scripts",
     "\\style"
   ],
-  "SelectedNode": "\\style\\header.css",
+  "SelectedNode": "\\style\\indexStyle.css",
   "PreviewInSolutionExplorer": false
 }

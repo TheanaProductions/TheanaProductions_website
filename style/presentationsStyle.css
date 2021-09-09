@@ -1,5 +1,56 @@
 /* Base size */
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mainContent {
+    width: 90%;
+    margin: auto;
+    border: 5px solid black;
+    font-size: 19px;
+}
+
+#mainPresentation {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    border: 2px solid black;
+}
+
+#titleLogo{
+    display: flex;
+}
+
+#titleLogo img{
+    width: 50%;
+    align-self: center;
+    margin: auto;
+}
+
+#screenshots {
+    width: 25%;
+    background-image: url(../images/background_sections2.png);
+    background-size: cover;
+    border-radius: 10px;
+    margin: 15px auto;
+    align-self: flex-start;
+    border: 2px solid black;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    border: 2px solid black;
+}
+
+#screenshots img{
+    width: 100%;
+}
 
 @media only screen and (min-width: 350px) /* Phone size */
 {
@@ -23,5 +74,7 @@
 
 @media only screen and (min-width: 1300px) /* Computer size */
 {
-
+    #mainContent {
+        width: 80%;
+    }
 }
