@@ -7,7 +7,7 @@
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 90%;
     margin: 15px auto;
     padding: 10px 5px 5px 5px;
 }
@@ -17,6 +17,14 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin: auto;
+}
+
+#myBtnContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
 }
 
 .container {
@@ -80,10 +88,18 @@
 
 @media only screen and (min-width: 870px) /* Computer size */
 {
-
+    #mainContent {
+        width: 80%;
+    }
 }
 
 @media only screen and (min-width: 1300px) /* Computer size */
 {
+    #mainContent {
+        width: 60%;
+    }
 
+    #myBtnContainer{
+        width: 90%;
+    }
 }
