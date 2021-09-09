@@ -8,6 +8,7 @@ main{
     width: 90%;
     margin: 10px auto;
     padding: 2px;
+    font-size: 19px;
 }
 
 #twitterContent {
@@ -64,7 +65,6 @@ main{
     #socialmedias h1, #aboutTheana h1 {
         margin: 2px auto;
         padding: 0px 0px 3px 0px;
-        font-family: Arial;
         font-size: 22px;
         font-weight: bold;
         color: black;
@@ -74,6 +74,14 @@ main{
     background-image: url(../images/background_sections2.png)
 }
 
+#aboutUs{
+    padding: 0px 0px 0px 10px;
+    text-align: justify;
+}
+
+em {
+    font-weight: bold;
+}
 
     #socialmedias {
         background-image: url(../images/background_sections_noTitle.png);
@@ -149,7 +157,7 @@ main{
 
         #socialmedias h1 {
             color: #FFFFED;
-            font-weight: 400;
+            font-weight: normal;
             margin: 0px;
             padding: 2px 0px 2px 0px;
         }
