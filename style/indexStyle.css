@@ -95,6 +95,14 @@ main{
     margin: 5px auto;
 }
 
+#buttonBig{
+    display: none;
+}
+
+#buttonSmall{
+    display: block;
+}
+
 @media only screen and (min-width: 530px) /* Tablet size 1 */
 {
     #mainContent{
@@ -109,6 +117,18 @@ main{
         #socialmedias h1, #aboutTheana h1 {
             margin: 5px auto;
         }
+
+        #kofiWidget{
+            padding: 5px 0px 10px 0px;
+        }
+
+    #buttonBig {
+        display: block;
+    }
+
+    #buttonSmall {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 650px) /* Tablet size 2 */
@@ -127,11 +147,12 @@ main{
         background-image: url(../images/background_sections.png);
     }
 
-    #socialmedias h1 {
-        color: white;
-        margin: 0px;
-        padding: 2px 0px 2px 0px;
-    }
+        #socialmedias h1 {
+            color: #FFFFED;
+            font-weight: 400;
+            margin: 0px;
+            padding: 2px 0px 2px 0px;
+        }
 }
 
 @media only screen and (min-width: 870px) /* Computer size */
@@ -173,6 +194,6 @@ main{
     }
 
         #socialmedias h1, #aboutTheana h1 {
-            padding: 3px 0px 10px 0px;
+            padding: 5px 0px 10px 0px;
         }
 }
