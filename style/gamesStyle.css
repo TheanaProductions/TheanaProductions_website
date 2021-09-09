@@ -23,27 +23,20 @@
     margin: auto;
     padding: 10px;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 
 .filterDiv {
-    float: left;
-    background-image: url(../images/categoryBtn.png);
-    background-size: cover;
-    line-height: 100px;
-    text-align: center;
     margin: 5px;
-    padding: 0px 5px 0px 5px;
     display: none;
-    width: 125px;
-    border: 3px solid black;
+    width: 250px;
+    height: 350px;
     color: antiquewhite;
-    text-decoration: none;
-    font-size: 18px;
+    border: 5px solid black;
 }
-
-    .filterDiv:hover {
-        text-decoration: underline;
-    }
 
 .show {
     display: block;
