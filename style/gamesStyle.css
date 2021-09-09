@@ -6,30 +6,36 @@
     border: 5px solid #4A3159;
     border-radius: 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-items: center;
 }
 
-#categorySection{
+#categorySection {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin: auto;
 }
 
 .container {
     margin: 10px auto;
     overflow: hidden;
+    align-self: center;
 }
 
 .filterDiv {
     float: left;
-    background-color: #4A3159;
+    background-image: url(../images/categoryBtn.png);
+    background-size: cover;
     color: #ffffff;
     line-height: 100px;
     text-align: center;
-    margin: 2px;
+    margin: 5px;
     padding: 0px 5px 0px 5px;
     display: none;
     width: 125px;
+    border: 3px solid black;
+    
 }
 
 .show {
@@ -40,7 +46,7 @@
     border: none;
     outline: none;
     padding: 12px 16px;
-    margin: 10px auto;
+    margin: 10px 5px auto;
     background-color: #f1f1f1;
     cursor: pointer;
 }
