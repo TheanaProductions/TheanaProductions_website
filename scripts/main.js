@@ -6,7 +6,7 @@ create_divNav();
 // Insantiate banner images
 function create_logoSmall() {
     let logoSmall = document.createElement('img');
-    logoSmall.src = 'logoSmall.png';
+    logoSmall.src = 'images/logoSmall.png';
     logoSmall.id = 'img-small';
     document.getElementById('bannerHeader').appendChild(logoSmall);
 
