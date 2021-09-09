@@ -34,13 +34,13 @@
     display: none;
     width: 125px;
     border: 3px solid black;
-    
-}
-
-.filterDiv a{
     color: white;
     text-decoration: none;
     font-size: 18px;
+}
+
+.filterDiv:hover{
+    text-decoration: underline;
 }
 
 .show {
