@@ -35,13 +35,8 @@ main {
 
 #screenshots {
     width: 25%;
-    background-image: url(../images/background_sections2.png);
-    background-size: cover;
     margin: 15px auto;
-    padding: 8px;
     align-self: flex-start;
-    border-radius: 20px;
-    border: 5px solid #4A3159;
     display: flex;
     flex-direction: column;
 }
@@ -53,12 +48,14 @@ main {
     border: 2px solid black;
 }
 
-#screenshots img {
+#screenshots a{
+    margin: 5px auto;
+}
+
+#screenshots a img {
     width: 100%;
     border-radius: 10px;
-    border: 4px solid #6C4882;
-    align-self: center;
-    margin: auto;
+    border: 5px solid #4A3159;
 }
 
 @media only screen and (min-width: 350px) /* Phone size */
