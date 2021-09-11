@@ -14,7 +14,7 @@ main {
 }
 
 #mainPresentation {
-    width: 65%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -36,11 +36,11 @@ main {
 }
 
 #presentationText{
-    margin: 20px 10px 10px 30px;
+    margin: 10px 8px 5px 15px;
 }
 
 ul{
-    margin: 0px 120px;
+    margin: 0px 10px;
 }
 
 ul li{
@@ -48,9 +48,9 @@ ul li{
 }
 
 #screenshots {
-    width: 30%;
-    margin: 15px auto;
-    align-self: flex-start;
+    width: 90%;
+    margin: auto;
+    align-self: center;
     display: flex;
     flex-direction: column;
 }
@@ -99,13 +99,57 @@ ul li{
 @media only screen and (min-width: 650px) /* Tablet size 2 */
 {
 
+    #mainPresentation {
+        width: 80%;
+    }
+
+    #presentationText {
+        margin: 15px 10px 10px 25px;
+    }
+
+    ul {
+        margin: 0px 20px;
+    }
+
+        ul li {
+            list-style-position: inside;
+        }
+
+    #screenshots {
+        width: 50%;
+        margin: auto;
+    }
 }
 
 @media only screen and (min-width: 870px) /* Computer size */
 {
+    #mainPresentation{
+        width: 65%;
+    }
 
+    #screenshots {
+        width: 30%;
+        margin: 10px 10px auto;
+        align-self: flex-start;
+    }
 }
 
 @media only screen and (min-width: 1300px) /* Computer size */
 {
+    #mainPresentation {
+        width: 65%;
+    }
+
+    #presentationText {
+        margin: 20px 10px 10px 30px;
+    }
+
+    ul {
+        margin: 0px 120px;
+    }
+
+    #screenshots {
+        width: 30%;
+        margin: 15px auto;
+    }
 }
