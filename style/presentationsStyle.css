@@ -31,6 +31,14 @@ main {
     margin: auto;
 }
 
+#presentationText{
+    margin: 5px 10px auto;
+}
+
+ul{
+    margin: 0px 120px;
+}
+
 ul li{
     list-style-position: inside;
 }
