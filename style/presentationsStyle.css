@@ -11,6 +11,7 @@ main {
     font-size: 19px;
     display: flex;
     flex-wrap: wrap;
+    align-self: flex-start;
 }
 
 #mainPresentation {
@@ -59,11 +60,12 @@ ul li{
     margin: 10px auto;
 }
 
-#screenshots a img {
-    width: 100%;
-    border-radius: 10px;
-    border: 5px solid #4A3159;
-}
+    #screenshots a img {
+        width: 100%;
+        border-radius: 10px;
+        border: 5px solid #4A3159;
+        max-height: 500px;
+    }
 
 #buttons {
     display: flex;
