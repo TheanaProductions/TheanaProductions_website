@@ -21,6 +21,8 @@ main {
     margin: auto;
     border: 4px solid #4A3159;
     border-radius: 20px;
+    background-image: url(../images/background_sections2.png);
+    background-size: cover;
 }
 
 #titleLogo{
@@ -34,7 +36,7 @@ main {
 }
 
 #presentationText{
-    margin: 20px 10px auto;
+    margin: 20px 10px 10px 20px;
 }
 
 ul{
@@ -53,21 +55,21 @@ ul li{
     flex-direction: column;
 }
 
-#buttons {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    border: 2px solid black;
-}
-
 #screenshots a{
-    margin: 5px auto;
+    margin: 10px auto;
 }
 
 #screenshots a img {
     width: 100%;
     border-radius: 10px;
     border: 5px solid #4A3159;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    border: 2px solid black;
 }
 
 @media only screen and (min-width: 350px) /* Phone size */
