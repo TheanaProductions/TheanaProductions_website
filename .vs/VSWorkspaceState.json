@@ -1,11 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\images",
-    "\\images\\screenshots",
-    "\\images\\screenshots\\coeur_diamant",
-    "\\style"
+    "\\scripts"
   ],
-  "SelectedNode": "\\lead_the_way.html",
+  "SelectedNode": "\\scripts\\slideshowLatest.js",
   "PreviewInSolutionExplorer": false
 }
