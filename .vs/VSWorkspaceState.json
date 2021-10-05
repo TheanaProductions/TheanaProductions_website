@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\images",
-    "\\images\\sm",
-    "\\scripts"
+    "\\images\\thumbnails",
+    "\\scripts",
+    "\\style"
   ],
-  "SelectedNode": "\\games.html",
+  "SelectedNode": "\\coeur_diamant.html",
   "PreviewInSolutionExplorer": false
 }
