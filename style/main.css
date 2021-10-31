@@ -24,9 +24,7 @@ main {
     color: black;
 }
 
-@media only screen and (min-width: 350px) /* Phone size */
-{
-
+@media only screen and (min-width: 350px) /* Phone size */ {
 }
 
 @media only screen and (min-width: 530px) /* Tablet size 2 */
