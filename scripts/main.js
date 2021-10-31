@@ -45,4 +45,16 @@ function create_divNav() {
     gamesLink.className = 'linkNavHeader';
     gamesLink.setAttribute('href', ('games.html'));
     document.getElementById('gamesDiv').appendChild(gamesLink);
+
+    // Shop link
+    let divShop = document.createElement('div');
+    divShop.id = 'shopDiv';
+    divShop.classList = 'navDivHeader';
+    document.getElementById('navHeader').appendChild(divShop);
+
+    let shopLink = document.createElement('a');
+    shopLink.innerHTML = 'Shop';
+    shopLink.className = 'linkNavHeader';
+    shopLink.setAttribute('href', ('shop.html'));
+    document.getElementById('shopDiv').appendChild(shopLink);
 }
