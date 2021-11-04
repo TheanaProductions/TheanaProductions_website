@@ -8,12 +8,12 @@ function create_logoSmall() {
     document.getElementById('bannerHeader').appendChild(indexLink);
 
     let logoSmall = document.createElement('img');
-    logoSmall.src = 'images/logoSmall.png';
+    logoSmall.src = 'images/theana_logo_xmas.png';
     logoSmall.id = 'img-small';
     document.getElementById('indexLinkHeader').appendChild(logoSmall);
 
     let logoBig = document.createElement('img');
-    logoBig.src = 'images/logoBig.png';
+    logoBig.src = 'images/theana_logo_title_Xmas.png';
     logoBig.id = 'img-big';
     document.getElementById('indexLinkHeader').appendChild(logoBig);
 

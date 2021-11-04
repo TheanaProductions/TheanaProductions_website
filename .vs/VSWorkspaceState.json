@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\builds",
-    "\\scripts",
+    "\\images",
+    "\\images\\thumbnails",
     "\\style"
   ],
-  "SelectedNode": "\\snake_calculator_PrivacyPolicy.html",
+  "SelectedNode": "\\games.html",
   "PreviewInSolutionExplorer": false
 }
