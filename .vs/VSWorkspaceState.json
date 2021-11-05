@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\builds",
+    "\\images",
+    "\\images\\latestReleasesSlideshow",
+    "\\scripts",
     "\\style"
   ],
-  "SelectedNode": "\\style\\snow.css",
+  "SelectedNode": "\\images\\latestReleasesSlideshow\\img4.png",
   "PreviewInSolutionExplorer": false
 }
