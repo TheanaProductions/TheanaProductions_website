@@ -39,6 +39,7 @@ main {
 
 #presentationText{
     margin: 10px 8px 5px 15px;
+    width: 100%;
 }
 
 ul{
@@ -50,28 +51,34 @@ ul li{
 }
 
 #screenshots {
-    width: 90%;
-    margin: auto;
+    position: relative;
+    width: 80%;
+    margin: 15px auto;
     align-self: center;
-    display: flex;
-    flex-direction: column;
 }
 
-#screenshots a{
+#screenshots a, #screenshotsMobile a{
     margin: 10px auto;
 }
 
-    #screenshots a img {
+    #screenshots a img, #screenshotsMobile a img{
         width: 100%;
         border-radius: 10px;
         border: 5px solid #4A3159;
         max-height: 500px;
     }
 
+#screenshotsMobile {
+    position: relative;
+    width: 50%;
+    margin: 15px auto;
+    align-self: center;
+}
+
 #buttons {
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 90%;
     align-self: center;
     margin: 10px auto 15px auto;
 }
@@ -89,15 +96,30 @@ ul li{
         border: 3px solid #4A3159;
     }
 
-@media only screen and (min-width: 350px) /* Phone size */
-{
 
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
-@media only screen and (min-width: 530px) /* Tablet size 2 */
-{
-
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
 
 @media only screen and (min-width: 650px) /* Tablet size 2 */
 {
@@ -120,27 +142,28 @@ ul li{
 
     #screenshots {
         width: 50%;
-        margin: auto;
+    }
+
+    #screenshotsMobile {
+        width: 40%;
     }
 }
 
 @media only screen and (min-width: 870px) /* Computer size */
 {
     #mainPresentation{
-        width: 65%;
+        width: 75%;
     }
 
-    #screenshots {
-        width: 30%;
-        margin: 10px 10px auto;
-        align-self: flex-start;
+    #screenshotsMobile {
+        width: 35%;
     }
 }
 
 @media only screen and (min-width: 1300px) /* Computer size */
 {
     #mainPresentation {
-        width: 65%;
+        width: 70%;
     }
 
     #presentationText {
@@ -151,8 +174,7 @@ ul li{
         margin: 0px 120px;
     }
 
-    #screenshots {
-        width: 30%;
-        margin: 15px auto;
+    #screenshotsMobile {
+        width: 25%;
     }
 }
