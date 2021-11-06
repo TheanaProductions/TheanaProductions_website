@@ -1,12 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\builds",
-    "\\images",
-    "\\images\\latestReleasesSlideshow",
     "\\scripts",
     "\\style"
   ],
-  "SelectedNode": "\\images\\latestReleasesSlideshow\\img4.png",
+  "SelectedNode": "\\scripts\\main.js",
   "PreviewInSolutionExplorer": false
 }
