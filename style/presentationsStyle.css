@@ -120,6 +120,10 @@ ul li{
         background-color: rgba(0,0,0,0.8);
     }
 
+p a, p a:hover, p a:visited{
+    color: black;
+}
+
 
 @media only screen and (min-width: 650px) /* Tablet size 2 */
 {
