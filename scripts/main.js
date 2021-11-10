@@ -10,11 +10,13 @@ function create_logoSmall() {
     let logoSmall = document.createElement('img');
     logoSmall.src = 'images/theana_logo_xmas.png';
     logoSmall.id = 'img-small';
+    logoSmall.alt = 'Logo Theana Productions'
     document.getElementById('indexLinkHeader').appendChild(logoSmall);
 
     let logoBig = document.createElement('img');
     logoBig.src = 'images/theana_logo_title_Xmas.png';
     logoBig.id = 'img-big';
+    logoBig.alt = 'Logo Theana Productions'
     document.getElementById('indexLinkHeader').appendChild(logoBig);
 
 
