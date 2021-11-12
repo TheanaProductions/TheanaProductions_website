@@ -120,7 +120,7 @@ em {
     display: block;
 }
 
-p a{
+p a, p a:visited, p a:hover{
     color: black;
 }
 
