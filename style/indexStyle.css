@@ -120,6 +120,10 @@ em {
     display: block;
 }
 
+p a{
+    color: black;
+}
+
 @media only screen and (min-width: 530px) /* Tablet size 1 */
 {
     #mainContent{
