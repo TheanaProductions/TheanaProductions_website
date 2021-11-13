@@ -58,64 +58,46 @@
                     <p><em>Available in English, French and Portuguese (Brazil).</em></p>
                 </div>
 
-                <div id="screenshots">
-                    <div class="imgSlideshow">
-                        <a href="images/screenshots/hide_and_seek/hideandseek1.png" target="_blank">
-                            <img src="images/screenshots/hide_and_seek/hideandseek1.png" alt="Screenshot of the Hide and Seek game - Theana Productions" />
-                        </a>
-                    </div>
-                    <div class="imgSlideshow">
-                        <a href="images/screenshots/hide_and_seek/hideandseek2.png" target="_blank">
-                            <img src="images/screenshots/hide_and_seek/hideandseek2.png" alt="Screenshot of the Hide and Seek game - Theana Productions" />
-                        </a>
-                    </div>
-                    <div class="imgSlideshow">
-                        <a href="images/screenshots/hide_and_seek/hideandseek3.png" target="_blank">
-                            <img src="images/screenshots/hide_and_seek/hideandseek3.png" alt="Screenshot of the Hide and Seek game - Theana Productions" />
-                        </a>
-                    </div>
+                <div id="webGL">
+                    <canvas id="unity-canvas" width=900 height=600 style="width: 900px; height: 600px; background: #231F20"></canvas>
+                    <script src="builds/HideAndSeek_2.0.5/Build/2.0.5.loader.js"></script>
+                    <script>
+                        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+                            // Mobile device style: fill the whole browser client area with the game canvas:
+                            var meta = document.createElement('meta');
+                            meta.name = 'viewport';
+                            meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+                            document.getElementsByTagName('webGL')[0].appendChild(meta);
+                        }
 
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        createUnityInstance(document.querySelector("#unity-canvas"), {
+                            dataUrl: "builds/HideAndSeek_2.0.5/Build/2.0.5.data",
+                            frameworkUrl: "builds/HideAndSeek_2.0.5/Build/2.0.5.framework.js",
+                            codeUrl: "builds/HideAndSeek_2.0.5/Build/2.0.5.wasm",
+                            streamingAssetsUrl: "StreamingAssets",
+                            companyName: "Theana Productions",
+                            productName: "Hide and Seek",
+                            productVersion: "2.0.5",
+                            // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+                            // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+                        });
+                    </script>
                 </div>
 
                 <div id="buttons">
                     <a href="https://theana-productions.itch.io/hide-and-seek" id="itchIOButton" target="_blank" rel="noopener noreferrer">
                         Download - Itch.io
                     </a>
-                    <a href=https://play.google.com/store/apps/details?id=com.TheanaProductions.HideAndSeek id="playStoreButton" target="_blank" rel="noopener noreferrer">
+                    <a href=https://play.google.com/store/apps/details?id =com.TheanaProductions.HideAndSeek id="playStoreButton" target="_blank" rel="noopener noreferrer">
                         Play - PlayStore
                     </a>
                     <a href="https://theana-productions.myspreadshop.com/hide+and+seek?collection=BZKogBOLjc" id="spreadshirtButton" target="_blank" rel="noopener noreferrer">
                         Buy - Spreadshirt designs
                     </a>
+                    <a href="" id="donateBtn" target="_blank" rel="noopener noreferrer">
+                        Donate to Theana
+                    </a>
                 </div>
-            </div>
-
-            <div id="webGL">
-                <canvas id="unity-canvas" width=600 height=300 style="width: 600px; height: 300px; background: #231F20"></canvas>
-                <script src="builds/HideAndSeek_2.0.5/Build/2.0.5.loader.js"></script>
-                <script>
-                    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-                        // Mobile device style: fill the whole browser client area with the game canvas:
-                        var meta = document.createElement('meta');
-                        meta.name = 'viewport';
-                        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-                        document.getElementsByTagName('webGL')[0].appendChild(meta);
-                    }
-
-                    createUnityInstance(document.querySelector("#unity-canvas"), {
-                        dataUrl: "builds/HideAndSeek_2.0.5/Build/2.0.5.data",
-                        frameworkUrl: "builds/HideAndSeek_2.0.5/Build/2.0.5.framework.js",
-                        codeUrl: "builds/HideAndSeek_2.0.5/Build/2.0.5.wasm",
-                        streamingAssetsUrl: "StreamingAssets",
-                        companyName: "Theana Productions",
-                        productName: "Hide and Seek",
-                        productVersion: "2.0.5",
-                        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-                        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-                    });
-                </script>
             </div>
         </div>
     </main>

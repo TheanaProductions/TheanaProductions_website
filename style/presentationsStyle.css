@@ -183,6 +183,6 @@ p a, p a:hover, p a:visited{
     }
 
     #webGL {
-        margin: auto;
+        margin: 15px auto;
     }
 }
