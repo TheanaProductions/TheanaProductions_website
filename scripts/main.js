@@ -33,7 +33,7 @@ function create_divNav() {
     let indexLink = document.createElement('a');
     indexLink.innerHTML = 'Home';
     indexLink.className = 'linkNavHeader';
-    indexLink.setAttribute('href', ('index.html'));
+    indexLink.setAttribute('href', ('https://theanaproductions.com/'));
     document.getElementById('indexDiv').appendChild(indexLink);
 
     // Games link
