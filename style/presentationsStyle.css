@@ -50,12 +50,7 @@ ul li{
     list-style-position: inside;
 }
 
-#webGL{
-    display: none;
-}
-
 #screenshots {
-    display: block;
     position: relative;
     width: 80%;
     margin: 15px auto;
@@ -185,18 +180,5 @@ p a, p a:hover, p a:visited{
 
     #screenshotsMobile {
         width: 25%;
-    }
-
-    #webGL {
-        display: block;
-        margin: 15px auto;
-    }
-
-    #unity-canvas {
-        border: 3.5px solid #4A3159;
-    }
-
-    #screenshots {
-        display: none;
     }
 }
