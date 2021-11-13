@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\builds",
+    "\\builds\\HideAndSeek_2.0.5",
+    "\\builds\\HideAndSeek_2.0.5\\Build",
+    "\\scripts",
+    "\\style"
   ],
-  "SelectedNode": "\\lead_the_way_PrivacyPolicy.html",
+  "SelectedNode": "\\style\\presentationsStyle.css",
   "PreviewInSolutionExplorer": false
 }
