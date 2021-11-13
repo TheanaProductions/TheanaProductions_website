@@ -3,7 +3,7 @@ create_divNav();
 
 function create_logoSmall() {
     let indexLink = document.createElement('a');
-    indexLink.href = 'index.html';
+    indexLink.href = 'https://theanaproductions.com/';
     indexLink.id = 'indexLinkHeader';
     document.getElementById('bannerHeader').appendChild(indexLink);
 
