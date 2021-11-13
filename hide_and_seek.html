@@ -93,7 +93,7 @@
             </div>
 
             <div id="webGL">
-                <canvas id="unity-canvas" width=900 height=600 style="width: 900px; height: 600px; background: #231F20"></canvas>
+                <canvas id="unity-canvas" width=600 height=300 style="width: 600px; height: 300px; background: #231F20"></canvas>
                 <script src="builds/HideAndSeek_2.0.5/Build/2.0.5.loader.js"></script>
                 <script>
                     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -101,7 +101,7 @@
                         var meta = document.createElement('meta');
                         meta.name = 'viewport';
                         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-                        document.getElementsByTagName('head')[0].appendChild(meta);
+                        document.getElementsByTagName('webGL')[0].appendChild(meta);
                     }
 
                     createUnityInstance(document.querySelector("#unity-canvas"), {
