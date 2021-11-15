@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\scripts",
+    "\\builds",
+    "\\builds\\CoeurDiamant_2.0.3",
+    "\\builds\\HideAndSeek_2.0.5",
     "\\style"
   ],
-  "SelectedNode": "\\games.html",
+  "SelectedNode": "\\builds\\CoeurDiamant_2.0.3",
   "PreviewInSolutionExplorer": false
 }
