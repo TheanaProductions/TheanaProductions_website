@@ -53,31 +53,35 @@ a, a:hover, a:visited{
     color: black;
 }
 
-@media only screen and (min-width: 350px) /* Phone size */
-{
+.linkNavHeader, .linkNavHeader:hover, .linkNavHeader:visited {
+    color: white;
 }
 
-@media only screen and (min-width: 530px) /* Tablet size 2 */
-{
-    #emailBig {
-        display: block;
+    @media only screen and (min-width: 350px) /* Phone size */
+    {
     }
 
-    #emailSmall {
-        display: none;
+    @media only screen and (min-width: 530px) /* Tablet size 2 */
+    {
+        #emailBig {
+            display: block;
+        }
+
+        #emailSmall {
+            display: none;
+        }
     }
-}
 
-@media only screen and (min-width: 650px) /* Tablet size 2 */
-{
-}
-
-@media only screen and (min-width: 870px) /* Computer size */
-{
-}
-
-@media only screen and (min-width: 1300px) /* Computer size */
-{
-    #mainContent {
+    @media only screen and (min-width: 650px) /* Tablet size 2 */
+    {
     }
-}
+
+    @media only screen and (min-width: 870px) /* Computer size */
+    {
+    }
+
+    @media only screen and (min-width: 1300px) /* Computer size */
+    {
+        #mainContent {
+        }
+    }
