@@ -1,0 +1,10 @@
+footer{
+    display: flex;
+}
+
+footer a{
+    color: white;
+    margin: auto;
+    text-decoration: none;
+    padding: 10px 0px 10px 0px;
+}
