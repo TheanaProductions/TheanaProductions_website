@@ -49,6 +49,10 @@ ol
     display: block;
 }
 
+a, a:hover, a:visited{
+    color: black;
+}
+
 @media only screen and (min-width: 350px) /* Phone size */
 {
 }
