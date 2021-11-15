@@ -74,6 +74,20 @@
                 </div>
 
                 <div id="webGL">
+                    <canvas id="unity-canvas" width=500 height=1000 style="width: 500px; height: 1000px; background: #231F20"></canvas>
+                    <script src="builds/CoeurDiamant_2.0.3/2.0.3.loader.js"></script>
+                    <script>
+                        createUnityInstance(document.querySelector("#unity-canvas"), {
+                            dataUrl: "builds/CoeurDiamant_2.0.3/2.0.3.data.br",
+                            frameworkUrl: "builds/CoeurDiamant_2.0.3/2.0.3.framework.js.br",
+                            codeUrl: "builds/CoeurDiamant_2.0.3/2.0.3.wasm.br",
+                            streamingAssetsUrl: "StreamingAssets",
+                            companyName: "Theana Productions",
+                            productName: "Coeur Diamant",
+                            productVersion: "2.0.3",
+
+                        });
+                    </script>
                 </div>
 
                 <div id="buttons">
