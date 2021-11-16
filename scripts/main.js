@@ -1,5 +1,6 @@
 create_logoSmall();
 create_divNav();
+create_footer();
 
 function create_logoSmall() {
     let indexLink = document.createElement('a');
@@ -47,4 +48,22 @@ function create_divNav() {
     gamesLink.className = 'linkNavHeader';
     gamesLink.setAttribute('href', ('games.html'));
     document.getElementById('gamesDiv').appendChild(gamesLink);
+}
+
+function create_footer()
+{
+    let linkLegalNotice = document.createElement('a');
+    linkLegalNotice.innerHTML = 'Legal Notice';
+    linkLegalNotice.setAttribute('href', ('legalNotice.html'));
+    document.getElementById('footer').appendChild(linkLegalNotice);
+
+    let linkPrivacyPolicies = document.createElement('a');
+    linkPrivacyPolicies.innerHTML = 'Privacy Policies';
+    linkPrivacyPolicies.setAttribute('href', ('privacyPolicies.html'));
+    document.getElementById('footer').appendChild(linkPrivacyPolicies);
+
+    let linkPartners = document.createElement('a');
+    linkPartners.innerHTML = 'Our Partners';
+    linkPartners.setAttribute('href', ('partners.html'));
+    document.getElementById('footer').appendChild(linkPartners);
 }
