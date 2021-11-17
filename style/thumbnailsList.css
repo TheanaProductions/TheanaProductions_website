@@ -37,3 +37,8 @@
     background-image: url(../images/thumbnails/classicsnake.png);
     background-size: cover;
 }
+
+#leadTheway2 {
+    background-image: url(../images/thumbnails/leadtheway2.png);
+    background-size: cover;
+}
