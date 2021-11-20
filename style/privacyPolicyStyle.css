@@ -57,6 +57,19 @@ a, a:hover, a:visited{
     color: white;
 }
 
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
     @media only screen and (min-width: 350px) /* Phone size */
     {
     }
