@@ -4,13 +4,13 @@
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Discover Lead the way, a Theana Productions maze game" />
+    <meta name="description" content="Discover Lead the way 2, a Theana Productions multiplayer maze game" />
 
     <meta name=”twitter:card” content=”summary” />
-    <meta property="og:title" content=" Lead the Way - Theana Productions " />
-    <meta property="og:description" content="Discover Lead the way, a Theana Productions maze game" />
+    <meta property="og:title" content=" Lead the Way 2 - Theana Productions " />
+    <meta property="og:description" content="Discover Lead the way 2, a Theana Productions multiplayer maze game" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://theanaproductions.com/lead_the_way.html" />
+    <meta property="og:url" content="https://theanaproductions.com/lead_the_way_2.html" />
     <meta property="og:image" content="https://theanaproductions.com/images/logoSmall.png" />
     <meta property="og:site_name" content=" Theana Productions " />
 
@@ -27,8 +27,9 @@
     <link rel="stylesheet" href="style/footer.css" />
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/presentationsStyle.css" />
+    <link rel="stylesheet" href="style/webGL.css" />
 
-    <title> Lead the Way - Theana Productions </title>
+    <title> Lead the Way 2 - Theana Productions </title>
 </head>
 
 <body>
@@ -49,7 +50,7 @@
         <div id="mainContent">
             <div id="mainPresentation">
                 <div id="titleLogo">
-                    <img src="images/logos/leadtheway.png" alt="Logo Lead the way - Theana Productions" />
+                    <img src="images/logos/leadtheway2.png" alt="Logo Lead the way 2 - Theana Productions" />
                 </div>
 
                 <div id="presentationText">
@@ -57,35 +58,24 @@
                     <br />
                     <p>That's what they feel when they are with their partner.</p>
                     <br />
-                    <p>Unfortunately, because of a strange turn of events, they ended up being separated in a dark maze. It is now up to Bob to brave the dangers of the maze in order to be reunited with their loved one.</p>
+                    <p>Unfortunately, because of a strange turn of events, they ended up being separated in a dark maze. They now need to brave the dangers of the maze in order to be reunited with their loved one.</p>
                     <br />
                     <ul>
                         <li>Simple gameplay, perfect to relax or pass the time</li>
-                        <li>A cute character that will with no doubt make you fall in love</li>
-                        <li>A hard mode for those who like the challenge</li>
-                        <li>40 levels to test your abilities</li>
+                        <li>Local co-op needed in order to win</li>
+                        <li>Accessible to all keyboards thanks to custom inputs</li>
                     </ul>
                 </div>
 
                 <div id="screenshots">
                     <div class="imgSlideshow">
-                        <a href="images/screenshots/lead_the_way/leadtheway1.png" target="_blank">
-                            <img src="images/screenshots/lead_the_way/leadtheway1.png" alt="Screenshot of the Lead the way game - Theana Productions" />
+                        <a href="images/screenshots/lead_the_way2/leadtheway1.png" target="_blank">
+                            <img src="images/screenshots/lead_the_way2/leadtheway1.png" alt="Screenshot of the Lead the way 2 game - Theana Productions" />
                         </a>
                     </div>
                     <div class="imgSlideshow">
-                        <a href="images/screenshots/lead_the_way/leadtheway2.png" target="_blank">
-                            <img src="images/screenshots/lead_the_way/leadtheway2.png" alt="Screenshot of the Lead the way game - Theana Productions" />
-                        </a>
-                    </div>
-                    <div class="imgSlideshow">
-                        <a href="images/screenshots/lead_the_way/leadtheway3.png" target="_blank">
-                            <img src="images/screenshots/lead_the_way/leadtheway3.png" alt="Screenshot of the Lead the way game - Theana Productions" />
-                        </a>
-                    </div>
-                    <div class="imgSlideshow">
-                        <a href="images/screenshots/lead_the_way/leadtheway4.png" target="_blank">
-                            <img src="images/screenshots/lead_the_way/leadtheway4.png" alt="Screenshot of the Lead the way game - Theana Productions" />
+                        <a href="images/screenshots/lead_the_way2/leadtheway2.png" target="_blank">
+                            <img src="images/screenshots/lead_the_way2/leadtheway2.png" alt="Screenshot of the Lead the way 2 game - Theana Productions" />
                         </a>
                     </div>
 
@@ -93,11 +83,24 @@
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
 
+                <div id="webGL">
+                    <canvas id="unity-canvas" width=900 height=600 style="width: 900px; height: 600px; background: #231F20"></canvas>
+                    <script src="builds/LeadTheWay2_1.0.1/1.0.1.loader.js"></script>
+                    <script>
+                        createUnityInstance(document.querySelector("#unity-canvas"), {
+                            dataUrl: "builds/LeadTheWay2_1.0.1/1.0.1.data",
+                            frameworkUrl: "builds/LeadTheWay2_1.0.1/1.0.1.framework.js",
+                            codeUrl: "builds/LeadTheWay2_1.0.1/1.0.1.wasm",
+                            streamingAssetsUrl: "StreamingAssets",
+                            companyName: "Theana Productions",
+                            productName: "Lead the way 2",
+                            productVersion: "1.0.1",
+                        });
+                    </script>
+                </div>
+
                 <div id="buttons">
-                    <a href="https://play.google.com/store/apps/details?id=com.TheanaProductions.LeadtheWay" id="playStoreButton" target="_blank" rel="noopener noreferrer">
-                        Play - PlayStore
-                    </a>
-                    <a href="https://theana-productions.itch.io/lead-the-way-ea" id="itchIOButton" target="_blank" rel="noopener noreferrer">
+                    <a href="https://theana-productions.itch.io/lead-the-way-2" id="itchIOButton" target="_blank" rel="noopener noreferrer">
                         Play - Itch.io
                     </a>
                     <a href="https://theana-productions.myspreadshop.com/lead+the+way?collection=oEyqcYTerp" id="spreadshirtButton" target="_blank" rel="noopener noreferrer">
