@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\style"
+    "\\builds",
+    "\\builds\\LeadTheWay2_1.0.1"
   ],
-  "SelectedNode": "\\style\\snow.css",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
