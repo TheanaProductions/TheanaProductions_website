@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="style/footer.css" />
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/presentationsStyle.css" />
+    <link rel="stylesheet" href="style/webGL.css" />
 
     <title> Coeur Diamant - Theana Productions </title>
 </head>
@@ -78,6 +79,22 @@
 
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <div id="webGL">
+                    <canvas id="unity-canvas" width=350 height=650 style="width: 350px; height: 650px; background: #231F20"></canvas>
+                    <script src="builds/CoeurDiamant_2.0.2/2.0.2.loader.js"></script>
+                    <script>
+                        createUnityInstance(document.querySelector("#unity-canvas"), {
+                            dataUrl: "builds/CoeurDiamant_2.0.2/2.0.2.data",
+                            frameworkUrl: "builds/CoeurDiamant_2.0.2/2.0.2.framework.js",
+                            codeUrl: "builds/CoeurDiamant_2.0.2/2.0.2.wasm",
+                            streamingAssetsUrl: "StreamingAssets",
+                            companyName: "Theana Productions",
+                            productName: "Coeur Diamant",
+                            productVersion: "2.0.2",
+                        });
+                    </script>
                 </div>
 
                 <div id="buttons">
