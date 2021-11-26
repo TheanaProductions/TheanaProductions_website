@@ -13,7 +13,7 @@
     <meta property="og:image" content="https://theanaproductions.com/images/logoSmall.png" />
     <meta property="og:site_name" content=" Theana Productions - Take a look at our creations" />
 
-    <link rel="icon" href="images/favicon_TheanaProductions16.ico?" />
+    <link rel="icon" href="images/favicons/favicon_TheanaProductions16.ico?" />
     <link rel="icon" type="image/png" sizes="48x48" href="images/favicons/favicon_TheanaProductions48.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon_TheanaProductions96.png">
     <link rel="icon" type="image/png" sizes="144x144" href="images/favicons/favicon_TheanaProductions144.png">
@@ -49,17 +49,17 @@
         <section id="mainContent">
             <div id="categorySection">
                 <div id="myBtnContainer">
-                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-                    <button class="btn" onclick="filterSelection('games')"> PC</button>
-                    <button class="btn" onclick="filterSelection('apps')"> Android</button>
-                    <button class="btn" onclick="filterSelection('finished')"> Finished</button>
-                    <button class="btn" onclick="filterSelection('indev')"> In development</button>
-                    <button class="btn" onclick="filterSelection('platform')"> Platformer</button>
-                    <button class="btn" onclick="filterSelection('rpg')"> RPG</button>
-                    <button class="btn" onclick="filterSelection('reflexion')"> Reflexion</button>
+                    <button class="btn active" onclick="filterSelection('all')"><span lang="en" class="lang en">Show all</span><span lang="fr" class="lang fr">Tout afficher</span></button>
+                    <button class="btn" onclick="filterSelection('games')">PC</button>
+                    <button class="btn" onclick="filterSelection('apps')">Android</button>
+                    <button class="btn" onclick="filterSelection('finished')"><span lang="en" class="lang en">Finished</span><span lang="fr" class="lang fr">Publiés</span></button>
+                    <button class="btn" onclick="filterSelection('indev')"><span lang="en" class="lang en">In development</span><span lang="fr" class="lang fr">En développement</span></button>
+                    <button class="btn" onclick="filterSelection('platform')"><span lang="en" class="lang en">Platformer</span><span lang="fr" class="lang fr">Plateformes</span></button>
+                    <button class="btn" onclick="filterSelection('rpg')">RPG</button>
+                    <button class="btn" onclick="filterSelection('reflexion')"><span lang="en" class="lang en">Reflexion</span><span lang="fr" class="lang fr">Réflexions</span></button>
                     <button class="btn" onclick="filterSelection('solo')">Solo</button>
-                    <button class="btn" onclick="filterSelection('multi')">Multiplayer</button>
-                    <button class="btn" onclick="filterSelection('other')"> Other</button>
+                    <button class="btn" onclick="filterSelection('multi')"><span lang="en" class="lang en">Multiplayer</span><span lang="fr" class="lang fr">Multijoueurs</span></button>
+                    <button class="btn" onclick="filterSelection('other')"><span lang="en" class="lang en">Other</span><span lang="fr" class="lang fr">Autres</span></button>
                 </div>
 
                 <div class="container">
@@ -73,12 +73,27 @@
                     <a href="snake_calculator.html" class="filterDiv apps finished solo reflexion" id="snakeCalculator"></a>
                     <a href="classic_snake.html" class="filterDiv apps finished other solo" id="classicSnake"></a>
                 </div>
-            </div>      
+            </div>
         </section>
     </main>
 
+
     <footer id="footer">
+        <div id="mainDivFooter">
+            <div id="divFooterLang">
+                <select id="lang-switch" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <!--<option value="pt">Português</option>-->
+                </select>
+            </div>
+            <div id="divFooterLinks">
+
+            </div>
+        </div>
     </footer>
+
+    <script defer src="scripts/language.js"></script>
     <script defer src="scripts/categories.js"></script>
 </body>
 

@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://theanaproductions.com/images/logoSmall.png" />
     <meta property="og:site_name" content=" Theana Productions " />
 
-    <link rel="icon" href="images/favicon_TheanaProductions16.ico?" />
+    <link rel="icon" href="images/favicons/favicon_TheanaProductions16.ico?" />
     <link rel="icon" type="image/png" sizes="48x48" href="images/favicons/favicon_TheanaProductions48.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon_TheanaProductions96.png">
     <link rel="icon" type="image/png" sizes="144x144" href="images/favicons/favicon_TheanaProductions144.png">
@@ -53,7 +53,7 @@
                     <img src="images/logos/hideandseek.png" alt="Logo Hide and Seek - Theana Productions" />
                 </div>
 
-                <div id="presentationText">
+                <div id="presentationText" lang="en" class="lang en">
                     <p>Click and break pillows to reveal your hidden plushie in this luck game.</p>
                     <p>Will you manage to find all the different plushies?</p>
                     <br />
@@ -65,6 +65,21 @@
                     <br />
                     <p><em>This game was initially created for the Mini Jam 87: Break. Classed 24 out of 113.</em></p>
                     <p><em>Available in English, French and Portuguese (Brazil).</em></p>
+                </div>
+                <div id="presentationText" lang="fr" class="lang fr">
+                    <p>
+                        Casse les oreillers pour trouver ta peluche dans ce jeu de chance.
+                    </p>
+                    <p>Parviendras-tu as trouver toutes les peluches disponibles ?</p>
+                    <br />
+                    <ul>
+                        <li>Deux modes de jeu pour tester ta chance encore plus !</li>
+                        <li>Des peluches si mignonnes que tu voudras toutes les voir</li>
+                        <li>Une atmosphère relaxante, parfaite pour les jeunes enfants, ou pour quand tu as besoin d'une pause</li>
+                    </ul>
+                    <br />
+                    <p><em>Ce jeu was initiallement créé pour le Mini Jam 87 : Break. Classé 24 sur 113.</em></p>
+                    <p><em>Disponible en Français, Anglais et Portugais.</em></p>
                 </div>
 
                 <div id="screenshots">
@@ -86,44 +101,60 @@
 
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
+                </div>
 
-                    <div id="webGL">
-                        <canvas id="unity-canvas" width=900 height=600 style="width: 900px; height: 600px; background: #231F20"></canvas>
-                        <script src="builds/HideAndSeek_2.0.5/2.0.5.loader.js"></script>
-                        <script>
-                            createUnityInstance(document.querySelector("#unity-canvas"), {
-                                dataUrl: "builds/HideAndSeek_2.0.5/2.0.5.data",
-                                frameworkUrl: "builds/HideAndSeek_2.0.5/2.0.5.framework.js",
-                                codeUrl: "builds/HideAndSeek_2.0.5/2.0.5.wasm",
-                                streamingAssetsUrl: "StreamingAssets",
-                                companyName: "Theana Productions",
-                                productName: "Hide and Seek",
-                                productVersion: "2.0.5",
-                            });
-                        </script>
-                    </div>
+                <div id="webGL">
+                    <canvas id="unity-canvas" width=900 height=600 style="width: 900px; height: 600px; background: #231F20"></canvas>
+                    <script src="builds/HideAndSeek_2.0.5/2.0.5.loader.js"></script>
+                    <script>
+                        createUnityInstance(document.querySelector("#unity-canvas"), {
+                            dataUrl: "builds/HideAndSeek_2.0.5/2.0.5.data",
+                            frameworkUrl: "builds/HideAndSeek_2.0.5/2.0.5.framework.js",
+                            codeUrl: "builds/HideAndSeek_2.0.5/2.0.5.wasm",
+                            streamingAssetsUrl: "StreamingAssets",
+                            companyName: "Theana Productions",
+                            productName: "Hide and Seek",
+                            productVersion: "2.0.5",
+                        });
+                    </script>
+                </div>
 
-                    <div id="buttons">
-                        <a href="https://theana-productions.itch.io/hide-and-seek" id="itchIOButton" target="_blank" rel="noopener noreferrer">
-                            Download - Itch.io
-                        </a>
-                        <a href=https://play.google.com/store/apps/details?id =com.TheanaProductions.HideAndSeek id="playStoreButton" target="_blank" rel="noopener noreferrer">
-                            Play - PlayStore
-                        </a>
-                        <a href="https://theana-productions.myspreadshop.com/hide+and+seek?collection=BZKogBOLjc" id="spreadshirtButton" target="_blank" rel="noopener noreferrer">
-                            Buy - Spreadshirt designs
-                        </a>
-                        <a href="https://www.paypal.com/donate/?hosted_button_id=29TM3J6LL4SLJ" id="donateBtn" target="_blank" rel="noopener noreferrer">
-                            Donate to Theana
-                        </a>
-                    </div>
+                <div id="buttons">
+                    <a href="https://theana-productions.itch.io/hide-and-seek" id="itchIOButton" target="_blank" rel="noopener noreferrer">
+                        <span lang="en" class="lang en">Download - Itch.io</span>
+                        <span lang="fr" class="lang fr">Télécharger - Itch.io</span>
+                    </a>
+                    <a href=https://play.google.com/store/apps/details?id=com.TheanaProductions.HideAndSeek id="playStoreButton" target="_blank" rel="noopener noreferrer">
+                        <span lang="en" class="lang en">Play - PlayStore</span>
+                        <span lang="fr" class="lang fr">Jouer - PlayStore</span>
+                    </a>
+                    <a href="https://theana-productions.myspreadshop.com/hide+and+seek?collection=BZKogBOLjc" id="spreadshirtButton" target="_blank" rel="noopener noreferrer">
+                        <span lang="en" class="lang en">Buy - Spreadshirt designs</span><span lang="fr" class="lang fr">Achetez - Spreadshirt designs</span>
+                    </a>
+                    <a href="https://www.paypal.com/donate/?hosted_button_id=29TM3J6LL4SLJ" id="donateBtn" target="_blank" rel="noopener noreferrer">
+                        <span lang="en" class="lang en">Donate to Theana</span><span lang="fr" class="lang fr">Faire un don à Theana</span>
+                    </a>
                 </div>
             </div>
+        </div>
     </main>
 
     <footer id="footer">
+        <div id="mainDivFooter">
+            <div id="divFooterLang">
+                <select id="lang-switch" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <!--<option value="pt">Português</option>-->
+                </select>
+            </div>
+            <div id="divFooterLinks">
+
+            </div>
+        </div>
     </footer>
+
+    <script defer src="scripts/language.js"></script>
     <script defer src="scripts/slideshowLatest.js"></script>
 </body>
 

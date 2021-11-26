@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://theanaproductions.com/images/logoSmall.png" />
     <meta property="og:site_name" content=" Theana Productions " />
 
-    <link rel="icon" href="images/favicon_TheanaProductions16.ico?" />
+    <link rel="icon" href="images/favicons/favicon_TheanaProductions16.ico?" />
     <link rel="icon" type="image/png" sizes="48x48" href="images/favicons/favicon_TheanaProductions48.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon_TheanaProductions96.png">
     <link rel="icon" type="image/png" sizes="144x144" href="images/favicons/favicon_TheanaProductions144.png">
@@ -52,7 +52,7 @@
                     <img src="images/logos/captiny.png" alt="Logo Captiny - Theana Productions" />
                 </div>
 
-                <div id="presentationText">
+                <div id="presentationText" lang="en" class="lang en">
                     <p>Explore the different biomes and learn more about Captiny's world in this sweet RPG/Exploration game.</p>
                     <br />
                     <ul>
@@ -62,6 +62,18 @@
                         <li>Decorate your house</li>
                         <li>Test your strength against the local monsters</li>
                         <li>Win rewards and dress your little character as you wish</li>
+                    </ul>
+                </div>
+                <div id="presentationText" lang="fr" class="lang fr">
+                    <p>Explore les différents biomes et apprends-en plus sur le monde de Captiny dans ce doux jeu d'exploration/RPG.</p>
+                    <br />
+                    <ul>
+                        <li>Choisis parmis plusieurs biomes où tu souhaites commencer ton voyage</li>
+                        <li>Explore différents biomes afin de trouver ce dont tu as besoin</li>
+                        <li>Rencontre d'adorables PNJ</li>
+                        <li>Décore ta maison</li>
+                        <li>Test ta force contre les monstre locaux</li>
+                        <li>Gagne des récompenses et habille ton personnage comme tu le souhaites</li>
                     </ul>
                 </div>
 
@@ -89,20 +101,29 @@
                         Devlog - GameJolt
                     </a>
                     <a href="https://www.paypal.com/donate/?hosted_button_id=29TM3J6LL4SLJ" id="donateBtn" target="_blank" rel="noopener noreferrer">
-                        Donate to Theana
+                        <span lang="en" class="lang en">Donate to Theana</span><span lang="fr" class="lang fr">Faire un don à Theana</span>
                     </a>
                 </div>
-            </div>
-
-            <div id="screenshots">
-
-
             </div>
         </div>
     </main>
 
     <footer id="footer">
+        <div id="mainDivFooter">
+            <div id="divFooterLang">
+                <select id="lang-switch" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <!--<option value="pt">Português</option>-->
+                </select>
+            </div>
+            <div id="divFooterLinks">
+
+            </div>
+        </div>
     </footer>
+
+    <script defer src="scripts/language.js"></script>
     <script defer src="scripts/slideshowLatest.js"></script>
 </body>
 

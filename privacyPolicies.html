@@ -8,7 +8,7 @@
 
     <meta name="robots" content="noindex" />
 
-    <link rel="icon" href="images/favicon_TheanaProductions16.ico?" />
+    <link rel="icon" href="images/favicons/favicon_TheanaProductions16.ico?" />
     <link rel="icon" type="image/png" sizes="48x48" href="images/favicons/favicon_TheanaProductions48.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon_TheanaProductions96.png">
     <link rel="icon" type="image/png" sizes="144x144" href="images/favicons/favicon_TheanaProductions144.png">
@@ -42,9 +42,11 @@
     <main>
         <section id="mainContent">
             <div id="privacyPolicy">
-                <h4>Our privacy policies - Theana Productions</h4>
+                <h4><span lang="en" class="lang en">Our privacy policies - Theana Productions</span>
+                <span lang="fr" class="lang fr">Nos politiques de confidentialités - Theana Productions</span></h4>
 
-                <p>Our games privacy policies:</p>
+                <p><span lang="en" class="lang en">Our games privacy policies:</span>
+                <span lang="fr" class="lang fr">Politiques de confidentialités de nos jeux :</span></p>
                 <ol>
                     <li><a href="coeur_diamant_PrivacyPolicy.html">Coeur Diamant</a></li>
                     <!--<li><a href="fairy_quest_PrivacyPolicy.html">Fairy Quest</a></li>-->
@@ -62,19 +64,56 @@
                 <br />
 
                 <p>
-                    Except if specified in the game's privacy policy, no datas are shared by <b>Theana Productions</b>.
-                    As of now, only Google Play account can be linked with some of our games in order for the Google Play Services to work (leaderbord, advancements).
+                    <span lang="en" class="lang en">
+                    Except if specified in the game's privacy policy, no data are shared by <b>Theana Productions</b>.
+                    As of now, only Google Play accounts can be linked with some of our games in order for the Google Play Services to work (leaderboard, advancements).</span>
+                    <span lang="fr" class="lang fr">
+                        Hormis si la politique de confidentialité du jeu indique le contraire, aucunes de vos données ne sont partagées par <b>Theana Productions</b>.
+                        Au jour d'aujourd'hui, seuls les comptes Google Play peuvent être reliés à certains de nos jeux afin de permettre à l'API Google Play Services de fonctionner (classement, succès).
+                    </span>
                 </p>
 
                 <br />
-                <p id="emailBig" class="textPP">If you have any complaint or question, you can contact <b>Theana Productions</b> at <a href="mailto:theanaproductions.games@gmail.com" class="email">theanaproductions.games[at]gmail.com</a>. We will answer as soon as possible in order to find solutions with you.</p>
-                <p id="emailSmall" class="textPP">If you have any complaint or question, you can contact <b>Theana Productions</b> <a href="mailto:theanaproductions.games@gmail.com" class="email">here</a>. We will answer as soon as possible in order to find solutions with you.</p>
+                <p id="emailBig" class="textPP">
+                    <span lang="en" class="lang en">
+                        If you have any complaint or question, you can contact <b>Theana Productions</b> at
+                        <a href="mailto:theanaproductions.games@gmail.com" class="email">theanaproductions.games@gmail.com</a>. We will answer as soon as possible in order to find solutions with you.
+                    </span>
+                    <span lang="fr" class="lang fr">
+                        Si vous avez des questions ou réclamations, vous pouvez contacter <b>Theana Productions</b> sur <a href="mailto:theanaproductions.games@gmail.com" class="email">theanaproductions.games@gmail.com</a>. Nous vous répondrons aussi rapidement que possible afin de pouvoir
+                        trouver, avec vous, une solution.
+                    </span>
+                </p>
+                <p id="emailSmall" class="textPP">
+                <span lang="en" class="lang en">
+                    If you have any complaint or question, you can contact <b>Theana Productions</b> 
+                    <a href="mailto:theanaproductions.games@gmail.com" class="email">here</a>. We will answer as soon as possible in order to find solutions with you.
+                    </span>
+                <span lang="fr" class="lang fr">
+                    Si vous avez des questions ou réclamations, vous pouvez nous contacter <a href="mailto:theanaproductions.games@gmail.com" class="email">ici</a>. Nous vous répondrons aussi rapidement que possible afin de pouvoir
+                    trouver, avec vous, une solution.
+                </span>
+                </p>
             </div>
         </section>
     </main>
 
     <footer id="footer">
+        <div id="mainDivFooter">
+            <div id="divFooterLang">
+                <select id="lang-switch" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <!--<option value="pt">Português</option>-->
+                </select>
+            </div>
+            <div id="divFooterLinks">
+
+            </div>
+        </div>
     </footer>
+
+    <script defer src="scripts/language.js"></script>
 </body>
 
 </html>

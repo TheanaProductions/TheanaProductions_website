@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://theanaproductions.com/images/logoSmall.png" />
     <meta property="og:site_name" content=" Theana Productions " />
 
-    <link rel="icon" href="images/favicon_TheanaProductions16.ico?" />
+    <link rel="icon" href="images/favicons/favicon_TheanaProductions16.ico?" />
     <link rel="icon" type="image/png" sizes="48x48" href="images/favicons/favicon_TheanaProductions48.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon_TheanaProductions96.png">
     <link rel="icon" type="image/png" sizes="144x144" href="images/favicons/favicon_TheanaProductions144.png">
@@ -51,7 +51,7 @@
                 <div id="titleLogo">
                     <img src="images/logos/makeitright.png" alt="Logo Make it Right - Theana Productions" />
                 </div>
-                <div id="presentationText">
+                <div id="presentationText" lang="en" class="lang en">
                     <p>Needing money, you enroll in the newest trending experimentation as volunteer #5703.</p>
                     <p>However, it doesn't take you long to realize that this was a mistake, as the experiment seems to become weirder and more dangerous by the second.</p>
                     <br />
@@ -64,6 +64,20 @@
                     </ul>
                     <br />
                     <p>... Good luck</p>
+                </div>
+                <div id="presentationText" lang="fr" class="lang fr">
+                    <p>Ayant besoin d'argent, vous vous faites acceptés dans la dernière expérience à la mode en tant que volontaire #5703.</p>
+                    <p>Cependant, il ne vous faut pas longtemps pour vous rendre compte que ceci était une erreur. L'expérience devient en effet de plus en plus étrange et dangereuse à mesure que vous vous y aventurez.</p>
+                    <br />
+                    <p>Cette expérimentation vous semble bien vite être plus un piège mortel qu'une réelle expérience scientifique. C'est maintenant à vous d'y survivre...</p>
+                    <br />
+                    <ul>
+                        <li>Des designs simples pour totalement rentrer dans le jeu</li>
+                        <li>Une méchanique de jeu simple mais innovante</li>
+                        <li>15 niveaux pour tester tes capacités</li>
+                    </ul>
+                    <br />
+                    <p>... Bonne chance</p>
                 </div>
 
                 <div id="screenshots">
@@ -89,19 +103,22 @@
 
                 <div id="buttons">
                     <a href="https://theana-productions.itch.io/make-it-right" id="itchIOButton" target="_blank" rel="noopener noreferrer">
-                        Buy - Itch.io
+                        <span lang="en" class="lang en">Buy - Itch.io</span>
+                        <span lang="fr" class="lang fr">Acheter - Itch.io</span>
                     </a>
                     <a href=https://play.google.com/store/apps/details?id =com.TheanaProductions.MakeItRight id="playStoreButton" target="_blank" rel="noopener noreferrer">
-                        Buy - PlayStore
+                        <span lang="en" class="lang en">Buy - PlayStore</span>
+                        <span lang="fr" class="lang fr">Acheter - PlayStore</span>
                     </a>
                     <a href="https://theana-productions.myspreadshop.com/make+it+right?collection=mpNtcSMgTW" id="spreadshirtButton" target="_blank" rel="noopener noreferrer">
-                        Buy - Spreadshirt designs
+                        <span lang="en" class="lang en">Buy - Spreadshirt designs</span><span lang="fr" class="lang fr">Achetez - Spreadshirt designs</span>
                     </a>
                     <a href="https://www.fiverr.com/theanaprod/create-a-2d-platformer-game-with-unity" id="fiverrButton" target="_blank" rel="noopener noreferrer">
-                        Get your own platform game - Fiverr
+                        <span lang="en" class="lang en">Get your own platform game - Fiverr</span>
+                        <span lang="fr" class="lang fr">Crée ton propre jeu de plateforme - Fiverr</span>
                     </a>
                     <a href="https://www.paypal.com/donate/?hosted_button_id=29TM3J6LL4SLJ" id="donateBtn" target="_blank" rel="noopener noreferrer">
-                        Donate to Theana
+                        <span lang="en" class="lang en">Donate to Theana</span><span lang="fr" class="lang fr">Faire un don à Theana</span>
                     </a>
                 </div>
             </div>
@@ -109,7 +126,21 @@
     </main>
 
     <footer id="footer">
+        <div id="mainDivFooter">
+            <div id="divFooterLang">
+                <select id="lang-switch" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <!--<option value="pt">Português</option>-->
+                </select>
+            </div>
+            <div id="divFooterLinks">
+
+            </div>
+        </div>
     </footer>
+
+    <script defer src="scripts/language.js"></script>
     <script defer src="scripts/slideshowLatest.js"></script>
 </body>
 

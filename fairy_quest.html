@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://theanaproductions.com/images/logoSmall.png" />
     <meta property="og:site_name" content=" Theana Productions " />
 
-    <link rel="icon" href="images/favicon_TheanaProductions16.ico?" />
+    <link rel="icon" href="images/favicons/favicon_TheanaProductions16.ico?" />
     <link rel="icon" type="image/png" sizes="48x48" href="images/favicons/favicon_TheanaProductions48.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon_TheanaProductions96.png">
     <link rel="icon" type="image/png" sizes="144x144" href="images/favicons/favicon_TheanaProductions144.png">
@@ -52,7 +52,7 @@
                     <img src="images/logos/fairy_quest.png" alt="Logo The Fairy Quest - Theana Productions" />
                 </div>
 
-                <div id="presentationText">
+                <div id="presentationText" lang="en" class="lang en">
                     <p>When Mary woke up this morning, it wasn't to the sound of laughs and idle chatter of her fairy comrades, but the explosive and deafening one of a failed experimentation.</p>
                     <p>Once again, she prayed for luck to be on her side, but once again, it seemed that her prayers had stayed unanswered as she soon realized she was the last fairy in her village.</p>
                     <br />
@@ -63,6 +63,19 @@
                         <li>A well-written story that will make you want to know more</li>
                         <li>Cute and relaxing designs that will make you feel better instantly</li>
                         <li>And so much more...</li>
+                    </ul>
+                </div>
+                <div id="presentationText" lang="fr" class="lang fr">
+                    <p>Quand Mary se réveille ce matin, ce n'est pas au son des rires et conversations de ces compagnes fées, mais à l'explosif et assourdissant son d'une expérience ratée.</p>
+                    <p>Une fois encore, elle pria pour que la chance soit à ses côtés, mais, une fois encore, ses prières ne furent excausées : de toutes les fées du village, seule elle était présente.</p>
+                    <br />
+                    <p>Aide Mary dans sa quête afin de découvrir ce qui arriva cette nuit, et, avec un peu de chance, retrouver ses amis dans ce simple jeu de plateformes.</p>
+                    <br />
+                    <ul>
+                        <li>Découvre différents personnages et sois charmé par leurs individualités</li>
+                        <li>Une histoire qui vous fera vouloir en savoir plus</li>
+                        <li>Des designs mignons et relaxants qui vous feront vous sentir bien en un instant</li>
+                        <li>Et bien plus...</li>
                     </ul>
                 </div>
 
@@ -94,16 +107,17 @@
 
                 <div id="buttons">
                     <!--<a href="https://theana-productions.itch.io/fairy-quest" id="itchIOButton" target="_blank" rel="noopener noreferrer">
-                    Buy - Itch.io
-                    </a>-->
+        Buy - Itch.io
+        </a>-->
                     <a href="https://theana-productions.myspreadshop.com/fairy+quest?collection=cxTqDQmLPL" id="spreadshirtButton" target="_blank" rel="noopener noreferrer">
-                        Buy - Spreadshirt designs
+                        <span lang="en" class="lang en">Buy - Spreadshirt designs</span><span lang="fr" class="lang fr">Achetez - Spreadshirt designs</span>
                     </a>
                     <a href="https://www.fiverr.com/theanaprod/create-a-2d-platformer-game-with-unity" id="fiverrButton" target="_blank" rel="noopener noreferrer">
-                        Get your own platform game - Fiverr
+                        <span lang="en" class="lang en">Get your own platform game - Fiverr</span>
+                        <span lang="fr" class="lang fr">Crée ton propre jeu de plateforme - Fiverr</span>
                     </a>
                     <a href="https://www.paypal.com/donate/?hosted_button_id=29TM3J6LL4SLJ" id="donateBtn" target="_blank" rel="noopener noreferrer">
-                        Donate to Theana
+                        <span lang="en" class="lang en">Donate to Theana</span><span lang="fr" class="lang fr">Faire un don à Theana</span>
                     </a>
                 </div>
             </div>
@@ -111,8 +125,21 @@
     </main>
 
     <footer id="footer">
+        <div id="mainDivFooter">
+            <div id="divFooterLang">
+                <select id="lang-switch" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <!--<option value="pt">Português</option>-->
+                </select>
+            </div>
+            <div id="divFooterLinks">
+
+            </div>
+        </div>
     </footer>
 
+    <script defer src="scripts/language.js"></script>
     <script defer src="scripts/slideshowLatest.js"></script>
 </body>
 

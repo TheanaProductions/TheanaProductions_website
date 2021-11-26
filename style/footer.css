@@ -1,10 +1,21 @@
-footer{
-    display: flex;
-}
-
 footer a, footer a:visited, footer a:hover{
     color: white;
     margin: auto;
     text-decoration: none;
     padding: 10px 0px 10px 0px;
+}
+
+#mainDivFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#divFooterLinks{
+    display: flex;
+}
+
+#divFooterLang{
+    padding: 15px 0px 5px 0px;
+    margin: auto;
 }

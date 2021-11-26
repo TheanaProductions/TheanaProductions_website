@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://theanaproductions.com/images/logoSmall.png" />
     <meta property="og:site_name" content=" Theana Productions " />
 
-    <link rel="icon" href="images/favicon_TheanaProductions16.ico?" />
+    <link rel="icon" href="images/favicons/favicon_TheanaProductions16.ico?" />
     <link rel="icon" type="image/png" sizes="48x48" href="images/favicons/favicon_TheanaProductions48.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon_TheanaProductions96.png">
     <link rel="icon" type="image/png" sizes="144x144" href="images/favicons/favicon_TheanaProductions144.png">
@@ -52,7 +52,7 @@
                     <img src="images/logos/leadtheway.png" alt="Logo Lead the way - Theana Productions" />
                 </div>
 
-                <div id="presentationText">
+                <div id="presentationText" lang="en" class="lang en">
                     <p>If you ask Bob the blob what they think about being with your loved one, they'll probably tell you that it is the best feeling in the world.</p>
                     <br />
                     <p>That's what they feel when they are with their partner.</p>
@@ -64,6 +64,20 @@
                         <li>A cute character that will with no doubt make you fall in love</li>
                         <li>A hard mode for those who like the challenge</li>
                         <li>40 levels to test your abilities</li>
+                    </ul>
+                </div>
+                <div id="presentationText" lang="fr" class="lang fr">
+                    <p>Si vous demandez à Bob le blob la sensation que cela lui procure d'être avec son.sa partenaire, iel vous répondrait probablement qu'il s'agit de la meilleure sensation au monde. </p>
+                    <br />
+                    <p>C'est en tout cas ce qu'iel ressentent lorsqu'iels sont ensembles.</p>
+                    <br />
+                    <p>Malheureusement, à cause d'étranges péripéties, iels finirent par être séparés au sein d'un sombre labyrinthe. C'est maintenant à Bob d'être courageux et de braver les dangers du labyrinthe pour retrouver son.sa partenaire.</p>
+                    <br />
+                    <ul>
+                        <li>Un jeu simple, parfait pour se détendre et passer le temps</li>
+                        <li>Un personnage tout mignon</li>
+                        <li>Un mode difficile pour ceux qui aiment les défis</li>
+                        <li>40 niveaux pour tester tes capacités</li>
                     </ul>
                 </div>
 
@@ -95,19 +109,22 @@
 
                 <div id="buttons">
                     <a href="https://play.google.com/store/apps/details?id=com.TheanaProductions.LeadtheWay" id="playStoreButton" target="_blank" rel="noopener noreferrer">
-                        Play - PlayStore
+                        <span lang="en" class="lang en">Play - PlayStore</span>
+                        <span lang="fr" class="lang fr">Jouer - PlayStore</span>
                     </a>
                     <a href="https://theana-productions.itch.io/lead-the-way-ea" id="itchIOButton" target="_blank" rel="noopener noreferrer">
-                        Play - Itch.io
+                        <span lang="en" class="lang en">Play - Itch.io</span>
+                        <span lang="fr" class="lang fr">Jouer - Itch.io</span>
                     </a>
                     <a href="https://theana-productions.myspreadshop.com/lead+the+way?collection=oEyqcYTerp" id="spreadshirtButton" target="_blank" rel="noopener noreferrer">
-                        Buy - Spreadshirt designs
+                        <span lang="en" class="lang en">Buy - Spreadshirt designs</span><span lang="fr" class="lang fr">Achetez - Spreadshirt designs</span>
                     </a>
                     <a href="https://www.fiverr.com/theanaprod/create-a-2d-maze-game-with-unity" id="fiverrButton" target="_blank" rel="noopener noreferrer">
-                        Get your own maze game - Fiverr
+                        <span lang="en" class="lang en">Get your own maze game - Fiverr</span>
+                        <span lang="fr" class="lang fr">Crée ton propre jeu de labyrinthe - Fiverr</span>
                     </a>
                     <a href="https://www.paypal.com/donate/?hosted_button_id=29TM3J6LL4SLJ" id="donateBtn" target="_blank" rel="noopener noreferrer">
-                        Donate to Theana
+                        <span lang="en" class="lang en">Donate to Theana</span><span lang="fr" class="lang fr">Faire un don à Theana</span>
                     </a>
                 </div>
             </div>
@@ -115,7 +132,21 @@
     </main>
 
     <footer id="footer">
+        <div id="mainDivFooter">
+            <div id="divFooterLang">
+                <select id="lang-switch" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <!--<option value="pt">Português</option>-->
+                </select>
+            </div>
+            <div id="divFooterLinks">
+
+            </div>
+        </div>
     </footer>
+
+    <script defer src="scripts/language.js"></script>
     <script defer src="scripts/slideshowLatest.js"></script>
 </body>
 

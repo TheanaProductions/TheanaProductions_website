@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://theanaproductions.com/images/logoSmall.png" />
     <meta property="og:site_name" content=" Theana Productions " />
 
-    <link rel="icon" href="images/favicon_TheanaProductions16.ico?" />
+    <link rel="icon" href="images/favicons/favicon_TheanaProductions16.ico?" />
     <link rel="icon" type="image/png" sizes="48x48" href="images/favicons/favicon_TheanaProductions48.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon_TheanaProductions96.png">
     <link rel="icon" type="image/png" sizes="144x144" href="images/favicons/favicon_TheanaProductions144.png">
@@ -51,9 +51,9 @@
                 <div id="titleLogo">
                     <img src="images/logos/classicSnake.png" alt="Logo Classic Snake - Theana Productions" />
                 </div>
-                <div id="presentationText">
+                <div id="presentationText" lang="en" class="lang en">
                     <p>We don't have to present the Snake game anymore with how famous it got over the years. However, finding a good Snake game isn't always easy nowadays, and we decided to remedy that.</p>
-                    <br/>
+                    <br />
                     <ul>
                         <li>An online and offline mode so you can play everywhere, everywhen</li>
                         <li>A leaderboard to show off your skills and compete against the best players</li>
@@ -62,6 +62,20 @@
                     <br />
                     <p>
                         If you are looking for a Snake game for kids, you can take a look at our <a href="snake_calculator.html">Snake Calculator</a> game.
+                    </p>
+                    <br />
+                </div>
+                <div id="presentationText" lang="fr" class="lang fr">
+                    <p>Présenter le mythique jeu Snake n'est plus nécessaire. Cependant, trouver un bon jeu Snake n'est pas toujours évident, et ce que nous avons voulu changer.</p>
+                    <br />
+                    <ul>
+                        <li>Mode en ligne et hors-ligne afin de pouvoir jouer n'importe où, n'importe quand</li>
+                        <li>Un classement pour montrer au monde ton niveau</li>
+                        <li>Des succès cachés pour redécouvrir ce mythique jeu</li>
+                    </ul>
+                    <br />
+                    <p>
+                        Si vous souhaitez un jeu Snake pour enfants, vous pouvez jeter un oeil à notre jeu <a href="snake_calculator.html">Snake Calculator</a>.
                     </p>
                     <br />
                 </div>
@@ -84,13 +98,15 @@
 
                 <div id="buttons">
                     <a href="https://play.google.com/store/apps/details?id=com.TheanaProductions.ClassicSnake" id="playStoreButton" target="_blank" rel="noopener noreferrer">
-                        Play - PlayStore
+                        <span lang="en" class="lang en">Play - PlayStore</span>
+                        <span lang="fr" class="lang fr">Jouer - PlayStore</span>
                     </a>
                     <a href="https://theana-productions.itch.io/classic-snake" id="itchIOButton" target="_blank" rel="noopener noreferrer">
-                        Play - Itch.io
+                        <span lang="en" class="lang en">Play - Itch.io</span>
+                        <span lang="fr" class="lang fr">Jouer - Itch.io</span>
                     </a>
                     <a href="https://www.paypal.com/donate/?hosted_button_id=29TM3J6LL4SLJ" id="donateBtn" target="_blank" rel="noopener noreferrer">
-                        Donate to Theana
+                        <span lang="en" class="lang en">Donate to Theana</span><span lang="fr" class="lang fr">Faire un don à Theana</span>
                     </a>
                 </div>
             </div>
@@ -98,7 +114,21 @@
     </main>
 
     <footer id="footer">
+        <div id="mainDivFooter">
+            <div id="divFooterLang">
+                <select id="lang-switch" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <!--<option value="pt">Português</option>-->
+                </select>
+            </div>
+            <div id="divFooterLinks">
+
+            </div>
+        </div>
     </footer>
+
+    <script defer src="scripts/language.js"></script>
     <script defer src="scripts/slideshowLatest.js"></script>
 </body>
 

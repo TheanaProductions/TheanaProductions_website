@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://theanaproductions.com/images/logoSmall.png" />
     <meta property="og:site_name" content=" Theana Productions " />
 
-    <link rel="icon" href="images/favicon_TheanaProductions16.ico?" />
+    <link rel="icon" href="images/favicons/favicon_TheanaProductions16.ico?" />
     <link rel="icon" type="image/png" sizes="48x48" href="images/favicons/favicon_TheanaProductions48.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon_TheanaProductions96.png">
     <link rel="icon" type="image/png" sizes="144x144" href="images/favicons/favicon_TheanaProductions144.png">
@@ -53,11 +53,17 @@
                     <img src="images/logos/coeurDiamant.png" alt="Logo Coeur Diamant - Theana Productions" />
                 </div>
 
-                <div id="presentationText">
+                <div id="presentationText" lang="en" class="lang en">
                     <p> A simple tarot app with a unique game created by the Coeur Diamant blog.</p>
                     <p> Pick a card to learn more about your current life, or to answer your questions.</p>
                     <br />
                     <p> <em>Only available in French.</em> </p>
+                </div>
+                <div id="presentationText" lang="fr" class="lang fr">
+                    <p>Une application de tarot simple créée avec le jeu du blog Coeur Diamant.</p>
+                    <p>Choisissez une carte afin d'en apprendre plus sur votre vie actuelle, ou répondre à vos questions.</p>
+                    <br />
+                    <p><em>Seulement disponible en français.</em></p>
                 </div>
 
                 <div id="screenshotsMobile">
@@ -99,24 +105,37 @@
 
                 <div id="buttons">
                     <a href="https://play.google.com/store/apps/details?id=com.TheanaProductions.CoeurDiamant" id="playStoreButton" target="_blank" rel="noopener noreferrer">
-                        Download - PlayStore
-                    </a>
-                    <a href="https://theana-productions.itch.io/coeur-diamant" id="itchIOButton" target="_blank" rel="noopener noreferrer">
-                        Run in browser - Itch.io
+                        <span lang="en" class="lang en">Download - PlayStore</span>
+                        <span lang="fr" class="lang fr">Télécharger - PlayStore</span>
                     </a>
                     <a href="https://www.fiverr.com/theanaprod/develop-a-personalized-tarot-mobile-application" id="fiverrButton" target="_blank" rel="noopener noreferrer">
-                        Create your own tarot app - Fiverr
+                        <span lang="en" class="lang en">Create your own tarot app - Fiverr</span>
+                        <span lang="fr" class="lang fr">Crée ta propre application de tarot - Fiverr</span>
                     </a>
                     <a href="https://www.paypal.com/donate/?hosted_button_id=29TM3J6LL4SLJ" id="donateBtn" target="_blank" rel="noopener noreferrer">
-                        Donate to Theana
+                        <span lang="en" class="lang en">Donate to Theana</span><span lang="fr" class="lang fr">Faire un don à Theana</span>
                     </a>
                 </div>
             </div>
-            </div>
+        </div>
     </main>
 
     <footer id="footer">
+        <div id="mainDivFooter">
+            <div id="divFooterLang">
+                <select id="lang-switch" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <!--<option value="pt">Português</option>-->
+                </select>
+            </div>
+            <div id="divFooterLinks">
+
+            </div>
+        </div>
     </footer>
+
+    <script defer src="scripts/language.js"></script>
     <script defer src="scripts/slideshowLatest.js"></script>
 </body>
 

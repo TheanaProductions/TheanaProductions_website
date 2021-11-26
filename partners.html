@@ -8,7 +8,7 @@
 
     <meta name="robots" content="noindex" />
 
-    <link rel="icon" href="images/favicon_TheanaProductions16.ico?" />
+    <link rel="icon" href="images/favicons/favicon_TheanaProductions16.ico?" />
     <link rel="icon" type="image/png" sizes="48x48" href="images/favicons/favicon_TheanaProductions48.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon_TheanaProductions96.png">
     <link rel="icon" type="image/png" sizes="144x144" href="images/favicons/favicon_TheanaProductions144.png">
@@ -42,7 +42,10 @@
     <main>
         <section id="mainContent">
             <div id="privacyPolicy">
-                <h4>Theana's partners</h4>
+                <h4>
+                    <span lang="en" class="lang en">Theana's partners</span>
+                    <span lang="fr" class="lang fr">Les partenaires de Theana</span>
+                </h4>
 
                 <div class="row">
                     <div class="column">
@@ -61,7 +64,21 @@
     </main>
 
     <footer id="footer">
+        <div id="mainDivFooter">
+            <div id="divFooterLang">
+                <select id="lang-switch" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <!--<option value="pt">Português</option>-->
+                </select>
+            </div>
+            <div id="divFooterLinks">
+
+            </div>
+        </div>
     </footer>
+
+    <script defer src="scripts/language.js"></script>
 </body>
 
 </html>
