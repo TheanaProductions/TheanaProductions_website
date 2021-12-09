@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\builds",
+    "\\builds\\LeadTheWay2_1.0.3"
   ],
-  "SelectedNode": "\\lead_the_way_2.html",
+  "SelectedNode": "\\builds\\LeadTheWay2_1.0.3",
   "PreviewInSolutionExplorer": false
 }
