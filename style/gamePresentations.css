@@ -1,0 +1,132 @@
+/* Selectors */
+#categorySection {
+    margin: auto;
+    margin-top: 35px;
+}
+
+#myBtnContainer {
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    align-content: center;
+}
+
+.btn {
+    color: #E8E8E8;
+    background-color: #5B3C6B;
+    padding: 8px;
+    border-bottom: 4px solid #2F1F38;
+    border-right: 4px solid #2F1F38;
+    border-left: 3px solid #AF9EB8;
+    border-top: 3px solid #AF9EB8;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Dosis', sans-serif;
+    transition: all 0.8s ease;
+    margin: 5px;
+}
+
+    .btn:hover {
+        background-color: #402B4C;
+    }
+
+    .btn.active {
+        background-color: #402B4C;
+    }
+
+
+/* Display */
+.gameDisplaySection {
+    margin-top: 0px;
+}
+
+.gameDisplayContainer {
+    width: 80%;
+    margin: auto;
+}
+
+.gameDisplayContent {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.gameDisplayItem {
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.filterDiv {
+    display: none;
+    width: 250px;
+    height: 350px;
+    padding: 0px;
+}
+
+    .filterDiv a {
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        border: solid 3px black;
+        transition: all 0.5s ease;
+        transform: scale(1);
+    }
+
+        .filterDiv a:hover {
+            transform: scale(1.07) perspective(1px);
+            backface-visibility: hidden;
+        }
+
+.show {
+    display: flex;
+}
+
+
+/* Game thumbnails */
+.FairyQuest {
+    background-image: url(../medias/games/thumbnails/fairyQuest.png);
+    background-size: cover;
+}
+
+.hideAndSeek {
+    background-image: url(../medias/games/thumbnails/hideandseek.png);
+    background-size: cover;
+}
+
+.captiny {
+    background-image: url(../medias/games/thumbnails/captiny.png);
+    background-size: cover;
+}
+
+.LeadTheWay {
+    background-image: url(../medias/games/thumbnails/leadtheway.png);
+    background-size: cover;
+}
+
+.LeadTheWay2 {
+    background-image: url(../medias/games/thumbnails/leadtheway2.png);
+    background-size: cover;
+}
+
+.SnakeCalculator {
+    background-image: url(../medias/games/thumbnails/snakecalculator.png);
+    background-size: cover;
+}
+
+.ClassicSnake {
+    background-image: url(../medias/games/thumbnails/classicsnake.png);
+    background-size: cover;
+}
+
+.MakeItRight {
+    background-image: url(../medias/games/thumbnails/makeitright.png);
+    background-size: cover;
+}
+
+.CoeurDiamant {
+    background-image: url(../medias/games/thumbnails/coeurdiamant.png);
+    background-size: cover;
+}

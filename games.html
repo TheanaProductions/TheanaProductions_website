@@ -1,18 +1,20 @@
-<!DOCTYPE html>
+
+<!doctype html>
 
 <html lang="en">
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Discover all Theana's productions published and in development games" />
+    <meta name="description" content="Welcome to Theana Productions' official website. Theana is a french based game dev company created in 2021." />
 
-    <meta name=”twitter:card” content=”summary” />
-    <meta property="og:title" content=" Discover Theana Productions' creations" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:title" content="Theana Productions - Games" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://theanaproductions.com/games.html" />
-    <meta property="og:image" content="https://theanaproductions.com/images/logoSmall.png" />
-    <meta property="og:site_name" content=" Theana Productions - Take a look at our creations" />
+    <meta property="og:url" content="https://theanaproductions.com/" />
+    <meta property="og:image" content="https://theanaproductions.com/medias/logo_TheanaProductions.png" />
+    <meta property="og:site_name" content=" Theana Productions " />
 
+    <!-- Google tag manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FB6T85MVW"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -22,88 +24,226 @@
         gtag('config', 'G-3FB6T85MVW');
     </script>
 
-    <link rel="icon" href="images/favicons/favicon_TheanaProductions16.ico?" />
-    <link rel="icon" type="image/png" sizes="48x48" href="images/favicons/favicon_TheanaProductions48.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon_TheanaProductions96.png">
-    <link rel="icon" type="image/png" sizes="144x144" href="images/favicons/favicon_TheanaProductions144.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/favicons/favicon_TheanaProductions192.png">
-    <link rel="icon" type="image/png" sizes="256x256" href="images/favicons/favicon_TheanaProductions256.png">
-    <link rel="icon" type="image/png" sizes="384x384" href="images/favicons/favicon_TheanaProductions384.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="images/favicons/favicon_TheanaProductions512.png">
+    <!-- https://realfavicongenerator.net/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="medias/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="medias/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="medias/favicon/favicon-16x16.png">
+    <link rel="manifest" href="medias/favicon/site.webmanifest">
+    <link rel="mask-icon" href="medias/favicon/safari-pinned-tab.svg" color="#4b1354">
+    <link rel="shortcut icon" href="medias/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#9f00a7">
+    <meta name="msapplication-config" content="medias/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#490957">
 
+    <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/header.css" />
     <link rel="stylesheet" href="style/footer.css" />
-    <link rel="stylesheet" href="style/main.css" />
-    <link rel="stylesheet" href="style/gamesStyle.css" />
-    <link rel="stylesheet" href="style/thumbnailsList.css" />
+    <link rel="stylesheet" href="style/gamePresentations.css" />
+  
 
-    <title> Theana Productions - Take a look at our creations</title>
+    <title> Theana Productions - Games</title>
 </head>
 
 <body>
-    <header>
-        <script defer src="scripts/main.js"></script>
-        <div id="bannerHeader">
-
-        </div>
-
-        <div id="navDiv">
-            <nav id="navHeader">
-
-            </nav>
-        </div>
+    <header class="rowFlex" id="header">
+        <script defer src="scripts/commonParts.js"></script>
     </header>
 
     <main>
-        <section id="mainContent">
-            <div id="categorySection">
-                <div id="myBtnContainer">
-                    <button class="btn active" onclick="filterSelection('all')"><span lang="en" class="lang en">Show all</span><span lang="fr" class="lang fr">Tout afficher</span></button>
+        <div class="mainPage">
+
+            <div class="bannerContainer">
+                <div class="bannerContentImg fullOpacity">
+                    <img src="medias/index/headBannerPresentationTheanaProductions.png" alt="Theana Productions banner" />
+                </div>
+
+                <!-- Banner text English -->
+                <div class="bannerContentTxt lang en">
+                    <img src="medias/logo_TheanaProductions.png" alt="Logo Theana Productions" />
+                    <h1 class="darkTxt">Theana Productions</h1>
+                    <hr />
+                    <h5 class="darkTxt">
+                        A new era of games begins!
+                    </h5>
+                </div>
+                <!-- Banner text French -->
+                <div class="bannerContentTxt lang fr">
+                    <img src="medias/logo_TheanaProductions.png" alt="Logo Theana Productions" />
+                    <h1 class="darkTxt">Theana Productions</h1>
+                    <hr />
+                    <h5 class="darkTxt">
+                        Une nouvelle ère commence!
+                    </h5>
+                </div>
+                <!-- Banner text Portuguese -->
+                <div class="bannerContentTxt lang pt">
+                    <img src="medias/logo_TheanaProductions.png" alt="Logo Theana Productions" />
+                    <h1 class="darkTxt">Theana Productions</h1>
+                    <hr />
+                    <h5 class="darkTxt">
+                        Games made by players for players!
+                    </h5>
+                </div>
+            </div>
+
+            <!-- Selectors English -->
+            <div id="categorySection" class="columnFlex wrapAllTime lang en">
+                <div id="myBtnContainer" class="rowFlex wrapAllTime">
+                    <button class="btn active" onclick="filterSelection('all')">Show all</button>
                     <button class="btn" onclick="filterSelection('games')">PC</button>
                     <button class="btn" onclick="filterSelection('apps')">Android</button>
-                    <button class="btn" onclick="filterSelection('finished')"><span lang="en" class="lang en">Finished</span><span lang="fr" class="lang fr">Publiés</span></button>
-                    <button class="btn" onclick="filterSelection('indev')"><span lang="en" class="lang en">In development</span><span lang="fr" class="lang fr">En développement</span></button>
-                    <button class="btn" onclick="filterSelection('platform')"><span lang="en" class="lang en">Platformer</span><span lang="fr" class="lang fr">Plateformes</span></button>
+                    <button class="btn" onclick="filterSelection('finished')">Finished</button>
+                    <button class="btn" onclick="filterSelection('indev')">In development</button>
+                    <button class="btn" onclick="filterSelection('platform')">Platformer</button>
                     <button class="btn" onclick="filterSelection('rpg')">RPG</button>
-                    <button class="btn" onclick="filterSelection('reflexion')"><span lang="en" class="lang en">Reflexion</span><span lang="fr" class="lang fr">Réflexions</span></button>
+                    <button class="btn" onclick="filterSelection('reflexion')">Reflexion</button>
                     <button class="btn" onclick="filterSelection('solo')">Solo</button>
-                    <button class="btn" onclick="filterSelection('multi')"><span lang="en" class="lang en">Multiplayer</span><span lang="fr" class="lang fr">Multijoueurs</span></button>
-                    <button class="btn" onclick="filterSelection('other')"><span lang="en" class="lang en">Other</span><span lang="fr" class="lang fr">Autres</span></button>
-                </div>
-
-                <div class="container">
-                    <a href="fairy_quest.html" class="filterDiv games indev platform solo" id="fairyQuest"></a>
-                    <a href="captiny.html" class="filterDiv games indev rpg solo" id="captiny"></a>
-                    <!--<a href="make_it_right.html" class="filterDiv apps games finished platform solo" id="makeItRight"></a>-->
-                    <a href="lead_the_way.html" class="filterDiv apps games finished reflexion solo" id="leadTheway"></a>
-                    <a href="lead_the_way_2.html" class="filterDiv games indev reflexion multi" id="leadTheway2"></a>
-                    <a href="hide_and_seek.html" class="filterDiv apps games finished other solo" id="hideAndseek"></a>
-                    <a href="coeur_diamant.html" class="filterDiv apps finished other solo" id="coeurDiamant"></a>
-                    <a href="snake_calculator.html" class="filterDiv apps finished solo reflexion" id="snakeCalculator"></a>
-                    <a href="classic_snake.html" class="filterDiv apps finished other solo" id="classicSnake"></a>
+                    <button class="btn" onclick="filterSelection('multi')">Multiplayer</button>
+                    <button class="btn" onclick="filterSelection('other')">Others</button>
                 </div>
             </div>
-        </section>
-    </main>
-
-
-    <footer id="footer">
-        <div id="mainDivFooter">
-            <div id="divFooterLang">
-                <select id="lang-switch" onchange="changeLanguage(this.value)">
-                    <option value="en">English</option>
-                    <option value="fr">Français</option>
-                    <!--<option value="pt">Português</option>-->
-                </select>
+            <!-- Selectors French -->
+            <div id="categorySection" class="columnFlex wrapAllTime lang fr">
+                <div id="myBtnContainer" class="rowFlex wrapAllTime">
+                    <button class="btn active" onclick="filterSelection('all')">Tout voir</button>
+                    <button class="btn" onclick="filterSelection('games')">PC</button>
+                    <button class="btn" onclick="filterSelection('apps')">Android</button>
+                    <button class="btn" onclick="filterSelection('finished')">Publiés</button>
+                    <button class="btn" onclick="filterSelection('indev')">En développement</button>
+                    <button class="btn" onclick="filterSelection('platform')">Jeux de plateforme</button>
+                    <button class="btn" onclick="filterSelection('rpg')">RPG</button>
+                    <button class="btn" onclick="filterSelection('reflexion')">Jeux de réflexion</button>
+                    <button class="btn" onclick="filterSelection('solo')">Solo</button>
+                    <button class="btn" onclick="filterSelection('multi')">Multijoueur</button>
+                    <button class="btn" onclick="filterSelection('other')">Autres</button>
+                </div>
             </div>
-            <div id="divFooterLinks">
+            <!-- Selectors Portuguese -->
+            <div id="categorySection" class="columnFlex wrapAllTime lang pt">
+                <div id="myBtnContainer" class="rowFlex wrapAllTime">
+                    <button class="btn active" onclick="filterSelection('all')">Mostrar tudo</button>
+                    <button class="btn" onclick="filterSelection('games')">PC</button>
+                    <button class="btn" onclick="filterSelection('apps')">Android</button>
+                    <button class="btn" onclick="filterSelection('finished')">Acabado</button>
+                    <button class="btn" onclick="filterSelection('indev')">Em desenvolvimento</button>
+                    <button class="btn" onclick="filterSelection('platform')">Plataforma</button>
+                    <button class="btn" onclick="filterSelection('rpg')">RPG</button>
+                    <button class="btn" onclick="filterSelection('reflexion')">Reflexão</button>
+                    <button class="btn" onclick="filterSelection('solo')">Solo</button>
+                    <button class="btn" onclick="filterSelection('multi')">Mutiplayer</button>
+                    <button class="btn" onclick="filterSelection('other')">Outros</button>
+                </div>
+            </div>
 
+            <!-- Games -->
+            <div class="gameDisplaySection">
+                <div class="gameDisplayContainer">
+                    <div class="aboutContent gameDisplayContent rowFlex wrapAllTime">
+                        <div class="gameDisplayItem columnFlex aboutColumn filterDiv games apps finished other solo">
+                            <a href="hide_and_seek.html" class="hideAndSeek" title=" Hide and Seek - Theana Productions"></a>
+                        </div>
+                        <div class="gameDisplayItem columnFlex aboutColumn filterDiv games indev platform solo">
+                            <a href="fairy_quest.html" class="FairyQuest" title="Fairy Quest - Theana Productions"></a>
+                        </div>
+                        <div class="gameDisplayItem columnFlex aboutColumn filterDiv games apps indev rpg solo">
+                            <a href="captiny.html" class="captiny" title="Captiny - Theana Productions"></a>
+                        </div>
+                        <div class="gameDisplayItem columnFlex aboutColumn filterDiv apps games finished reflexion solo">
+                            <a href="lead_the_way.html" class="LeadTheWay" title="Lead the Way - Theana Productions"></a>
+                        </div>
+                        <div class="gameDisplayItem columnFlex aboutColumn filterDiv games indev reflexion multi">
+                            <a href="lead_the_way_2.html" class="LeadTheWay2" title="Lead the Way 2 - Theana Productions"></a>
+                        </div>
+                        <div class="gameDisplayItem columnFlex aboutColumn filterDiv apps finished reflexion solo">
+                            <a href="snake_calculator.html" class="SnakeCalculator" title="Snake Calculator - Theana Productions"></a>
+                        </div>
+                        <div class="gameDisplayItem columnFlex aboutColumn filterDiv apps finished other solo">
+                            <a href="classic_snake.html" class="ClassicSnake" title="Classic Snake - Theana Productions"></a>
+                        </div>
+                        <div class="gameDisplayItem columnFlex aboutColumn filterDiv games finished platform solo">
+                            <a href="make_it_right.html" class="MakeItRight" title="Make it Right - Theana Productions"></a>
+                        </div>
+                        <div class="gameDisplayItem columnFlex aboutColumn filterDiv apps games finished other solo">
+                            <a href="coeur_diamant.html" class="CoeurDiamant" title="Coeur Diamant - Theana Productions"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </main>
+
+    <footer class="columnFlex">
+        <nav class="footerMenu rowFlex">
+            <div class="social columnFlex">
+                <h5 class="lightTxt lang en">Follow us on</h5>
+                <h5 class="lightTxt lang fr">Suis nous sur</h5>
+                <h5 class="lightTxt lang pt">Follow us on</h5>
+                <ul class="socialLinks rowFlex">
+                    <li class="hoverLinkBtn"><a href="https://twitter.com/TheanaProdOff" title="Theana - Twitter"><img src="medias/twitter.png" /></a></li>
+                    <li class="hoverLinkBtn"><a href="https://www.tiktok.com/@theanaproductions?" title="Theana - TikTok"><img src="medias/tiktok.png" /></a></li>
+                    <li class="hoverLinkBtn"><a href="https://www.youtube.com/channel/UC2S3K2-dtLeUiSFKWtxNkGw" title="Theana - Youtube"><img src="medias/youtube.png" /></a></li>
+                    <li class="hoverLinkBtn"><a href="https://github.com/TheanaProductions" title="Theana - Github"><img src="medias/github.png" /></a></li>
+                    <li class="hoverLinkBtn"><a href="https://theana-productions.myspreadshop.com/" title="Theana - Spreadshirt"><img src="medias/spreadshirt.png" /></a></li>
+                    <li class="hoverLinkBtn"><a href="https://www.fiverr.com/theanaprod?up_rollout=true" title="Theana - Fiverr"><img src="medias/fiverr.png" /></a></li>
+                </ul>
+            </div>
+            <div class="paypalLink columnFlex">
+                <div id="donate-button-container">
+                    <div id="donate-button" class="hoverLinkBtn"></div>
+                    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                    <script>
+                        PayPal.Donation.Button({
+                            env: 'production',
+                            hosted_button_id: 'N499RT6SH7CRC',
+                            image: {
+                                src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif',
+                                alt: 'Donate to Theana Productions with PayPal',
+                                title: 'Help Theana Productions by donating through Paypal!',
+                            }
+                        }).render('#donate-button');
+                    </script>
+                </div>
+            </div>
+            <div class="stores columnFlex">
+                <h5 class="lightTxt lang en">Download our games</h5>
+                <h5 class="lightTxt lang fr">Téléchargez nos jeux</h5>
+                <h5 class="lightTxt lang pt">Download our games</h5>
+                <ul class="storeLinks rowFlex">
+                    <li class="hoverLinkBtn"><a href="https://play.google.com/store/apps/dev?id=6665872148698811107" title="Thena - PlayStore"><img src="medias/playStore.png" /></a></li>
+                    <li class="hoverLinkBtn"><a href="https://theana-productions.itch.io/" title="Thena - Itch.io"><img src="medias/itchIO.png" /></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="secondaryFooterMenu columnFlex">
+            <ul class="footerLinks rowFlex">
+                <!--
+    <li>
+        <select id="lang-switch" onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="pt">Português</option>
+        </select>
+    </li>
+    -->
+                <!-- English -->
+                <li class="lang en"><a href="legal_notice.html">Legal notice</a></li>
+                <li class="lang en"><a href="privacy_policy.html">Privacy Policy</a></li>
+                <li class="lang en"><a href="partners.html">Partners</a></li>
+                <!-- French -->
+                <li class="lang fr"><a href="legal_notice.html">Mentions légales</a></li>
+                <li class="lang fr"><a href="privacy_policy.html">Politique de confidentialité</a></li>
+                <li class="lang fr"><a href="partners.html">Partenaires</a></li>
+                <!-- Portuguese -->
+                <li class="lang pt"><a href="legal_notice.html">Notas de legalidade</a></li>
+                <li class="lang pt"><a href="privacy_policy.html">Política de privacidade</a></li>
+                <li class="lang pt"><a href="partners.html">Parceiros</a></li>
+            </ul>
+        </nav>
     </footer>
 
     <script defer src="scripts/language.js"></script>
     <script defer src="scripts/categories.js"></script>
 </body>
-
 </html>
+

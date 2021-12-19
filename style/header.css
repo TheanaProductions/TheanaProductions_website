@@ -1,97 +1,128 @@
-/* Base size */
 header {
-    display: flex;
-    flex-direction: column;
-    background-color: #593b6a;
-}
-
-/* Nav links */
-#navDiv {
     width: 100%;
-    background-color: #442D51;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-#navHeader {
-    display: flex;
+.menu {
+    margin: auto;
+    background-color: #513660;
+    width: 100%;
+    position: fixed;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    z-index: 10;
+}
+
+.logo {
+    margin: auto;
+    margin: 8px 0px 8px 12px;
+    width: 5%;
+}
+
+    .logo img {
+        width: 100%;
+    }
+
+.menuContent {
+    height: 80px;
+}
+
+    .menuContent ul {
+        list-style: none;
+        list-style-position: inside;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+        .menuContent ul li {
+            padding: 10px;
+            margin: 0px 2px;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 400;
+        }
+
+            .menuContent ul li a, .menuContent ul li a:visited {
+                text-decoration: none;
+                color: white;
+            }
+
+                .menuContent ul li a:hover {
+                    text-decoration: none;
+                    color: white;
+                }
+
+.bannerContainer {
+    position: relative;
+    height: 680px;
+    overflow: hidden;
+}
+
+.bannerContentImg {
+    height: 100%;
+    width: 100%;
+}
+
+    .bannerContentImg img {
+        position: absolute;
+        z-index: -2;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+    }
+
+.bannerContentTxt {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    justify-content: space-around;
-    margin: auto;
-    flex-wrap: wrap;
-    width: 20%;
+    font-family: 'Dosis', sans-serif;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: solid 3px #400255;
+    padding: 15px 60px;
 }
 
-.navDivHeader {
-    flex: 1;
-    padding-top: 10px;
-}
-
-.linkNavHeader {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* Banners */
-#img-big {
-    display: none;
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
-
-#img-small {
-    display: block;
-    width: 50%;
-    margin: auto;
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
-
-@media only screen and (min-width: 350px) /* Phone size */
-{
-    #img-big {
-        display: block;
+    .bannerContentTxt hr {
+        color: black;
+        border-color: black;
+        background-color: black;
+        opacity: 0.7;
         width: 50%;
-        justify-self: center;
         margin: auto;
-        margin-top: 5px;
+        margin-top: 10px;
     }
 
-    #img-small {
-        display: none;
+    .bannerContentTxt h5 {
+        font-family: 'Ubuntu', sans-serif;
+        margin-top: 8px;
+        font-size: 16px;
     }
 
-    .navDivHeader {
-        padding-bottom: 10px;
+    .bannerContentTxt img {
+        width: 60%;
     }
+
+.fullOpacity img {
+    opacity: 1;
 }
 
-@media only screen and (min-width: 530px) /* Tablet size 2 */
-{
-    #img-big{
-        width: 40%;
+@media only screen and (min-width: 700px){
+    .menu {
+        width: 90%;
+        border-bottom-left-radius: 55%;
+        border-bottom-right-radius: 55%;
     }
 
-    #navHeader {
-        width: 50%;
-    }
-}
-
-
-@media only screen and (min-width: 650px) /* Tablet size 2 */
-{
-    #img-big{
-        width: 30%;
-    }
-}
-
-@media only screen and (min-width: 870px) /* Computer size */
-{
-
-}
-
-@media only screen and (min-width: 1300px) /* Computer size */
-{
-    #navHeader {
-        width: 40%;
+    .menuContent ul li {
+        margin: 0px 10px;
     }
 }

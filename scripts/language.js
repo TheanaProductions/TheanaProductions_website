@@ -23,25 +23,28 @@ function loadLanguagePref() {
 }
 
 function changeLanguage(langSelected) {
+
+    console.log(langSelected);
+
     var lang = langSelected;
 
     var langTxt = document.getElementsByClassName('lang');
     var enTxt = document.getElementsByClassName('en');
-    var frTxt = document.getElementsByClassName('fr');
     var ptTxt = document.getElementsByClassName('pt');
+    var frTxt = document.getElementsByClassName('fr');
 
     for (var i = 0; i < langTxt.length; i++) {
         langTxt[i].style.display = 'none';
     }
 
-    if (lang.includes('fr')) {
-        lang = 'fr';
-    }
-    else if (lang.includes('en')) {
+    if (lang.includes('en')) {
         lang = 'en';
     }
     else if (lang.includes('pt')) {
         lang = 'pt';
+    }
+    else if (lang.includes('fr')) {
+        lang = 'fr';
     }
 
     switch (lang) {
@@ -49,22 +52,25 @@ function changeLanguage(langSelected) {
             for (var i = 0; i < frTxt.length; i++) {
                 frTxt[i].style.display = 'block';
             }
-            document.getElementById('lang-switch').value = 'fr';
+
+            //document.getElementById('lang-switch').value = 'fr';
             break;
-        case 'pt':
+        case 'pt': 
             for (var i = 0; i < ptTxt.length; i++) {
                 ptTxt[i].style.display = 'block';
             }
-            document.getElementById('lang-switch').value = 'pt';
+            //document.getElementById('lang-switch').value = 'pt';
             break;
         case 'en':
         default:
             for (var i = 0; i < enTxt.length; i++) {
                 enTxt[i].style.display = 'block';
             }
-            document.getElementById('lang-switch').value = 'en';
+            //document.getElementById('lang-switch').value = 'en';
             break;
     }
+
+    document.documentElement.lang = lang;
 
     saveLanguagePref(lang);
 }

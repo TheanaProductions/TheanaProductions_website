@@ -1,19 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Discover Lead the way 2, a Theana Productions multiplayer maze game" />
+    <meta name="description" content="Lead the Way 2 is a 2D co-op maze game created by Theana Productions." />
 
-    <meta name=”twitter:card” content=”summary” />
-    <meta property="og:title" content=" Lead the Way 2 - Theana Productions " />
-    <meta property="og:description" content="Discover Lead the way 2, a Theana Productions multiplayer maze game" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:title" content=" Theana Productions - Lead the Way 2" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://theanaproductions.com/lead_the_way_2.html" />
-    <meta property="og:image" content="https://theanaproductions.com/images/logoSmall.png" />
+    <meta property="og:image" content="https://theanaproductions.com/medias/logo_TheanaProductions.png" />
     <meta property="og:site_name" content=" Theana Productions " />
 
+    <!-- Google tag manager -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FB6T85MVW"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -23,129 +23,167 @@
         gtag('config', 'G-3FB6T85MVW');
     </script>
 
-    <link rel="icon" href="images/favicons/favicon_TheanaProductions16.ico?" />
-    <link rel="icon" type="image/png" sizes="48x48" href="images/favicons/favicon_TheanaProductions48.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon_TheanaProductions96.png">
-    <link rel="icon" type="image/png" sizes="144x144" href="images/favicons/favicon_TheanaProductions144.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/favicons/favicon_TheanaProductions192.png">
-    <link rel="icon" type="image/png" sizes="256x256" href="images/favicons/favicon_TheanaProductions256.png">
-    <link rel="icon" type="image/png" sizes="384x384" href="images/favicons/favicon_TheanaProductions384.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="images/favicons/favicon_TheanaProductions512.png">
+    <!-- https://realfavicongenerator.net/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="medias/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="medias/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="medias/favicon/favicon-16x16.png">
+    <link rel="manifest" href="medias/favicon/site.webmanifest">
+    <link rel="mask-icon" href="medias/favicon/safari-pinned-tab.svg" color="#4b1354">
+    <link rel="shortcut icon" href="medias/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#9f00a7">
+    <meta name="msapplication-config" content="medias/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#490957">
 
+    <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/header.css" />
     <link rel="stylesheet" href="style/footer.css" />
-    <link rel="stylesheet" href="style/main.css" />
-    <link rel="stylesheet" href="style/presentationsStyle.css" />
-    <link rel="stylesheet" href="style/webGL.css" />
+    <link rel="stylesheet" href="style/gamePages.css" />
 
-    <title> Lead the Way 2 - Theana Productions </title>
+    <title> Theana Productions - Lead the Way 2</title>
 </head>
 
 <body>
-    <header>
-        <script defer src="scripts/main.js"></script>
-        <div id="bannerHeader">
-
-        </div>
-
-        <div id="navDiv">
-            <nav id="navHeader">
-
-            </nav>
-        </div>
+    <header class="rowFlex" id="header">
+        <script defer src="scripts/commonParts.js"></script>
     </header>
 
     <main>
-        <div id="mainContent">
-            <div id="mainPresentation">
-                <div id="titleLogo">
-                    <img src="images/logos/leadtheway2.png" alt="Logo Lead the way 2 - Theana Productions" />
+        <div class="mainPage">
+            <div class="bannerContainer">
+                <div class="bannerContentImg">
+                    <img src="medias/games/banners/leadTheWay.png" alt="Theana Productions banner - Lead the Way 2" />
                 </div>
+                <div class="bannerContentTxt">
+                    <img src="medias/logo_TheanaProductions.png" alt="Logo Theana Productions" />
+                    <h1 class="darkTxt">Theana Productions</h1>
+                    <hr />
+                    <h5 class="darkTxt">
+                        Lead the Way 2
+                    </h5>
+                </div>
+            </div>
 
-                <div id="presentationText" lang="en" class="lang en">
-                    <ul>
-                        <li>Simple gameplay, perfect to relax or pass the time</li>
-                        <li>Local co-op needed in order to win</li>
-                        <li>Accessible to all keyboards thanks to custom inputs</li>
-                    </ul>
-                </div>
-                <div id="presentationText" lang="fr" class="lang fr">
-                    <ul>
-                        <li>Un jeu simple, parfait pour passer le temps et se détendre</li>
-                        <li>Co-opération locale nécessaire pour gagner</li>
-                        <li>Contrôles customizables pour une accessibilité accrue</li>
-                    </ul>
-                </div>
+            <div class="secondaryPart columnFlex lang en">
+                <div class="aboutContainer">
+                    <div class="aboutContent columnFlex">
+                        <div class="rowFlex">
+                            <div class="aboutColumn columnFlex oneAboutColumn">
+                                <img src="medias/games/logos/leadtheway2.png" alt="Lead the Way 2 logo - Theana Productions" class="logoGame" />
+                                <ul class="presentationList lang en">
+                                    <li>Simple gameplay, perfect to relax or pass the time</li>
+                                    <li>A cute character that will with no doubt make you fall in love</li>
+                                    <li>Local co-op needed in order to win</li>
+                                    <li>Accessible to all keyboards thanks to custom inputs</li>
+                                </ul>
+                                <br />
+                                <div class="linksGame rowFlex">
+                                    <a href="https://theana-productions.itch.io/lead-the-way-2" title="Thena - Itch.io" target="_blank" rel="noopener noreferrer"><img src="medias/itchIO.png" /></a>
+                                </div>
+                                <br />
 
-                <div id="screenshots">
-                    <div class="imgSlideshow">
-                        <a href="images/screenshots/lead_the_way2/leadtheway1.png" target="_blank">
-                            <img src="images/screenshots/lead_the_way2/leadtheway1.png" alt="Screenshot of the Lead the way 2 game - Theana Productions" />
-                        </a>
+                                <hr class="separationGamePresentations" />
+
+                                <br />
+                                <div id="screenshots">
+                                    <div class="imgSlideshow">
+                                        <a href="medias/games/screenshots/lead_the_way2/leadtheway1.png" target="_blank">
+                                            <img src="medias/games/screenshots/lead_the_way2/leadtheway1.png" alt="Screenshot of the Lead the Way 2 game - Theana Productions" />
+                                        </a>
+                                    </div>
+                                    <div class="imgSlideshow">
+                                        <a href="medias/games/screenshots/lead_the_way2/leadtheway2.png" target="_blank">
+                                            <img src="medias/games/screenshots/lead_the_way2/leadtheway2.png" alt="Screenshot of the Lead the Way 2 game - Theana Productions" />
+                                        </a>
+                                    </div>
+                                    <div class="imgSlideshow">
+                                        <a href="medias/games/screenshots/lead_the_way2/leadtheway3.png" target="_blank">
+                                            <img src="medias/games/screenshots/lead_the_way2/leadtheway3.png" alt="Screenshot of the Lead the Way 2 game - Theana Productions" />
+                                        </a>
+                                    </div>
+
+                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="imgSlideshow">
-                        <a href="images/screenshots/lead_the_way2/leadtheway2.png" target="_blank">
-                            <img src="images/screenshots/lead_the_way2/leadtheway2.png" alt="Screenshot of the Lead the way 2 game - Theana Productions" />
-                        </a>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-
-                <div id="webGL">
-                    <canvas id="unity-canvas" width=900 height=600 style="width: 900px; height: 600px; background: #231F20"></canvas>
-                    <script src="builds/LeadTheWay2_1.0.3/1.0.3_demo.loader.js"></script>
-                    <script>
-                        createUnityInstance(document.querySelector("#unity-canvas"), {
-                            dataUrl: "builds/LeadTheWay2_1.0.3/1.0.3_demo.data",
-                            frameworkUrl: "builds/LeadTheWay2_1.0.3/1.0.3_demo.framework.js",
-                            codeUrl: "builds/LeadTheWay2_1.0.3/1.0.3_demo.wasm",
-                            streamingAssetsUrl: "StreamingAssets",
-                            companyName: "Theana Productions",
-                            productName: "Lead the way 2",
-                            productVersion: "1.0.3",
-                        });
-                    </script>
-                </div>
-
-                <div id="buttons">
-                    <a href="https://theana-productions.itch.io/lead-the-way-2" id="itchIOButton" target="_blank" rel="noopener noreferrer">
-                        <span lang="en" class="lang en">Play - Itch.io</span>
-                        <span lang="fr" class="lang fr">Jouer - Itch.io</span>
-                    </a>
-                    <a href="https://theana-productions.myspreadshop.com/lead+the+way?collection=oEyqcYTerp" id="spreadshirtButton" target="_blank" rel="noopener noreferrer">
-                        <span lang="en" class="lang en">Buy - Spreadshirt designs</span><span lang="fr" class="lang fr">Achetez - Spreadshirt designs</span>
-                    </a>
-                    <a href="https://www.fiverr.com/theanaprod/create-a-2d-maze-game-with-unity" id="fiverrButton" target="_blank" rel="noopener noreferrer">
-                        <span lang="en" class="lang en">Get your own maze game - Fiverr</span>
-                        <span lang="fr" class="lang fr">Crée ton propre jeu de labyrinthe - Fiverr</span>
-                    </a>
-                    <a href="https://www.paypal.com/donate/?hosted_button_id=29TM3J6LL4SLJ" id="donateBtn" target="_blank" rel="noopener noreferrer">
-                        <span lang="en" class="lang en">Donate to Theana</span><span lang="fr" class="lang fr">Faire un don à Theana</span>
-                    </a>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer id="footer">
-        <div id="mainDivFooter">
-            <div id="divFooterLang">
-                <select id="lang-switch" onchange="changeLanguage(this.value)">
-                    <option value="en">English</option>
-                    <option value="fr">Français</option>
-                    <!--<option value="pt">Português</option>-->
-                </select>
+    <footer class="columnFlex">
+        <nav class="footerMenu rowFlex">
+            <div class="social columnFlex">
+                <h5 class="lightTxt lang en">Follow us on</h5>
+                <h5 class="lightTxt lang fr">Suis nous sur</h5>
+                <h5 class="lightTxt lang pt">Follow us on</h5>
+                <ul class="socialLinks rowFlex">
+                    <li class="hoverLinkBtn"><a href="https://twitter.com/TheanaProdOff" title="Theana - Twitter"><img src="medias/twitter.png" /></a></li>
+                    <li class="hoverLinkBtn"><a href="https://www.tiktok.com/@theanaproductions?" title="Theana - TikTok"><img src="medias/tiktok.png" /></a></li>
+                    <li class="hoverLinkBtn"><a href="https://www.youtube.com/channel/UC2S3K2-dtLeUiSFKWtxNkGw" title="Theana - Youtube"><img src="medias/youtube.png" /></a></li>
+                    <li class="hoverLinkBtn"><a href="https://github.com/TheanaProductions" title="Theana - Github"><img src="medias/github.png" /></a></li>
+                    <li class="hoverLinkBtn"><a href="https://theana-productions.myspreadshop.com/" title="Theana - Spreadshirt"><img src="medias/spreadshirt.png" /></a></li>
+                    <li class="hoverLinkBtn"><a href="https://www.fiverr.com/theanaprod?up_rollout=true" title="Theana - Fiverr"><img src="medias/fiverr.png" /></a></li>
+                </ul>
             </div>
-            <div id="divFooterLinks">
+            <div class="paypalLink columnFlex">
+                <div id="donate-button-container">
+                    <div id="donate-button" class="hoverLinkBtn"></div>
+                    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                    <script>
+                        PayPal.Donation.Button({
+                            env: 'production',
+                            hosted_button_id: 'N499RT6SH7CRC',
+                            image: {
+                                src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif',
+                                alt: 'Donate to Theana Productions with PayPal',
+                                title: 'Help Theana Productions by donating through Paypal!',
+                            }
+                        }).render('#donate-button');
+                    </script>
+                </div>
+            </div>
+            <div class="stores columnFlex">
+                <h5 class="lightTxt lang en">Download our games</h5>
+                <h5 class="lightTxt lang fr">Téléchargez nos jeux</h5>
+                <h5 class="lightTxt lang pt">Download our games</h5>
+                <ul class="storeLinks rowFlex">
+                    <li class="hoverLinkBtn"><a href="https://play.google.com/store/apps/dev?id=6665872148698811107" title="Thena - PlayStore"><img src="medias/playStore.png" /></a></li>
+                    <li class="hoverLinkBtn"><a href="https://theana-productions.itch.io/" title="Thena - Itch.io"><img src="medias/itchIO.png" /></a></li>
+                </ul>
+            </div>
+        </nav>
 
-            </div>
-        </div>
+        <nav class="secondaryFooterMenu columnFlex">
+            <ul class="footerLinks rowFlex">
+                <!--
+                <li>
+                    <select id="lang-switch" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                        <option value="pt">Português</option>
+                    </select>
+                </li>
+                -->
+                <!-- English -->
+                <li class="lang en"><a href="legal_notice.html">Legal notice</a></li>
+                <li class="lang en"><a href="privacy_policy.html">Privacy Policy</a></li>
+                <li class="lang en"><a href="partners.html">Partners</a></li>
+                <!-- French -->
+                <li class="lang fr"><a href="legal_notice.html">Mentions légales</a></li>
+                <li class="lang fr"><a href="privacy_policy.html">Politique de confidentialité</a></li>
+                <li class="lang fr"><a href="partners.html">Partenaires</a></li>
+                <!-- Portuguese -->
+                <li class="lang pt"><a href="legal_notice.html">Notas de legalidade</a></li>
+                <li class="lang pt"><a href="privacy_policy.html">Política de privacidade</a></li>
+                <li class="lang pt"><a href="partners.html">Parceiros</a></li>
+            </ul>
+        </nav>
     </footer>
 
     <script defer src="scripts/language.js"></script>
-    <script defer src="scripts/slideshowLatest.js"></script>
+    <script defer src="scripts/screenshots.js"></script>
 </body>
-
 </html>
+
