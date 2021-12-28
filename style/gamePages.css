@@ -65,7 +65,7 @@
     margin-bottom: 25px;
 }
 
-.separationGamePresentations {
+.separationGamePresentations, .separationGamePresentationsAssets {
     display: none;
 }
 
@@ -116,6 +116,10 @@
 }
 
 .charactersSeparation {
+    display: none;
+}
+
+.widgetAssets{
     display: none;
 }
 
@@ -187,7 +191,7 @@
         align-self: center;
     }
 
-    .separationGamePresentations {
+    .separationGamePresentations, .separationGamePresentationsAssets {
         display: block;
         width: 70%;
         color: black;
@@ -197,9 +201,13 @@
         margin: 10px auto;
     }
 
-    .charactersSeparation {
-        display: none;
-    }
+        .separationGamePresentationsAssets{
+            display:none;
+        }
+
+        .charactersSeparation {
+            display: none;
+        }
 }
 
 @media only screen and (min-width: 1000px)
@@ -207,6 +215,15 @@
     .linksGame {
         width: 30%;
         margin-right: 50px;
+    }
+
+    .widgetAssets {
+        display: block;
+        margin: auto;
+    }
+
+    .separationGamePresentationsAssets{
+        display: block;
     }
 }
 
