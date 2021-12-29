@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\medias",
+    "\\medias\\games",
+    "\\medias\\games\\screenshots",
+    "\\medias\\games\\screenshots\\crazy_froggy",
+    "\\style"
   ],
+  "SelectedNode": "\\medias\\games\\screenshots\\crazy_froggy\\crazzyfroggy1.png",
   "PreviewInSolutionExplorer": false
 }

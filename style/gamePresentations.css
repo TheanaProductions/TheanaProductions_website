@@ -135,3 +135,8 @@
     background-image: url(../medias/games/thumbnails/spacechicken.png);
     background-size: cover;
 }
+
+.CrazyFroggy{
+    background-image: url(../medias/games/thumbnails/crazyfroggy.png);
+    background-size: cover;
+}
