@@ -123,6 +123,10 @@
     display: none;
 }
 
+.widgetAssets iframe{
+    margin: auto;
+}
+
 /* Fairy Quest Characters */
 #MaryCharacterEN {
     background-image: url(../medias/games/fairyQuest_characters/Mary_en.png);
@@ -218,7 +222,7 @@
     }
 
     .widgetAssets {
-        display: block;
+        display: flex;
         margin: auto;
     }
 
