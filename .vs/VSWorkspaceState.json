@@ -3,8 +3,9 @@
     "",
     "\\medias",
     "\\medias\\games",
-    "\\medias\\games\\screenshots"
+    "\\medias\\games\\screenshots",
+    "\\style"
   ],
-  "SelectedNode": "\\medias\\games\\screenshots\\space_chicken",
+  "SelectedNode": "\\style\\gamePages.css",
   "PreviewInSolutionExplorer": false
 }
