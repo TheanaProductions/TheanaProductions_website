@@ -1,4 +1,6 @@
-loadLanguagePref();
+//loadLanguagePref();
+
+changeLanguage('en');
 
 function checkBrowserLanguage() {
     var lang = navigator.language;

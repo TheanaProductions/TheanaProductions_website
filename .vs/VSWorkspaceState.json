@@ -2,10 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\medias",
-    "\\medias\\games",
-    "\\medias\\games\\screenshots",
-    "\\style"
+    "\\scripts"
   ],
-  "SelectedNode": "\\captiny.html",
+  "SelectedNode": "\\scripts\\language.js",
   "PreviewInSolutionExplorer": false
 }
