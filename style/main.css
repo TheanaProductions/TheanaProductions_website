@@ -97,7 +97,27 @@ a, a:hover, a:visited {
     margin: 6px 12px;
 }
 
-    /* Team content */
+
+/* Last published content */
+
+
+
+.lastPublishedContainer a {
+    margin: auto;
+    transition: all 0.5s ease;
+    transform: scale(1);
+    width: 250px;
+    height: 350px;
+}
+
+    .lastPublishedContainer a:hover {
+        transform: scale(1.07) perspective(1px);
+        backface-visibility: hidden;
+    }
+
+
+
+/* Team content */
 .teamContent {
     width: 25%;
     margin: 12px auto;

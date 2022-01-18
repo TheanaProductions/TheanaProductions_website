@@ -45,6 +45,17 @@ function createHeader() {
     linkGamesEN.innerHTML = 'Games';
     document.getElementById('liGamesEN').appendChild(linkGamesEN);
 
+        // Assets link
+    let liAssetsEN = document.createElement('li');
+    liAssetsEN.id = 'liAssetsEN';
+    document.getElementById('ulMenuEN').appendChild(liAssetsEN);
+
+    let linkAssetsEN = document.createElement('a');
+    linkAssetsEN.title = 'Our Assets';
+    linkAssetsEN.setAttribute('href', ('assets.html'));
+    linkAssetsEN.innerHTML = 'Assets';
+    document.getElementById('liAssetsEN').appendChild(linkAssetsEN);
+
         // Contact link
     let liContactEN = document.createElement('li');
     liContactEN.id = 'liContactEN';
@@ -99,6 +110,17 @@ function createHeader() {
     linkGamesFR.innerHTML = 'Jeux';
     document.getElementById('liGamesFR').appendChild(linkGamesFR);
 
+        // Assets link
+    let liAssetsFR = document.createElement('li');
+    liAssetsFR.id = 'liAssetsFR';
+    document.getElementById('ulMenuFR').appendChild(liAssetsFR);
+
+    let linkAssetsFR = document.createElement('a');
+    linkAssetsFR.title = 'Nos Assets';
+    linkAssetsFR.setAttribute('href', ('assets.html'));
+    linkAssetsFR.innerHTML = 'Assets';
+    document.getElementById('liAssetsFR').appendChild(linkAssetsFR);
+
         // Contact link
     let liContactFR = document.createElement('li');
     liContactFR.id = 'liContactFR';
@@ -152,6 +174,17 @@ function createHeader() {
     linkGamesPT.setAttribute('href', ('games.html'));
     linkGamesPT.innerHTML = 'Games';
     document.getElementById('liGamesPT').appendChild(linkGamesPT);
+
+        // Assets link
+    let liAssetsPT = document.createElement('li');
+    liAssetsPT.id = 'liAssetsPT';
+    document.getElementById('ulMenuPT').appendChild(liAssetsPT);
+
+    let linkAssetsPT = document.createElement('a');
+    linkAssetsPT.title = 'Our Assets';
+    linkAssetsPT.setAttribute('href', ('assets.html'));
+    linkAssetsPT.innerHTML = 'Assets';
+    document.getElementById('liAssetsPT').appendChild(linkAssetsPT);
 
         // Contact link
     let liContactPT = document.createElement('li');
