@@ -75,3 +75,8 @@
     background-image: url(../medias/assets/thumbnails/abstractBackgrounds.png);
     background-size: cover;
 }
+
+.teamHandwriting {
+    background-image: url(../medias/assets/thumbnails/teamHandwriting.png);
+    background-size: cover;
+}

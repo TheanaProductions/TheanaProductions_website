@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\medias",
-    "\\scripts"
+    "\\style"
   ],
-  "SelectedNode": "\\scripts\\language.js",
+  "SelectedNode": "\\style\\header.css",
   "PreviewInSolutionExplorer": false
 }
