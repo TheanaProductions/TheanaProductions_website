@@ -54,6 +54,11 @@
     background-size: cover;
 }
 
+.Love{
+    background-image: url(../medias/games/thumbnails/love.png);
+    background-size: cover;
+}
+
 
 /* Asset thumbnails */
 .hideAndSeekPlushies {
@@ -78,5 +83,10 @@
 
 .teamHandwriting {
     background-image: url(../medias/assets/thumbnails/teamHandwriting.png);
+    background-size: cover;
+}
+
+.loveBackgrounds{
+    background-image: url(../medias/assets/thumbnails/backgroundLove.png);
     background-size: cover;
 }
