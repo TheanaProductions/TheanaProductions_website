@@ -90,3 +90,8 @@
     background-image: url(../medias/assets/thumbnails/backgroundLove.png);
     background-size: cover;
 }
+
+.animatedCoins{
+    background-image: url(../medias/assets/thumbnails/animatedCoins.png);
+    background-size: cover;
+}
