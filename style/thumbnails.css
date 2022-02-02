@@ -100,3 +100,8 @@
     background-image: url(../medias/assets/thumbnails/mushrooms.png);
     background-size: cover;
 }
+
+.retroMinimalistTileset {
+    background-image: url(../medias/assets/thumbnails/retroMinimalistTileset.png);
+    background-size: cover;
+}
