@@ -59,6 +59,10 @@
     background-size: cover;
 }
 
+.LeadTheWayFullColl {
+    background-image: url(../medias/games/thumbnails/ltwFull.png);
+    background-size: cover;
+}
 
 /* Asset thumbnails */
 .hideAndSeekPlushies {
