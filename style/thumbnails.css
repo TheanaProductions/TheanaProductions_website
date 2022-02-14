@@ -109,3 +109,8 @@
     background-image: url(../medias/assets/thumbnails/retroMinimalistTileset.png);
     background-size: cover;
 }
+
+.neatMinimalistFont {
+    background-image: url(../medias/assets/thumbnails/neatMinimalistFont.png);
+    background-size: cover;
+}
