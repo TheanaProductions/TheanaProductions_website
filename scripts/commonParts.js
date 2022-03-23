@@ -132,7 +132,7 @@ function createHeader() {
     linkContactFR.innerHTML = 'Contact';
     document.getElementById('liContactFR').appendChild(linkContactFR);
 
-    // Portuguese Header (TO TRANSLATE LATER)
+    // Portuguese Header
     let menuNavDivPT = document.createElement('div');
     menuNavDivPT.classList = 'menu rowFlex lang pt';
     menuNavDivPT.id = 'menuNavDivPT';
@@ -170,9 +170,9 @@ function createHeader() {
     document.getElementById('ulMenuPT').appendChild(liGamesPT);
 
     let linkGamesPT = document.createElement('a');
-    linkGamesPT.title = 'Our Games';
+    linkGamesPT.title = 'Nossos Jogos';
     linkGamesPT.setAttribute('href', ('games.html'));
-    linkGamesPT.innerHTML = 'Games';
+    linkGamesPT.innerHTML = 'Jogos';
     document.getElementById('liGamesPT').appendChild(linkGamesPT);
 
         // Assets link
@@ -181,7 +181,7 @@ function createHeader() {
     document.getElementById('ulMenuPT').appendChild(liAssetsPT);
 
     let linkAssetsPT = document.createElement('a');
-    linkAssetsPT.title = 'Our Assets';
+    linkAssetsPT.title = 'Nossos Assets';
     linkAssetsPT.setAttribute('href', ('assets.html'));
     linkAssetsPT.innerHTML = 'Assets';
     document.getElementById('liAssetsPT').appendChild(linkAssetsPT);
@@ -192,8 +192,8 @@ function createHeader() {
     document.getElementById('ulMenuPT').appendChild(liContactPT);
 
     let linkContactPT = document.createElement('a');
-    linkContactPT.title = 'Contact us';
+    linkContactPT.title = 'Contate-nos';
     linkContactPT.setAttribute('href', ('contact.html'));
-    linkContactPT.innerHTML = 'Contact';
+    linkContactPT.innerHTML = 'Contato';
     document.getElementById('liContactPT').appendChild(linkContactPT);
 }

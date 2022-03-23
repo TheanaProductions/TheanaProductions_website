@@ -1,6 +1,4 @@
-//loadLanguagePref();
-
-changeLanguage('en');
+loadLanguagePref();
 
 function checkBrowserLanguage() {
     var lang = navigator.language;
@@ -55,20 +53,20 @@ function changeLanguage(langSelected) {
                 frTxt[i].style.display = 'block';
             }
 
-            //document.getElementById('lang-switch').value = 'fr';
+            document.getElementById('lang-switch').value = 'fr';
             break;
         case 'pt': 
             for (var i = 0; i < ptTxt.length; i++) {
                 ptTxt[i].style.display = 'block';
             }
-            //document.getElementById('lang-switch').value = 'pt';
+            document.getElementById('lang-switch').value = 'pt';
             break;
         case 'en':
         default:
             for (var i = 0; i < enTxt.length; i++) {
                 enTxt[i].style.display = 'block';
             }
-            //document.getElementById('lang-switch').value = 'en';
+            document.getElementById('lang-switch').value = 'en';
             break;
     }
 
