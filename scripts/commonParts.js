@@ -159,9 +159,9 @@ function createHeader() {
     document.getElementById('ulMenuPT').appendChild(liHomePT);
 
     let linkHomePT = document.createElement('a');
-    linkHomePT.title = 'Página Inicial';
+    linkHomePT.title = 'Pagina Inicial';
     linkHomePT.setAttribute('href', ('https://theanaproductions.com/'));
-    linkHomePT.innerHTML = 'Página Inicial';
+    linkHomePT.innerHTML = 'Pagina Inicial';
     document.getElementById('liHomePT').appendChild(linkHomePT);
 
         // Games link
