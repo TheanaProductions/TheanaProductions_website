@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\scripts"
+    "\\scripts",
+    "\\style"
   ],
-  "SelectedNode": "\\scripts\\commonParts.js",
+  "SelectedNode": "\\style\\gamePresentations.css",
   "PreviewInSolutionExplorer": false
 }
