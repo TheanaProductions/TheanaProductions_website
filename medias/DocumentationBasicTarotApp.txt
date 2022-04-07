@@ -1,0 +1,52 @@
+Thank you for downloading our Tarot App Template!
+
+If you have any question or encounter any issue, please send us a message at:
+theanaproductions.games@gmail.com
+
+### Common errors ###
+- If you get errors while testing the template, please make sure that the scripts
+"Events", "SaveManager" and "SaveFunctions" are before the default time in the 
+Script Execution Order.
+
+
+### How to get started ###
+- To start, add your font and sprites to the project and place them where needed:
+	- In the scene:
+		- Font: "Title_app", "Click_txt"
+		- Sprites: "Logo", Main_Background, "Icon_Home", "Icon_Catalogue", "Icon_Saved"
+	- In the prefabs:
+		- Font: "Description Card" (on both "Card Template" and "Save Template")
+		- Sprites: "Card" (on both "Card Template" and "Save Template"), "Icon_Back" ("Card Template")
+
+- You can then start creating your cards with Scriptable Objects!
+	- Create > Tarot App > Card
+		- Once it is created, don't forget to put them in the Card Database 
+		(one is already created, but you can do a new one by going Create > Tarot App > Database)
+			- The card number will be given by the database, so if you want them to have a certain order in
+			the catalogue, don't forget to place them in the right order in the database
+
+- Once all of this is done, you just need to click on the "SaveManager" game object
+	- In the inspector, set the max number of saved cards you want as well as if you want the files to be encrypted or not
+
+- And here you go! A working tarot app!
+
+
+### Functions ###
+- All the template scripts are under the namespace "TheanaProd.Assets.Templates.TarotApp"
+
+- Events:
+	- onOpenCard (takes a string and a CardSO), called through OpenCard(string, cardSO)
+	- onCloseCard (taked a gameobject), called through CloseCard(gameobject)
+
+- CardButton:
+	- OpenCard(string) : Open a random card
+	- ButtonCloseCard(gameobject) : Close the panel showing the card
+
+- PageManager:
+	- SwitchTab(string) : Switch the current open page
+
+- SaveManager:
+	- SetCards() : Load and call the cards instantiation on the SavedCards page
+	- SaveCard(CardSO) : Save the card to the SavedCards list
+	- Save() : Save the SavedCards list to a json file
+	- Load() : Load a json file of the SavedCards list
