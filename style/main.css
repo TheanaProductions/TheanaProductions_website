@@ -164,6 +164,12 @@ a, a:hover, a:visited {
         flex-direction: column;
     }
 
+    /* Articles links */
+    .articleList{
+        list-style-position: inside;
+        list-style-type: circle;
+    }
+
 @media only screen and (min-width: 600px)
 {
     .aboutContainer {
