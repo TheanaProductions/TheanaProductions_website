@@ -59,6 +59,11 @@
     background-size: cover;
 }
 
+.LegacyPuzzle {
+    background-image: url(../medias/games/thumbnails/legacypuzzle.png);
+    background-size: cover;
+}
+
 /* Asset thumbnails */
 .hideAndSeekPlushies {
     background-image: url(../medias/assets/thumbnails/hideandseekPlushies.png);
