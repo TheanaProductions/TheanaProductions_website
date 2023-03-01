@@ -1,0 +1,160 @@
+.ruban_price {
+    --f: 10px; /* control the folded part*/
+    --r: 15px; /* control the ribbon shape */
+    --t: 10px; /* the top offset */
+
+    position: absolute;
+    inset: var(--t) calc(-1*var(--f)) auto auto;
+    padding: 0 10px var(--f) calc(10px + var(--r));
+    clip-path: polygon(0 0,100% 0,100% calc(100% - var(--f)),calc(100% - var(--f)) 100%, calc(100% - var(--f)) calc(100% - var(--f)),0 calc(100% - var(--f)), var(--r) calc(50% - var(--f)/2));
+    background: #BD1550;
+    box-shadow: 0 calc(-1*var(--f)) 0 inset #0005;
+    color: black;
+    font-family: 'Shantell Sans', cursive;
+    font-weight: bold;
+}
+
+/* http://csscheckbox.com/ */
+label {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input[type=checkbox].css-checkbox {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+    input[type=checkbox].css-checkbox + label.css-label {
+        padding-left: 20px;
+        height: 15px;
+        display: inline-block;
+        line-height: 15px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        font-size: 15px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+
+    input[type=checkbox].css-checkbox:checked + label.css-label {
+        background-position: 0 -15px;
+    }
+
+.css-label {
+    background-image: url(http://csscheckbox.com/checkboxes/dark-check-green.png);
+}
+
+.dark-check-purple {
+    background-image: url(../medias/dark-check-purple.png);
+}
+
+/* Catalogue */
+.catalogue-element {
+    width: auto;
+    position: relative;
+    padding: 0px;
+    margin: 10px;
+}
+
+.img_games{
+    width: 12.5rem;
+}
+
+.img_games:hover{
+    opacity: 60%;
+}
+
+.checkbox-container{
+    margin-left: -100px;
+    margin-right: 100px;
+    width: auto;
+}
+
+.catalogue-container, .catalogue-parent {
+    width: 80%;
+}
+
+.text_label {
+    color: black;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.filter-box {
+    border: 3px solid #5B113A;
+    background-color: #B7829E;
+    border-radius: 25px;
+}
+
+.filter-category-end {
+    padding: 5px;
+    padding-inline: 20px;
+}
+
+.filter-category {
+    border-bottom: 2px solid #874F6D;
+    padding: 5px;
+    padding-inline: 20px;
+}
+
+    .filter-category h3, .filter-category-end h3 {
+        text-align: center;
+        color: black;
+        font-size: 25px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+@media(max-width:1200px) {
+    .img_games {
+    width: 11.25rem;
+    height: 11.25rem;
+ }
+}
+
+@media(max-width: 1000px)
+{
+    .checkbox-container{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .catalogue-parent{
+        width: 90%;
+    }
+
+    .catalogue-container{
+        width: 65%;
+    }
+}
+
+@media(max-width:600px){
+    .img_games {
+    width: 9.375rem;
+    height: 9.375rem;
+ }
+}
+
+@media(max-width:300px){
+    .img_games {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
+}
+
+@media(max-width:100px){
+    .img_games {
+        width: 3.125rem;
+        height: 3.125rem;
+    }
+}

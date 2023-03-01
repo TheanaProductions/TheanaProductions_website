@@ -1,28 +1,18 @@
-
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Welcome to Theana Productions' official website. Theana is a french based game dev company created in 2021." />
+    <meta name="description" content="Our games offer a wide rang of titles for all type of players! Want a chill and relaxing game, or a more challenging one? We have it all! So why wait?  Go browse our collection of games today and find your next favourite title!" />
 
     <meta name="twitter:card" content="summary" />
     <meta property="og:title" content="Theana Productions - Games" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://theanaproductions.com/" />
-    <meta property="og:image" content="https://theanaproductions.com/medias/logo_TheanaProductions.png" />
-    <meta property="og:site_name" content=" Theana Productions " />
+    <meta property="og:url" content="https://theanaproductions.com/games.html" />
+    <meta property="og:image" content="https://theanaproductions.com/medias/logo_theana.png" />
+    <meta property="og:site_name" content=" Theana Productions - Games" />
 
-    <!-- Google tag manager -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3FB6T85MVW"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-3FB6T85MVW');
-    </script>
 
     <!-- https://realfavicongenerator.net/ -->
     <link rel="apple-touch-icon" sizes="180x180" href="medias/favicon/apple-touch-icon.png">
@@ -35,129 +25,364 @@
     <meta name="msapplication-config" content="medias/favicon/browserconfig.xml">
     <meta name="theme-color" content="#490957">
 
-    <link rel="stylesheet" href="style/main.css" />
-    <link rel="stylesheet" href="style/header.css" />
-    <link rel="stylesheet" href="style/footer.css" />
-    <link rel="stylesheet" href="style/gamePresentations.css" />
-    <link rel="stylesheet" href="style/thumbnails.css" />
-  
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Shantell+Sans&family=Tourney&display=swap" rel="stylesheet">
 
-    <title> Theana Productions - Games</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/catalogue.css">
+
+    <!--Lien analytics Plezi-->
+    <script type="text/javascript" async src="https://brain.plezi.co/api/v1/analytics?tenant=3f4c8c5d-c7dd-4cd4-89fb-69ae16f8bb7e&tw=4fa5d3ca-8cca-4fa5-a903-51b13daed768"></script>
+
+    <title>Theana Productions - Games</title>
+
 </head>
 
-<body>
-    <header class="rowFlex" id="header">
-        <script defer src="scripts/commonParts.js"></script>
-    </header>
-
-    <main>
-        <div class="mainPage">
-            <div class="bannerContainer">
-                <div class="bannerContentImg fullOpacity">
-                    <img src="medias/index/headBannerPresentationTheanaProductions_2.png" alt="Theana Productions banner" />
-                </div>
+<body onload="loadLanguagePref(); setCheckboxCurrentDatas();">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar_background navbar_background_flou fixed-top">
+        <div class="container-fluid opacite">
+            <a class="navbar-brand" href="index.html"><img class="logo-navbar" src="medias/logo_theana.png" alt="Theana Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mx-5 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active lang en" aria-current="page" href="index.html"><button type="button" class="btn btn_menu fs-6 py-2 px-2">Home</button></a>
+                        <a class="nav-link active lang fr" aria-current="page" href="index.html"><button type="button" class="btn btn_menu fs-6 py-2 px-2">Accueil</button></a>
+                        <a class="nav-link active lang br" aria-current="page" href="index.html"><button type="button" class="btn btn_menu fs-6 py-2 px-2">Inicio</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lang en" href="games.html"><button type="button" class="btn btn_menu fs-6 py-2 px-2">Games</button></a>
+                        <a class="nav-link lang fr" href="games.html"><button type="button" class="btn btn_menu fs-6 py-2 px-2">Jeux</button></a>
+                        <a class="nav-link lang br" href="games.html"><button type="button" class="btn btn_menu fs-6 py-2 px-2">Jogos</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lang en" href="assets.html"><button type="button" class="btn btn_menu fs-6 py-2 px-2">Assets</button></a>
+                        <a class="nav-link lang fr" href="assets.html"><button type="button" class="btn btn_menu fs-6 py-2 px-2">Assets</button></a>
+                        <a class="nav-link lang br" href="assets.html"><button type="button" class="btn btn_menu fs-6 py-2 px-2">Assets</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link lang en" href="team.html"><button type="button" class="btn btn_menu fs-6 py-2 px-2">Team</button></a>
+                        <a class="nav-link lang fr" href="team.html"><button type="button" class="btn btn_menu fs-6 py-2 px-2">Equipe</button></a>
+                        <a class="nav-link lang br" href="team.html"><button type="button" class="btn btn_menu fs-6 py-2 px-2">Equipe</button></a>
+                    </li>
+                </ul>
             </div>
+            <!--Flag-->
+            <div class="me-3">
+                <button class="ms-5 flag-button" type="button" title="Français"><img class="img_flag" src="medias/french_flag.jpg" onclick="changeLanguage('fr'); setCheckboxCurrentDatas();" onmouseover="changeLanguage('fr'); setCheckboxCurrentDatas();" alt="French Flag"></button>
+                <button class="mx-3 flag-button" type="button" title="English"><img class="img_flag" src="medias/english_flag.jpg" onclick="changeLanguage('en'); setCheckboxCurrentDatas();" onmouseover="changeLanguage('en'); setCheckboxCurrentDatas();" alt="English Flag"></button>
+                <button class="flag-button" type="button" title="Portugues do Brasil"><img class="img_flag" src="medias/brazil_flag.jpg" onclick="changeLanguage('br'); setCheckboxCurrentDatas();" onmouseover="changeLanguage('br'); setCheckboxCurrentDatas();" alt="Brazilian Flag"></button>
+            </div>
+        </div>
+    </nav>
 
-            <!-- Games -->
-            <div class="gameDisplaySection">
-                <div class="gameDisplayContainer">
-                    <div class="aboutContent gameDisplayContent rowFlex wrapAllTime">
-                        <div class="gameDisplayItem columnFlex aboutColumn filterDiv">
-                            <a href="https://store.steampowered.com/app/1865940/Lead_the_Way__Full_Collection/" target="_blank" rel="noopener noreferrer" class="LeadTheWayFullColl" title="Lead the Way Full Collection - Theana Productions"></a>
+
+    <div class="container-fluid first_container box-bg">
+
+        <section id="middle">
+
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center d-flex align-items-center d-flex flex-column">
+                    <h1 class="title_bis lang en">Games</h1>
+                    <h1 class="title_bis lang fr">Jeux</h1>
+                    <h1 class="title_bis lang br">Jogos</h1>
+
+                    <div class="row catalogue-parent d-flex justify-content-center">
+                        <!-- FILTERS -->
+                        <div class="d-flex flex-column checkbox-container">
+                            <div class="filter-box">
+                                <div class="filter-category">
+                                    <h3 class="lang en">Price</h3>
+                                    <h3 class="lang fr">Prix</h3>
+                                    <h3 class="lang br">Preço</h3>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="free" id="free" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="free">Free</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="paid" id="paid" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="paid">Paid</label>
+                                    </div>
+                                </div>
+                                <div class="filter-category">
+                                    <h3 class="lang en">Type</h3>
+                                    <h3 class="lang fr">Type</h3>
+                                    <h3 class="lang br">Type</h3>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="2D" id="2D" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="2D">2D</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="3D" id="3D" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="3D">3D</label>
+                                    </div>
+                                </div>
+                                <div class="filter-category">
+                                    <h3 class="lang en">Platform</h3>
+                                    <h3 class="lang fr">Plateforme</h3>
+                                    <h3 class="lang br">Plataforma</h3>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="steam" id="steam" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="steam">Steam</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="itchio" id="itchio" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="itchio">Itch.io</label>
+                                    </div>
+                                </div>
+                                <div class="filter-category">
+                                    <h3 class="lang en">Genre</h3>
+                                    <h3 class="lang fr">Genre</h3>
+                                    <h3 class="lang br">Gênero</h3>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="reflexion" id="reflexion" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="reflexion">Reflexion</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="arcade" id="arcade" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="arcade">Arcade</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="casual" id="casual" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="casual">Casual</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="luck" id="luck" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="luck">Luck</label>
+                                    </div>
+                                </div>
+                                <div class="filter-category-end">
+                                    <h3 class="lang en">Status</h3>
+                                    <h3 class="lang fr">Status</h3>
+                                    <h3 class="lang br">Status</h3>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="published" id="published" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="published">Published</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="worked" id="worked" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="worked">In Work</label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="gameDisplayItem columnFlex aboutColumn filterDiv">
-                            <a href="https://theana-productions.itch.io/legacy-puzzle" target="_blank" rel="noopener noreferrer" class="LegacyPuzzle" title="Legacy Puzzle - Theana Productions"></a>
+
+                        <!-- GRILLE D'IMAGES -->
+                        <div class="row d-flex flex-wrap d-flex justify-content-center catalogue-container">
+                            <p class="catalogue-element no-filter text_container_bis lang en">Sorry... It would seem nothing exists with your filters yet. Please try with different ones.</p>
+                            <p class="catalogue-element no-filter text_container_bis lang fr">Désolé... Il semblerait que rien n'existe avec ces filtres pour l'instant. Veuillez essayer avec d'autres.</p>
+                            <p class="catalogue-element no-filter text_container_bis lang br">Desculpa... It would seem nothing exists with your filters. Please try with different one...</p>
+
+                            <a href="games/ltw_full.html" class="catalogue-element steam itchio paid published reflexion casual 2D">
+                                <img class="img-fluid img_games pb-3" src="medias/games/ltw_full/ltw_full_1.png" alt="Lead the Way - Full Collection - Theana Productions" title="Lead the Way - Full Collection" />
+                                <div class="ruban_price">1,99€</div>
+                            </a>
+                            <!--<a href="games/ltw_lite.html" class="catalogue-element playStore"><img class="img-fluid img_games pb-3" src="medias/assets/love_bg/love_bg_2.png" alt="Lead the Way - Lite - Theana Productions" title="Lead the Way - Lite"/></a>-->
+                            <a href="games/legacy_puzzle.html" class="catalogue-element itchio free published reflexion casual 2D">
+                                <img class="img-fluid img_games pb-3" src="medias/games/legacy_puzzle/legacy_puzzle_1.png" alt="Legacy Puzzle - Theana Productions" title="Legacy Puzzle" />
+                                <div class="ruban_price lang en">Free</div>
+                                <div class="ruban_price lang fr">Gratuit</div>
+                                <div class="ruban_price lang br">Gratuito</div>
+                            </a>
+                            <a href="games/space_chicken.html" class="catalogue-element itchio free published arcade casual 2D">
+                                <img class="img-fluid img_games pb-3" src="medias/games/space_chicken/space_chicken_1.png" alt="Space Chicken - Theana Productions" title="Space Chicken" />
+                                <div class="ruban_price lang en">Free</div>
+                                <div class="ruban_price lang fr">Gratuit</div>
+                                <div class="ruban_price lang br">Gratuito</div>
+                            </a>
+                            <a href="games/hide_and_seek.html" class="catalogue-element itchio free published casual luck 2D">
+                                <img class="img-fluid img_games pb-3" src="medias/games/hide_and_seek/hide_and_seek_1.png" alt="Hide and Seek - Theana Productions" title="Hide and Seek" />
+                                <div class="ruban_price lang en">Free</div>
+                                <div class="ruban_price lang fr">Gratuit</div>
+                                <div class="ruban_price lang br">Gratuito</div>
+                            </a>
+                            <!--<a href="games/hide_and_seek_1B.html" class="catalogue-element free worked casual luck 2D">
+                                <img class="img-fluid img_games pb-3" src="medias/games/hide_and_seek_1B/hide_and_seek_1B_1.png" alt="Hide and Seek 1Bit - Theana Productions" title="Hide and Seek 1Bit" />
+                                <div class="ruban_price lang en">Free</div>
+                                <div class="ruban_price lang fr">Gratuit</div>
+                                <div class="ruban_price lang br">Gratuito</div>
+                            </a>-->
                         </div>
-                        <div class="gameDisplayItem columnFlex aboutColumn filterDiv">
-                            <a href="https://theana-productions.itch.io/hide-and-seek" target="_blank" rel="noopener noreferrer" class="hideAndSeek" title=" Hide and Seek - Theana Productions"></a>
-                        </div>
-                        <div class="gameDisplayItem columnFlex aboutColumn filterDiv">
-                            <a href="https://theana-productions.itch.io/space-chicken" target="_blank" rel="noopener noreferrer" class="SpaceChicken" title="Space Chicken - Theana Productions"></a>
+                    </div>
+                </div>
+                <img class="footer-logo mx-auto my-3" src="medias/logo_theana.png" alt="Theana Logo" />
+            </div>
+        </section>
+    </div>
+
+    <!--footer start-->
+    <footer style="padding-top:20px; margin-top:80px;">
+        <!--Haut de page-->
+        <a href="#" class="lien-haut mx-auto my-auto d-block"><img class="d-block mx-auto img-fluid" src="medias/haut.png"></a>
+
+        <div class="footer-wrap">
+            <div class="container first_class">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="col-lg-12">
+                            <div>
+                                <span class="social_tittle d-flex justify-content-center pb-3 lang en">Follow us on</span>
+                                <span class="social_tittle d-flex justify-content-center pb-3 lang fr ">Suis nous sur</span>
+                                <span class="social_tittle d-flex justify-content-center pb-3 lang br">Siga-nos</span>
+                                <!-- Donate Button -->
+                                <div id="donate-button-container" class="d-flex justify-content-center pb-4">
+                                    <div id="donate-button"></div>
+                                    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                                    <script>
+                                        PayPal.Donation.Button({
+                                            env: 'production',
+                                            hosted_button_id: 'N499RT6SH7CRC',
+                                            image: {
+                                                src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif',
+                                                alt: 'Donate with PayPal button',
+                                                title: 'PayPal - The safer, easier way to pay online!',
+                                            }
+                                        }).render('#donate-button');
+                                    </script>
+                                </div>
+
+                                <!-- SOCIALS -->
+                                <div class="d-flex flex-row d-flex justify-content-center gap-3 d-flex flex-wrap">
+                                    <div class="social_link">
+                                        <a href="https://discord.gg/dzvwT2qHym" target="_blank" rel="noreferrer noopener" title="Theana - Discord"><img src="medias/social/logo_discord.png" /></a>
+                                    </div>
+                                    <div class="social_link">
+                                        <a href="https://twitter.com/TheanaProdOff" target="_blank" rel="noreferrer noopener" title="Theana - Twitter"><img src="medias/social/logo_twitter.png" /></a>
+                                    </div>
+                                    <div class="social_link">
+                                        <a href="https://www.tiktok.com/@theanaproductions?" target="_blank" rel="noreferrer noopener" title="Theana - TikTok"><img src="medias/social/logo_tiktok.png" /></a>
+                                    </div>
+                                    <div class="social_link">
+                                        <a href="https://www.youtube.com/channel/UC2S3K2-dtLeUiSFKWtxNkGw" target="_blank" rel="noreferrer noopener" title="Theana - Youtube"><img src="medias/social/logo_youtube.png" /></a>
+                                    </div>
+                                    <div class="social_link">
+                                        <a href="https://www.twitch.tv/theanaproductions" target="_blank" rel="noreferrer noopener" title="Theana - Twitch"><img src="medias/social/logo_twitch.png" /></a>
+                                    </div>
+                                    <div class="social_link">
+                                        <a href="https://github.com/TheanaProductions" target="_blank" rel="noreferrer noopener" title="Theana - Github"><img src="medias/social/logo_github.png" /></a>
+                                    </div>
+                                    <div class="social_link">
+                                        <a href="https://store.steampowered.com/developer/theanaproductions" target="_blank" rel="noreferrer noopener" title="Theana - Steam"><img src="medias/social/logo_steam.png" /></a>
+                                    </div>
+                                    <!--<li class="social_link"><a href="https://github.com/TheanaProductions" target="_blank" rel="noreferrer noopener" title="Theana - PlayStore"><img src="medias/social/logo_playstore.png" /></a>
+                                    </li>-->
+                                    <div class="social_link">
+                                        <a href="https://theana-productions.itch.io/" target="_blank" rel="noreferrer noopener" title="Theana - Itch.io"><img src="medias/social/logo_itchio.png" /></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
 
-    <footer class="columnFlex">
-        <nav class="footerMenu rowFlex">
-            <div class="social columnFlex">
-                <h5 class="lightTxt lang en">Follow us on</h5>
-                <h5 class="lightTxt lang fr">Suis nous sur</h5>
-                <h5 class="lightTxt lang pt">Siga-nos no</h5>
-                <ul class="socialLinks rowFlex">
-
-                    <li class="hoverLinkBtn"><a href="https://twitter.com/TheanaProdOff" title="Theana - Twitter" target="_blank" rel="noopener noreferrer"><img src="medias/twitter.png" /></a></li>
-                    <li class="hoverLinkBtn"><a href="https://www.tiktok.com/@theanaproductions?" title="Theana - TikTok" target="_blank" rel="noopener noreferrer"><img src="medias/tiktok.png" /></a></li>
-                    <li class="hoverLinkBtn"><a href="https://www.youtube.com/channel/UC2S3K2-dtLeUiSFKWtxNkGw" title="Theana - Youtube" target="_blank" rel="noopener noreferrer"><img src="medias/youtube.png" /></a></li>
-                    <li class="hoverLinkBtn"><a href="https://github.com/TheanaProductions" title="Theana - Github" target="_blank" rel="noopener noreferrer"><img src="medias/github.png" /></a></li>
-                    <li class="hoverLinkBtn"><a href="https://discord.gg/dzvwT2qHym" title="Theana - Discord" target="_blank" rel="noopener noreferrer"><img src="medias/discord.png" /></a></li>
-                    <!--<li class="hoverlinkbtn"><a href="https://www.patreon.com/theanaproductions" title="theana - patreon" target="_blank" rel="noopener noreferrer"><img src="medias/patreon.png" /></a></li>
-    <li class="hoverlinkbtn"><a href="https://www.fiverr.com/theanaprod?up_rollout=true" title="theana - fiverr" target="_blank" rel="noopener noreferrer"><img src="medias/fiverr.png" /></a></li>-->
-                </ul>
+            <!--Newsletter-->
+            <div class="mb-2">
+                <span class="social_tittle d-flex align-items-end d-flex justify-content-center pt-4">Newsletter</span>
+                <form id="plz-form-6912077c-13d2-4350-b6d4-bbee31b3173d"></form>
+                <script async src="https://brain.plezi.co/api/v1/web_forms/scripts?content_web_form_id=6912077c-13d2-4350-b6d4-bbee31b3173d"></script>
             </div>
-            <div class="paypalLink columnFlex">
-                <div id="donate-button-container">
-                    <div id="donate-button" class="hoverLinkBtn"></div>
-                    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-                    <script>
-                        PayPal.Donation.Button({
-                            env: 'production',
-                            hosted_button_id: 'N499RT6SH7CRC',
-                            image: {
-                                src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif',
-                                alt: 'Donate to Theana Productions with PayPal',
-                                title: 'Help Theana Productions by donating through Paypal!',
-                            }
-                        }).render('#donate-button');
-                    </script>
+
+            <div class="second_class">
+                <div class="container second_class_bdr">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="d-flex flex-row"><img class="footer-logo mx-auto" src="medias/logo_theana.png" alt="logo"></div>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <h3 class="lang en">QUICK LINKS</h3>
+                            <h3 class="lang fr">LIENS RAPIDES</h3>
+                            <h3 class="lang br">QUICK LINKS</h3>
+                            <ul class="footer-links">
+                                <li class="menu_link">
+                                    <a href="index.html" class="lang en">Home</a>
+                                    <a href="index.html" class="lang fr">Accueil</a>
+                                    <a href="index.html" class="lang br">Inicio</a>
+                                </li>
+                                <li class="menu_link">
+                                    <a href="games.html" class="lang en">Games</a>
+                                    <a href="games.html" class="lang fr">Jeux</a>
+                                    <a href="games.html" class="lang br">Jogos</a>
+                                </li>
+                                <li class="menu_link">
+                                    <a href="assets.html">Assets</a>
+                                </li>
+                                <li class="menu_link">
+                                    <a href="articles.html" class="lang en">Articles</a>
+                                    <a href="articles.html" class="lang fr">Articles</a>
+                                    <a href="articles.html" class="lang br">Artigos</a>
+                                </li>
+                                <!--<li class="menu_link">
+                                    <a href="partners.html" class="lang en">Partners</a>
+                                    <a href="partners.html" class="lang fr">Partenaires</a>
+                                    <a href="partners.html" class="lang br">Parceiros</a>
+                                </li>-->
+                                <li class="menu_link">
+                                    <a href="privacy_policy.html" class="lang en">Privacy Policy</a>
+                                    <a href="privacy_policy.html" class="lang fr">Politique de confidentialité</a>
+                                    <a href="privacy_policy.html" class="lang br">Política de privacidade</a>
+                                </li>
+                                <li class="menu_link">
+                                    <a href="legal_notice.html" class="lang en">Legal Notice</a>
+                                    <a href="legal_notice.html" class="lang fr">Mentions légales</a>
+                                    <a href="legal_notice.html" class="lang br">Notícia legal</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <h3>WEB DEVELOPPERS</h3>
+                            <ul class="footer-links">
+                                <li class="menu_link">
+                                    <a href="https://github.com/Sin-Gala" target="_blank" rel="noreferrer noopener">SinGala</a>
+                                </li>
+                                <li style="color: #ccc; font-family: 'Shantell Sans', cursive;">
+                                    <!--a href="https://sirenita1306.github.io/E-DW/" target="_blank" rel="noreferrer noopener"-->E-DW
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="stores columnFlex">
-                <h5 class="lightTxt lang en">Download our games</h5>
-                <h5 class="lightTxt lang fr">Téléchargez nos jeux</h5>
-                <h5 class="lightTxt lang pt">Baixe nossos jogos</h5>
-                <ul class="storeLinks rowFlex">
 
-                    <li class="hoverLinkBtn"><a href="https://theana-productions.itch.io/" title="Thena - Itch.io" target="_blank" rel="noreferrer noopener"><img src="medias/itchIO.png" /></a></li>
-                    <li class="hoverLinkBtn"><a href="https://store.steampowered.com/developer/theanaproductions" title="Thena - Steam" target="_blank" rel="noreferrer noopener"><img src="medias/steam.png" /></a></li>
-                </ul>
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="copyright"> Copyright 2021-2023 | Theana Productions</div>
+                </div>
             </div>
-        </nav>
+        </div>
 
-        <nav class="secondaryFooterMenu columnFlex">
-            <ul class="footerLinks rowFlex">
-
-                <li>
-                    <select id="lang-switch" onchange="changeLanguage(this.value)">
-                        <option value="en">English</option>
-                        <option value="fr">Français</option>
-                        <option value="pt">Português</option>
-                    </select>
-                </li>
-
-                <!-- English -->
-                <li class="lang en"><a href="legal_notice.html">Legal notice</a></li>
-                <li class="lang en"><a href="privacy_policy.html">Privacy Policy</a></li>
-                <li class="lang en"><a href="partners.html">Partners</a></li>
-                <li class="lang en"><a href="articles.html">Articles</a></li>
-                <!-- French -->
-                <li class="lang fr"><a href="legal_notice.html">Mentions légales</a></li>
-                <li class="lang fr"><a href="privacy_policy.html">Politique de confidentialité</a></li>
-                <li class="lang fr"><a href="partners.html">Partenaires</a></li>
-                <li class="lang fr"><a href="articles.html">Articles</a></li>
-                <!-- Portuguese -->
-                <li class="lang pt"><a href="legal_notice.html">Notas de legalidade</a></li>
-                <li class="lang pt"><a href="privacy_policy.html">Política de privacidade</a></li>
-                <li class="lang pt"><a href="partners.html">Parceiros</a></li>
-                <li class="lang pt"><a href="articles.html">Artigos</a></li>
-            </ul>
-        </nav>
     </footer>
 
-    <script defer src="scripts/language.js"></script>
-    <script defer src="scripts/categories.js"></script>
+    <!--footer end-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome 5 links-->
+    <script src="https://kit.fontawesome.com/fddf5c0916.js" crossorigin="anonymous"></script>
+
+    <!--Language-->
+    <script src="js/language.js"></script>
+
+    <!-- Filter -->
+    <script src="js/filter.js"></script>
+
 </body>
 </html>
-
