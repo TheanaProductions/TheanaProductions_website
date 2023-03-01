@@ -108,6 +108,10 @@
                         <div class="d-flex flex-column checkbox-container">
                             <div class="filter-box">
                                 <div class="form-check">
+                                    <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="new" id="new" onchange="setCheckboxCurrentDatas();">
+                                    <label class="form-check-label text_label css-label dark-check-purple" for="new">New</label>
+                                </div>
+                                <div class="form-check">
                                     <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="tuto" id="tuto" onchange="setCheckboxCurrentDatas();">
                                     <label class="form-check-label text_label css-label dark-check-purple" for="tuto">With Tutorial</label>
                                 </div>
@@ -122,6 +126,10 @@
                                     <div class="form-check">
                                         <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="paid" id="paid" onchange="setCheckboxCurrentDatas();">
                                         <label class="form-check-label text_label css-label dark-check-purple" for="paid">Paid</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="sale" id="sale" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="sale">On Sale</label>
                                     </div>
                                 </div>
                                 <div class="filter-category">
@@ -196,7 +204,7 @@
                             <p class="catalogue-element no-filter text_container_bis lang fr">Désolé... Il semblerait que rien n'existe avec ces filtres pour l'instant. Veuillez essayer avec d'autres.</p>
                             <p class="catalogue-element no-filter text_container_bis lang br">Desculpa... It would seem nothing exists with your filters. Please try with different one...</p>
                             
-                            <a href="assets/traffic_cone_LP.html" class="catalogue-element 3D free environments tuto">
+                            <a href="assets/traffic_cone_LP.html" class="catalogue-element 3D free environments tuto new">
                                 <img class="img-fluid img_games pb-3" src="medias/assets/traffic_cone_LP/traffic_cone_LP_1_new.png" alt="Traffic Cone Low Poly - Theana Productions" title="Traffic Cone Low Poly" />
                                 <div class="ruban_price lang en">Free</div>
                                 <div class="ruban_price lang fr">Gratuit</div>
