@@ -46,6 +46,19 @@ p{
     color: #e2cbbd;
 }
 
+@media(max-width: 800px)
+{
+    .title, .title_3, .title_bis {
+        font-size: 3.4375rem;
+    }
+}
+
+@media(max-width: 700px)
+{
+    .title, .title_3, .title_bis {
+        font-size: 2.1875rem;
+    }
+}
 
 
 /*Navbar*/

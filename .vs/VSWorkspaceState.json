@@ -3,10 +3,10 @@
     "",
     "\\assets",
     "\\css",
-    "\\games",
     "\\medias",
-    "\\medias\\favicon"
+    "\\medias\\assets",
+    "\\medias\\assets\\weapons_pack_LP"
   ],
-  "SelectedNode": "\\games\\legacy_puzzle.html",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
