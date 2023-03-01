@@ -212,6 +212,14 @@ p{
     }
 }
 
+@media(max-width: 500px)
+{
+    .img_container_bas, .img_container, .img_container_haut {
+        width: 21.875rem;
+        height: 21.875rem;
+    }
+}
+
 .text_container{
     padding-inline: 9.375rem;
     font-family: 'Shantell Sans', cursive;
