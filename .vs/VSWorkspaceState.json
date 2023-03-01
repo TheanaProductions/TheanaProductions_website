@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\css",
+    "\\games",
+    "\\medias",
+    "\\medias\\favicon"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\sitemap.txt",
   "PreviewInSolutionExplorer": false
 }
