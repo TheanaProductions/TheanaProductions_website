@@ -107,7 +107,11 @@ input[type=checkbox].css-checkbox {
     padding-inline: 20px;
 }
 
-    .filter-category h3, .filter-category-end h3 {
+.filter-category-top {
+    border-top: 2px solid #874F6D;
+}
+
+    .filter-category h3, .filter-category-end h3, .filter-category-top h3 {
         text-align: center;
         color: black;
         font-size: 25px;

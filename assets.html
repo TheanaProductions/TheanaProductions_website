@@ -107,7 +107,11 @@
                         <!-- FILTERS -->
                         <div class="d-flex flex-column checkbox-container">
                             <div class="filter-box">
-                                <div class="filter-category">
+                                <div class="form-check">
+                                    <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="tuto" id="tuto" onchange="setCheckboxCurrentDatas();">
+                                    <label class="form-check-label text_label css-label dark-check-purple" for="tuto">With Tutorial</label>
+                                </div>
+                                <div class="filter-category-top filter-category">
                                     <h3 class="lang en">Price</h3>
                                     <h3 class="lang fr">Prix</h3>
                                     <h3 class="lang br">Preço</h3>
@@ -183,7 +187,7 @@
                                         <label class="form-check-label text_label css-label dark-check-purple" for="packs">Packs</label>
                                     </div>
                                 </div>
-                                </div>
+                            </div>
                             </div>
 
                         <!-- GRILLE D'IMAGES -->
@@ -191,7 +195,13 @@
                             <p class="catalogue-element no-filter text_container_bis lang en">Sorry... It would seem nothing exists with your filters yet. Please try with different ones.</p>
                             <p class="catalogue-element no-filter text_container_bis lang fr">Désolé... Il semblerait que rien n'existe avec ces filtres pour l'instant. Veuillez essayer avec d'autres.</p>
                             <p class="catalogue-element no-filter text_container_bis lang br">Desculpa... It would seem nothing exists with your filters. Please try with different one...</p>
-
+                            
+                            <a href="assets/traffic_cone_LP.html" class="catalogue-element 3D free environments tuto">
+                                <img class="img-fluid img_games pb-3" src="medias/assets/traffic_cone_LP/traffic_cone_LP_1_new.png" alt="Traffic Cone Low Poly - Theana Productions" title="Traffic Cone Low Poly" />
+                                <div class="ruban_price lang en">Free</div>
+                                <div class="ruban_price lang fr">Gratuit</div>
+                                <div class="ruban_price lang br">Gratuito</div>
+                            </a>
                             <a href="assets/chicken_astronaut.html" class="catalogue-element 2D hand-drawn animated paid animals space">
                                 <img class="img-fluid img_games pb-3" src="medias/assets/chicken_astronaut/chicken_astronaut_1.png" alt="Chicken Astronaut - Theana Productions" title="Chicken Astronaut" />
                                 <div class="ruban_price">2,00€</div>
@@ -227,11 +237,11 @@
                                 <div class="ruban_price lang br">Gratuito</div>
                             </a>
                             <!--<a href="assets/weapons_pack_3D.html" class="catalogue-element 3D free packs">
-                                <img class="img-fluid img_games pb-3" src="medias/assets/weapons_pack_3D/weapons_pack_1.png" alt="Weapons Pack 3D - Theana Productions" title="Weapons Pack 3D" />
-                                <div class="ruban_price lang en">Free</div>
-                                <div class="ruban_price lang fr">Gratuit</div>
-                                <div class="ruban_price lang br">Gratuito</div>
-                            </a>-->
+        <img class="img-fluid img_games pb-3" src="medias/assets/weapons_pack_3D/weapons_pack_1.png" alt="Weapons Pack 3D - Theana Productions" title="Weapons Pack 3D" />
+        <div class="ruban_price lang en">Free</div>
+        <div class="ruban_price lang fr">Gratuit</div>
+        <div class="ruban_price lang br">Gratuito</div>
+    </a>-->
                             <a href="assets/match3_space.html" class="catalogue-element 2D pixel-art paid space packs">
                                 <img class="img-fluid img_games pb-3" src="medias/assets/match3_space/match3_space_1.png" alt="Match 3 Space - Theana Productions" title="Match 3 Space" />
                                 <div class="ruban_price">3,00€</div>
