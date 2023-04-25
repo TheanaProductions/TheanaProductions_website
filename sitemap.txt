@@ -20,7 +20,8 @@ https://theanaproductions.com/assets/traffic_cone_LP.html
 https://theanaproductions.com/assets/weapons_pack_LP.html
 https://theanaproductions.com/assets/chicken_mailbox_LP.html
 
-https://theanaproductions.com/assets/hide_and_seek.html
-https://theanaproductions.com/assets/legacy_puzzle.html
-https://theanaproductions.com/assets/ltw_full.html
-https://theanaproductions.com/assets/space_chicken.html
+https://theanaproductions.com/games/hide_and_seek.html
+https://theanaproductions.com/games/legacy_puzzle.html
+https://theanaproductions.com/games/ltw_full.html
+https://theanaproductions.com/games/space_chicken.html
+https://theanaproductions.com/games/amindstal.html

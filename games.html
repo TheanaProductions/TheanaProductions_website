@@ -154,6 +154,10 @@
                                         <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="itchio" id="itchio" onchange="setCheckboxCurrentDatas();">
                                         <label class="form-check-label text_label css-label dark-check-purple" for="itchio">Itch.io</label>
                                     </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="playstore" id="playstore" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="playstore">PlayStore</label>
+                                    </div>
                                 </div>
                                 <div class="filter-category">
                                     <h3 class="lang en">Genre</h3>
@@ -174,6 +178,10 @@
                                     <div class="form-check">
                                         <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="luck" id="luck" onchange="setCheckboxCurrentDatas();">
                                         <label class="form-check-label text_label css-label dark-check-purple" for="luck">Luck</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="health" id="health" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="health">Health</label>
                                     </div>
                                 </div>
                                 <div class="filter-category-end">
@@ -198,6 +206,12 @@
                             <p class="catalogue-element no-filter text_container_bis lang fr">Désolé... Il semblerait que rien n'existe avec ces filtres pour l'instant. Veuillez essayer avec d'autres.</p>
                             <p class="catalogue-element no-filter text_container_bis lang br">Desculpa... It would seem nothing exists with your filters. Please try with different one...</p>
 
+                            <a href="games/amindstal.html" class="catalogue-element playstore free published casual 2D health new">
+                                <img class="img-fluid img_games pb-3" src="medias/games/amindstal/amindstal_1_new.png" alt="Amindstal - Theana Productions" title="Amindstal" />
+                                <div class="ruban_price lang en">Free</div>
+                                <div class="ruban_price lang fr">Gratuit</div>
+                                <div class="ruban_price lang br">Gratuito</div>
+                            </a>
                             <a href="games/ltw_full.html" class="catalogue-element steam itchio paid published reflexion casual 2D">
                                 <img class="img-fluid img_games pb-3" src="medias/games/ltw_full/ltw_full_1.png" alt="Lead the Way - Full Collection - Theana Productions" title="Lead the Way - Full Collection" />
                                 <div class="ruban_price">1,99€</div>
@@ -235,6 +249,7 @@
         </section>
     </div>
 
+
     <!--footer start-->
     <footer style="padding-top:20px; margin-top:80px;">
         <!--Haut de page-->
@@ -249,6 +264,7 @@
                                 <span class="social_tittle d-flex justify-content-center pb-3 lang en">Follow us on</span>
                                 <span class="social_tittle d-flex justify-content-center pb-3 lang fr ">Suis nous sur</span>
                                 <span class="social_tittle d-flex justify-content-center pb-3 lang br">Siga-nos</span>
+
                                 <!-- Donate Button -->
                                 <div id="donate-button-container" class="d-flex justify-content-center pb-4">
                                     <div id="donate-button"></div>
@@ -289,8 +305,9 @@
                                     <div class="social_link">
                                         <a href="https://store.steampowered.com/developer/theanaproductions" target="_blank" rel="noreferrer noopener" title="Theana - Steam"><img src="medias/social/logo_steam.png" /></a>
                                     </div>
-                                    <!--<li class="social_link"><a href="https://github.com/TheanaProductions" target="_blank" rel="noreferrer noopener" title="Theana - PlayStore"><img src="medias/social/logo_playstore.png" /></a>
-                                    </li>-->
+                                    <li class="social_link">
+                                        <a href="https://play.google.com/store/apps/dev?id=6665872148698811107" target="_blank" rel="noreferrer noopener" title="Theana - PlayStore"><img src="medias/social/logo_playstore.png" /></a>
+                                    </li>
                                     <div class="social_link">
                                         <a href="https://theana-productions.itch.io/" target="_blank" rel="noreferrer noopener" title="Theana - Itch.io"><img src="medias/social/logo_itchio.png" /></a>
                                     </div>
@@ -360,8 +377,8 @@
                                 <li class="menu_link">
                                     <a href="https://github.com/Sin-Gala" target="_blank" rel="noreferrer noopener">SinGala</a>
                                 </li>
-                                <li style="color: #ccc; font-family: 'Shantell Sans', cursive;">
-                                    <!--a href="https://sirenita1306.github.io/E-DW/" target="_blank" rel="noreferrer noopener"-->E-DW
+                                <li class="menu_link">
+                                    <a href="https://eleonore-pascal-poirel.com/" target="_blank" rel="noreferrer noopener">La Sorcière et l'Enchanteur</a>
                                 </li>
                             </ul>
                         </div>
@@ -389,8 +406,8 @@
     <!--Language-->
     <script src="js/language.js"></script>
 
-    <!-- Filter -->
-    <script src="js/filter.js"></script>
+    <!-- Pop up -->
+    <script src="js/popupcarousel.js"></script>
 
 </body>
 </html>
