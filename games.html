@@ -172,6 +172,10 @@
                                         <label class="form-check-label text_label css-label dark-check-purple" for="arcade">Arcade</label>
                                     </div>
                                     <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="hypercasual" id="hypercasual" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="hypercasual">Hyper Casual</label>
+                                    </div>
+                                    <div class="form-check">
                                         <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="casual" id="casual" onchange="setCheckboxCurrentDatas();">
                                         <label class="form-check-label text_label css-label dark-check-purple" for="casual">Casual</label>
                                     </div>
@@ -206,6 +210,12 @@
                             <p class="catalogue-element no-filter text_container_bis lang fr">Désolé... Il semblerait que rien n'existe avec ces filtres pour l'instant. Veuillez essayer avec d'autres.</p>
                             <p class="catalogue-element no-filter text_container_bis lang br">Desculpa... It would seem nothing exists with your filters. Please try with different one...</p>
 
+                            <!--<a href="games/jumpyplungy.html" class="catalogue-element playstore free published hypercasual 2D new">
+                                <img class="img-fluid img_games pb-3" src="medias/games/jumpyplungy/jumpyplungy_1_new.png" alt="Jumpy Plungy - Theana Productions" title="Jumpy Plungy" />
+                                <div class="ruban_price lang en">Free</div>
+                                <div class="ruban_price lang fr">Gratuit</div>
+                                <div class="ruban_price lang br">Gratuito</div>
+                            </a>-->
                             <a href="games/amindstal.html" class="catalogue-element playstore free published casual 2D health new">
                                 <img class="img-fluid img_games pb-3" src="medias/games/amindstal/amindstal_1_new.png" alt="Amindstal - Theana Productions" title="Amindstal" />
                                 <div class="ruban_price lang en">Free</div>
@@ -223,24 +233,24 @@
                                 <div class="ruban_price lang fr">Gratuit</div>
                                 <div class="ruban_price lang br">Gratuito</div>
                             </a>
-                            <a href="games/space_chicken.html" class="catalogue-element itchio free published arcade casual 2D">
+                            <a href="games/space_chicken.html" class="catalogue-element itchio free published arcade hypercasual 2D">
                                 <img class="img-fluid img_games pb-3" src="medias/games/space_chicken/space_chicken_1.png" alt="Space Chicken - Theana Productions" title="Space Chicken" />
                                 <div class="ruban_price lang en">Free</div>
                                 <div class="ruban_price lang fr">Gratuit</div>
                                 <div class="ruban_price lang br">Gratuito</div>
                             </a>
-                            <a href="games/hide_and_seek.html" class="catalogue-element itchio free published casual luck 2D">
+                            <a href="games/hide_and_seek.html" class="catalogue-element itchio free published hypercasual luck 2D">
                                 <img class="img-fluid img_games pb-3" src="medias/games/hide_and_seek/hide_and_seek_1.png" alt="Hide and Seek - Theana Productions" title="Hide and Seek" />
                                 <div class="ruban_price lang en">Free</div>
                                 <div class="ruban_price lang fr">Gratuit</div>
                                 <div class="ruban_price lang br">Gratuito</div>
                             </a>
                             <!--<a href="games/hide_and_seek_1B.html" class="catalogue-element free worked casual luck 2D">
-                                <img class="img-fluid img_games pb-3" src="medias/games/hide_and_seek_1B/hide_and_seek_1B_1.png" alt="Hide and Seek 1Bit - Theana Productions" title="Hide and Seek 1Bit" />
-                                <div class="ruban_price lang en">Free</div>
-                                <div class="ruban_price lang fr">Gratuit</div>
-                                <div class="ruban_price lang br">Gratuito</div>
-                            </a>-->
+        <img class="img-fluid img_games pb-3" src="medias/games/hide_and_seek_1B/hide_and_seek_1B_1.png" alt="Hide and Seek 1Bit - Theana Productions" title="Hide and Seek 1Bit" />
+        <div class="ruban_price lang en">Free</div>
+        <div class="ruban_price lang fr">Gratuit</div>
+        <div class="ruban_price lang br">Gratuito</div>
+    </a>-->
                         </div>
                     </div>
                 </div>
@@ -406,8 +416,8 @@
     <!--Language-->
     <script src="js/language.js"></script>
 
-    <!-- Pop up -->
-    <script src="js/popupcarousel.js"></script>
+    <!-- Filter -->
+    <script src="js/filter.js"></script>
 
 </body>
 </html>
