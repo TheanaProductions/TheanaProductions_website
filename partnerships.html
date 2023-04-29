@@ -2,16 +2,17 @@
 <html lang="en">
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Our games offer a wide rang of titles for all type of players! Want a chill and relaxing game, or a more challenging one? We have it all! So why wait?  Go browse our collection of games today and find your next favourite title!" />
+    <meta name="description" content="Welcome to Theana Productions' official website. Theana is a french based game dev company created in 2021." />
 
     <meta name="twitter:card" content="summary" />
-    <meta property="og:title" content="Theana Productions - Games" />
+    <meta property="og:title" content="Theana Productions" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://theanaproductions.com/games.html" />
+    <meta property="og:url" content="https://theanaproductions.com/" />
     <meta property="og:image" content="https://theanaproductions.com/medias/logo_theana.png" />
-    <meta property="og:site_name" content=" Theana Productions - Games" />
+    <meta property="og:site_name" content=" Theana Productions" />
 
 
     <!-- https://realfavicongenerator.net/ -->
@@ -43,16 +44,16 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/catalogue.css">
 
     <!--Lien analytics Plezi-->
     <script type="text/javascript" async src="https://brain.plezi.co/api/v1/analytics?tenant=3f4c8c5d-c7dd-4cd4-89fb-69ae16f8bb7e&tw=4fa5d3ca-8cca-4fa5-a903-51b13daed768"></script>
 
-    <title>Theana Productions - Games</title>
+    <title>Theana Productions - Partnerships</title>
 
 </head>
 
-<body onload="loadLanguagePref(); setCheckboxCurrentDatas();">
+<body onload="loadLanguagePref();">
+
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark navbar_background navbar_background_flou fixed-top">
         <div class="container-fluid opacite">
@@ -82,183 +83,164 @@
                         <a class="nav-link lang fr" href="team.html"><button type="button" class="btn btn_menu fs-6 py-2 px-2">Equipe</button></a>
                         <a class="nav-link lang br" href="team.html"><button type="button" class="btn btn_menu fs-6 py-2 px-2">Equipe</button></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link lang en" href="contact.html"><button type="button" class="btn btn_menu fs-6 py-2 px-2">Contact</button></a>
+                        <a class="nav-link lang fr" href="contact.html"><button type="button" class="btn btn_menu fs-6 py-2 px-2">Contact</button></a>
+                        <a class="nav-link lang br" href="contact.html"><button type="button" class="btn btn_menu fs-6 py-2 px-2">Contato</button></a>
+                    </li>
                 </ul>
             </div>
             <!--Flag-->
             <div class="me-3">
-                <button class="ms-5 flag-button" type="button" title="Français"><img class="img_flag" src="medias/french_flag.jpg" onclick="changeLanguage('fr'); setCheckboxCurrentDatas();" onmouseover="changeLanguage('fr'); setCheckboxCurrentDatas();" alt="French Flag"></button>
-                <button class="mx-3 flag-button" type="button" title="English"><img class="img_flag" src="medias/english_flag.jpg" onclick="changeLanguage('en'); setCheckboxCurrentDatas();" onmouseover="changeLanguage('en'); setCheckboxCurrentDatas();" alt="English Flag"></button>
-                <button class="flag-button" type="button" title="Portugues do Brasil"><img class="img_flag" src="medias/brazil_flag.jpg" onclick="changeLanguage('br'); setCheckboxCurrentDatas();" onmouseover="changeLanguage('br'); setCheckboxCurrentDatas();" alt="Brazilian Flag"></button>
+                <button class="ms-5 flag-button" type="button" title="Français"><img class="img_flag" src="medias/french_flag.jpg" onclick="changeLanguage('fr');" onmouseover="changeLanguage('fr');" alt="French Flag"></button>
+                <button class="mx-3 flag-button" type="button" title="English"><img class="img_flag" src="medias/english_flag.jpg" onclick="changeLanguage('en');" onmouseover="changeLanguage('en');" alt="English Flag"></button>
+                <button class="flag-button" type="button" title="Portugues do Brasil"><img class="img_flag" src="medias/brazil_flag.jpg" onclick="changeLanguage('br');" onmouseover="changeLanguage('br');" alt="Brazilian Flag"></button>
             </div>
         </div>
     </nav>
 
-
     <div class="container-fluid first_container box-bg">
-
         <section id="middle">
-
             <div class="row">
-                <div class="col-lg-12 d-flex justify-content-center d-flex align-items-center d-flex flex-column">
-                    <h1 class="title_bis lang en">Games</h1>
-                    <h1 class="title_bis lang fr">Jeux</h1>
-                    <h1 class="title_bis lang br">Jogos</h1>
+                <div class="lang en col-lg-12 d-flex justify-content-center d-flex align-items-center d-flex flex-column">
+                    <h1 class="title_bis">Partnerships</h1>
 
-                    <div class="row catalogue-parent d-flex justify-content-center">
-                        <!-- FILTERS -->
-                        <div class="d-flex flex-column checkbox-container">
-                            <div class="filter-box">
-                                <div class="form-check">
-                                    <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="new" id="new" onchange="setCheckboxCurrentDatas();">
-                                    <label class="form-check-label text_label css-label dark-check-purple" for="new">New</label>
-                                </div>
-                                <div class="filter-category filter-category-top">
-                                    <h3 class="lang en">Price</h3>
-                                    <h3 class="lang fr">Prix</h3>
-                                    <h3 class="lang br">Preço</h3>
-                                    <div class="form-check">
-                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="free" id="free" onchange="setCheckboxCurrentDatas();">
-                                        <label class="form-check-label text_label css-label dark-check-purple" for="free">Free</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="paid" id="paid" onchange="setCheckboxCurrentDatas();">
-                                        <label class="form-check-label text_label css-label dark-check-purple" for="paid">Paid</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="sale" id="sale" onchange="setCheckboxCurrentDatas();">
-                                        <label class="form-check-label text_label css-label dark-check-purple" for="sale">On Sale</label>
-                                    </div>
-                                </div>
-                                <div class="filter-category">
-                                    <h3 class="lang en">Type</h3>
-                                    <h3 class="lang fr">Type</h3>
-                                    <h3 class="lang br">Type</h3>
-                                    <div class="form-check">
-                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="2D" id="2D" onchange="setCheckboxCurrentDatas();">
-                                        <label class="form-check-label text_label css-label dark-check-purple" for="2D">2D</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="3D" id="3D" onchange="setCheckboxCurrentDatas();">
-                                        <label class="form-check-label text_label css-label dark-check-purple" for="3D">3D</label>
-                                    </div>
-                                </div>
-                                <div class="filter-category">
-                                    <h3 class="lang en">Platform</h3>
-                                    <h3 class="lang fr">Plateforme</h3>
-                                    <h3 class="lang br">Plataforma</h3>
-                                    <div class="form-check">
-                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="steam" id="steam" onchange="setCheckboxCurrentDatas();">
-                                        <label class="form-check-label text_label css-label dark-check-purple" for="steam">Steam</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="itchio" id="itchio" onchange="setCheckboxCurrentDatas();">
-                                        <label class="form-check-label text_label css-label dark-check-purple" for="itchio">Itch.io</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="playstore" id="playstore" onchange="setCheckboxCurrentDatas();">
-                                        <label class="form-check-label text_label css-label dark-check-purple" for="playstore">PlayStore</label>
-                                    </div>
-                                </div>
-                                <div class="filter-category">
-                                    <h3 class="lang en">Genre</h3>
-                                    <h3 class="lang fr">Genre</h3>
-                                    <h3 class="lang br">Gênero</h3>
-                                    <div class="form-check">
-                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="reflexion" id="reflexion" onchange="setCheckboxCurrentDatas();">
-                                        <label class="form-check-label text_label css-label dark-check-purple" for="reflexion">Reflexion</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="arcade" id="arcade" onchange="setCheckboxCurrentDatas();">
-                                        <label class="form-check-label text_label css-label dark-check-purple" for="arcade">Arcade</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="hypercasual" id="hypercasual" onchange="setCheckboxCurrentDatas();">
-                                        <label class="form-check-label text_label css-label dark-check-purple" for="hypercasual">Hyper Casual</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="casual" id="casual" onchange="setCheckboxCurrentDatas();">
-                                        <label class="form-check-label text_label css-label dark-check-purple" for="casual">Casual</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="luck" id="luck" onchange="setCheckboxCurrentDatas();">
-                                        <label class="form-check-label text_label css-label dark-check-purple" for="luck">Luck</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="health" id="health" onchange="setCheckboxCurrentDatas();">
-                                        <label class="form-check-label text_label css-label dark-check-purple" for="health">Health</label>
-                                    </div>
-                                </div>
-                                <div class="filter-category-end">
-                                    <h3 class="lang en">Status</h3>
-                                    <h3 class="lang fr">Status</h3>
-                                    <h3 class="lang br">Status</h3>
-                                    <div class="form-check">
-                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="published" id="published" onchange="setCheckboxCurrentDatas();">
-                                        <label class="form-check-label text_label css-label dark-check-purple" for="published">Published</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="worked" id="worked" onchange="setCheckboxCurrentDatas();">
-                                        <label class="form-check-label text_label css-label dark-check-purple" for="worked">In Work</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <p>
+                        Interested in doing a partnership with Theana Productions? Fill this form to know more:
+                        <a href="https://forms.gle/9wUwvMNB5cB1Bbr97" target="_blank" rel="noopener noreferrer">Partnership Form - ENGLISH</a>
+                    </p>
 
-                        <!-- GRILLE D'IMAGES -->
-                        <div class="row d-flex flex-wrap d-flex justify-content-center catalogue-container">
-                            <p class="catalogue-element no-filter text_container_bis lang en">Sorry... It would seem nothing exists with your filters yet. Please try with different ones.</p>
-                            <p class="catalogue-element no-filter text_container_bis lang fr">Désolé... Il semblerait que rien n'existe avec ces filtres pour l'instant. Veuillez essayer avec d'autres.</p>
-                            <p class="catalogue-element no-filter text_container_bis lang br">Desculpa... It would seem nothing exists with your filters. Please try with different one...</p>
-
-                            <!--<a href="games/jumpyplungy.html" class="catalogue-element playstore free published hypercasual 2D new">
-                                <img class="img-fluid img_games pb-3" src="medias/games/jumpyplungy/jumpyplungy_1_new.png" alt="Jumpy Plungy - Theana Productions" title="Jumpy Plungy" />
-                                <div class="ruban_price lang en">Free</div>
-                                <div class="ruban_price lang fr">Gratuit</div>
-                                <div class="ruban_price lang br">Gratuito</div>
-                            </a>-->
-                            <a href="games/amindstal.html" class="catalogue-element playstore free published casual 2D health new">
-                                <img class="img-fluid img_games pb-3" src="medias/games/amindstal/amindstal_1_new.png" alt="Amindstal - Theana Productions" title="Amindstal" />
-                                <div class="ruban_price lang en">Free</div>
-                                <div class="ruban_price lang fr">Gratuit</div>
-                                <div class="ruban_price lang br">Gratuito</div>
-                            </a>
-                            <a href="games/ltw_full.html" class="catalogue-element steam itchio paid published reflexion casual 2D">
-                                <img class="img-fluid img_games pb-3" src="medias/games/ltw_full/ltw_full_1.png" alt="Lead the Way - Full Collection - Theana Productions" title="Lead the Way - Full Collection" />
-                                <div class="ruban_price">1,99€</div>
-                            </a>
-                            <!--<a href="games/ltw_lite.html" class="catalogue-element playStore"><img class="img-fluid img_games pb-3" src="medias/assets/love_bg/love_bg_2.png" alt="Lead the Way - Lite - Theana Productions" title="Lead the Way - Lite"/></a>-->
-                            <a href="games/legacy_puzzle.html" class="catalogue-element itchio free published reflexion casual 2D">
-                                <img class="img-fluid img_games pb-3" src="medias/games/legacy_puzzle/legacy_puzzle_1.png" alt="Legacy Puzzle - Theana Productions" title="Legacy Puzzle" />
-                                <div class="ruban_price lang en">Free</div>
-                                <div class="ruban_price lang fr">Gratuit</div>
-                                <div class="ruban_price lang br">Gratuito</div>
-                            </a>
-                            <a href="games/space_chicken.html" class="catalogue-element itchio free published arcade hypercasual 2D">
-                                <img class="img-fluid img_games pb-3" src="medias/games/space_chicken/space_chicken_1.png" alt="Space Chicken - Theana Productions" title="Space Chicken" />
-                                <div class="ruban_price lang en">Free</div>
-                                <div class="ruban_price lang fr">Gratuit</div>
-                                <div class="ruban_price lang br">Gratuito</div>
-                            </a>
-                            <a href="games/hide_and_seek.html" class="catalogue-element itchio free published hypercasual luck 2D">
-                                <img class="img-fluid img_games pb-3" src="medias/games/hide_and_seek/hide_and_seek_1.png" alt="Hide and Seek - Theana Productions" title="Hide and Seek" />
-                                <div class="ruban_price lang en">Free</div>
-                                <div class="ruban_price lang fr">Gratuit</div>
-                                <div class="ruban_price lang br">Gratuito</div>
-                            </a>
-                            <!--<a href="games/hide_and_seek_1B.html" class="catalogue-element free worked casual luck 2D">
-        <img class="img-fluid img_games pb-3" src="medias/games/hide_and_seek_1B/hide_and_seek_1B_1.png" alt="Hide and Seek 1Bit - Theana Productions" title="Hide and Seek 1Bit" />
-        <div class="ruban_price lang en">Free</div>
-        <div class="ruban_price lang fr">Gratuit</div>
-        <div class="ruban_price lang br">Gratuito</div>
-    </a>-->
-                        </div>
+                    <div class="table-responsive">
+                        <table class="table table-lg" style="color: #e2cbbd; text-align: center;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Job</th>
+                                    <th scope="col">Asset</th>
+                                    <th scope="col">Game</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Creators</td>
+                                    <td>60% / person</td>
+                                    <td>50% / person</td>
+                                </tr>
+                                <tr>
+                                    <td>Communication</td>
+                                    <td colspan="2">10% / person</td>
+                                </tr>
+                                <tr>
+                                    <td>Translations</td>
+                                    <td>3% / person</td>
+                                    <td>5% / person</td>
+                                </tr>
+                                <tr>
+                                    <td>Theana</td>
+                                    <td>5%</td>
+                                    <td>13%</td>
+                                </tr>
+                                <tr>
+                                    <td>Theana taxes</td>
+                                    <td colspan="2">22%</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <img class="footer-logo mx-auto my-3" src="medias/logo_theana.png" alt="Theana Logo" />
-            </div>
-        </section>
-    </div>
+                <div class="lang fr col-lg-12 d-flex justify-content-center d-flex align-items-center d-flex flex-column">
+                    <h1 class="title_bis">Partenariats</h1>
+                    <p>
+                        Intéressé par un partenariat avec Theana Productions ? Remplissez ce formulaire pour en savoir plus :
+                        <a href="https://forms.gle/ZVvu9vP1J8jNQRjX9" target="_blank" rel="noopener noreferrer">Formulaire de Partenariat - FRANCAIS</a>
+                    </p>
 
+                    <div class="table-responsive">
+                        <table class="table table-lg" style="color: #e2cbbd; text-align: center;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Travail</th>
+                                    <th scope="col">Asset</th>
+                                    <th scope="col">Jeu</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Créateurs</td>
+                                    <td>60% / personne</td>
+                                    <td>50% / personne</td>
+                                </tr>
+                                <tr>
+                                    <td>Communication</td>
+                                    <td colspan="2">10% / personne</td>
+                                </tr>
+                                <tr>
+                                    <td>Traductions</td>
+                                    <td>3% / personne</td>
+                                    <td>5% / personne</td>
+                                </tr>
+                                <tr>
+                                    <td>Theana</td>
+                                    <td>5%</td>
+                                    <td>13%</td>
+                                </tr>
+                                <tr>
+                                    <td>Theana Impôts</td>
+                                    <td colspan="2">22%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="lang br col-lg-12 d-flex justify-content-center d-flex align-items-center d-flex flex-column">
+                    <h1 class="title_bis">Parceria</h1>
+                    <p>
+                        Interessado em fazer uma parceria com a Theana Productions? Preencha este formulário para saber mais:
+                        <a href="https://forms.gle/9wUwvMNB5cB1Bbr97" target="_blank" rel="noopener noreferrer">Formulário de parceria - INGLES</a>
+                    </p>
+
+                    <br />
+
+                    <div class="table-responsive">
+                        <table class="table table-lg" style="color: #e2cbbd; text-align: center;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Trabalho</th>
+                                    <th scope="col">Asset</th>
+                                    <th scope="col">Jogo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Criadores</td>
+                                    <td>60% / pessoa</td>
+                                    <td>50% / pessoa</td>
+                                </tr>
+                                <tr>
+                                    <td>Comunicação</td>
+                                    <td colspan="2">10% / pessoa</td>
+                                </tr>
+                                <tr>
+                                    <td>Traduções</td>
+                                    <td>3% / pessoa</td>
+                                    <td>5% / pessoa</td>
+                                </tr>
+                                <tr>
+                                    <td>Theana</td>
+                                    <td>5%</td>
+                                    <td>13%</td>
+                                </tr>
+                                <tr>
+                                    <td>Theana Impostos</td>
+                                    <td colspan="2">22%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <img class="footer-logo mx-auto my-3" src="medias/logo_theana.png" alt="Theana Logo" />
+</section>
+    </div>
 
     <!--footer start-->
     <footer style="padding-top:20px; margin-top:80px;">
@@ -416,8 +398,8 @@
     <!--Language-->
     <script src="js/language.js"></script>
 
-    <!-- Filter -->
-    <script src="js/filter.js"></script>
+    <!-- Pop up -->
+    <script src="js/popupcarousel.js"></script>
 
 </body>
 </html>
