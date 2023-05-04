@@ -1,10 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets",
     "\\games",
-    "\\js"
+    "\\js",
+    "\\medias",
+    "\\medias\\games"
   ],
-  "SelectedNode": "\\games\\amindstal.html",
+  "SelectedNode": "\\games.html",
   "PreviewInSolutionExplorer": false
 }
