@@ -2,11 +2,9 @@
 var langTxt = document.getElementsByClassName('lang');
 var enTxt = document.getElementsByClassName('en');
 var frTxt = document.getElementsByClassName('fr');
-var brTxt = document.getElementsByClassName('br');
 
 var enElements = setupLanguageElementArrays(enTxt);
 var frElements = setupLanguageElementArrays(frTxt);
-var brElements = setupLanguageElementArrays(brTxt);
 
 loadLanguagePref();
 
@@ -46,17 +44,9 @@ function changeLanguage(langSelected) {
     else if (lang.includes('fr')) {
         lang = 'fr';
     }
-    else if (lang.includes('br')){
-        lang = 'br';
-    }
 
     // Add the new languages to switch the shown texts
     switch (lang) {
-        case 'br':
-            for (var i = 0; i < brElements.length; i++) {
-                brElements[i].element.setAttribute('style', 'display: ' + brElements[i].display + '!important');
-            }
-            break;
         case 'fr':
             for (var i = 0; i < frElements.length; i++) {
                 frElements[i].element.setAttribute('style', 'display: ' + frElements[i].display + '!important');
