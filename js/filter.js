@@ -1,7 +1,7 @@
 // Gets all the datas to filter
 var catalogueElements = document.getElementsByClassName('catalogue-element');
 var checkboxDatas = document.getElementsByClassName('catalogue-checkbox');
-var noFilterElements = document.getElementsByClassName('no-filter');
+var noFilterElements = document.getElementById('no-filter');
 
 var currentCheckboxDatas = [];
 var currentElementsToShow = [];
@@ -30,17 +30,14 @@ function setCheckboxCurrentDatas() {
 function updateCatalogue() {
     if (currentCheckboxDatas.length == 0) {
         showAll();
+        noFilterElements.style.display = 'none';
         return;
     }
 
     hideAll();
 
     if (currentElementsToShow.length == 0) {
-        for (var i = 0; i < noFilterElements.length; i++) {
-            noFilterElements[i].style.display = 'block';
-        }
-
-        loadLanguagePref();
+        noFilterElements.style.display = 'block';
     }
 
     for (var i = 0; i < currentElementsToShow.length; i++) {

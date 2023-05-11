@@ -52,7 +52,7 @@
 
 </head>
 
-<body onload="loadLanguagePref(); setCheckboxCurrentDatas();">
+<body onload="/*loadLanguagePref(); */setCheckboxCurrentDatas();">
 
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark navbar_background navbar_background_flou fixed-top">
@@ -184,7 +184,7 @@
 
                         <!-- GRILLE D'IMAGES -->
                         <div class="row d-flex flex-wrap d-flex justify-content-center catalogue-container">
-                            <p class="catalogue-element no-filter text_container_bis  ">Sorry... It would seem nothing exists with your filters yet. Please try with different ones.</p>
+                            <p class="catalogue-element text_container_bis" id="no-filter">Sorry... It would seem nothing exists with your filters yet. Please try with different ones.</p>
 
                             <a href="assets/chicken_mailbox_LP.html" class="catalogue-element 3D paid new animals environments">
                                 <img class="img-fluid img_games pb-3" src="medias/assets/chicken_mailbox_LP/chicken_mailbox_1_new.png" alt="Chicken MailBox Low Poly - Theana Productions" title="Chicken Mail Box Low Poly" />
