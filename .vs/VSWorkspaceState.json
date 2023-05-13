@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\games"
+    "\\games",
+    "\\js"
   ],
+  "SelectedNode": "\\js\\filter.js",
   "PreviewInSolutionExplorer": false
 }
