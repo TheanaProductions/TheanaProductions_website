@@ -2,17 +2,16 @@
 <html lang="en">
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="UTF-8">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Welcome to Theana Productions' official website. Theana is a french based game dev company created in 2021." />
+    <meta name="description" content="Want to learn how to code? Or see how an indie company creates games? You're at the right place!'" />
 
     <meta name="twitter:card" content="summary" />
-    <meta property="og:title" content="Theana Productions" />
+    <meta property="og:title" content="Theana Productions - Games" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://theanaproductions.com/" />
+    <meta property="og:url" content="https://theanaproductions.com/videos.html" />
     <meta property="og:image" content="https://theanaproductions.com/medias/logo_theana.png" />
-    <meta property="og:site_name" content=" Theana Productions" />
+    <meta property="og:site_name" content=" Theana Productions - Games" />
 
 
     <!-- https://realfavicongenerator.net/ -->
@@ -44,16 +43,16 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/catalogue.css">
 
     <!--Lien analytics Plezi-->
     <script type="text/javascript" async src="https://brain.plezi.co/api/v1/analytics?tenant=3f4c8c5d-c7dd-4cd4-89fb-69ae16f8bb7e&tw=4fa5d3ca-8cca-4fa5-a903-51b13daed768"></script>
 
-    <title>Theana Productions - Privacy Policy</title>
+    <title>Theana Productions - Videos</title>
 
 </head>
 
-<body onload="loadLanguagePref();">
-
+<body onload="/*loadLanguagePref(); */setCheckboxCurrentDatas();">
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark navbar_background navbar_background_flou fixed-top">
         <div class="container-fluid opacite">
@@ -79,34 +78,89 @@
             </div>
             <!--Flag-->
             <!--<div class="me-3">
-                <button class="ms-5 flag-button" type="button" title="Français"><img class="img_flag" src="medias/french_flag.jpg" onclick="changeLanguage('fr');" onmouseover="changeLanguage('fr');" alt="French Flag"></button>
-                <button class="mx-3 flag-button" type="button" title="English"><img class="img_flag" src="medias/english_flag.jpg" onclick="changeLanguage('');" onmouseover="changeLanguage('');" alt="English Flag"></button>
-
+                <button class="ms-5 flag-button" type="button" title="Français"><img class="img_flag" src="medias/french_flag.jpg" onclick="changeLanguage('fr'); setCheckboxCurrentDatas();" onmouseover="changeLanguage('fr'); setCheckboxCurrentDatas();" alt="French Flag"></button>
+                <button class="mx-3 flag-button" type="button" title="English"><img class="img_flag" src="medias/english_flag.jpg" onclick="changeLanguage(''); setCheckboxCurrentDatas();" onmouseover="changeLanguage(''); setCheckboxCurrentDatas();" alt="English Flag"></button>
             </div>-->
         </div>
     </nav>
 
-    <!--Container Team text centr�-->
+
     <div class="container-fluid first_container box-bg">
+
         <section id="middle">
+
             <div class="row">
-                <div class="  col-lg-12 d-flex justify-content-center d-flex align-items-center d-flex flex-column">
-                    <h1 class="title_bis">Privacy Policy</h1>
-                    <p class="text_container_bis"><i>Last updated: May, 10th, 2023</i></p>
-                    <br />
-                    <p class="text_container_bis">Here at Theana Productions, we value our players. This is why we decided that we wouldn't collect (and even less sell) any of our player's data unless necessary.</p>
-                    <p class="text_container_bis">As of today, none of our games needs our users to enter any of their personal informations, and we will keep it that way as long as we can.</p>
+                <div class="col-lg-12 d-flex justify-content-center d-flex align-items-center d-flex flex-column">
+                    <h1 class="title_bis  ">Games</h1>
 
-                    <br />
-                    <p class="text_container_bis">Some of our PlayStore games now have Unity Ads integrated in them. To know more about the datas they collect and their privacy policy, check this <a href="https://unity.com/legal/privacy-policy">link</a>.</p>
-                    <br />
-                    <p class="text_container_bis">If you wish to voice any complaint, or if you have any questions, you can contact us <a href="index.html" class="inside-link">here</a>.</p>
+                    <div class="row catalogue-parent d-flex justify-content-center">
+                        <!-- FILTERS -->
+                        <div class="d-flex flex-column checkbox-container">
+                            <div class="filter-box">
+                                <div class="form-check">
+                                    <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="new" id="new" onchange="setCheckboxCurrentDatas();">
+                                    <label class="form-check-label text_label css-label dark-check-purple" for="new">New</label>
+                                </div>
+                                <div class="filter-category filter-category-top">
+                                    <h3 class=" ">Type</h3>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="trailer" id="trailer" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="trailer">Trailer</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="tuto" id="tuto" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="tuto">Tutorial</label>
+                                    </div>
+                                </div>
+                                <div class="filter-category">
+                                    <h3 class=" ">Level</h3>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="beginner" id="beginner" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="beginner">Beginner</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="intermediate" id="intermediate" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="intermediate">Intermediate</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="advanced" id="advanced" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="advanced">Advanced</label>
+                                    </div>
+                                </div>
+                                <div class="filter-category">
+                                    <h3 class=" ">Subject</h3>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="blender" id="blender" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="blender">Blender</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input catalogue-checkbox css-checkbox" type="checkbox" value="unity" id="unity" onchange="setCheckboxCurrentDatas();">
+                                        <label class="form-check-label text_label css-label dark-check-purple" for="unity">Unity</label>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+
+                        <!-- GRILLE D'IMAGES -->
+                        <div class="row d-flex flex-wrap d-flex justify-content-center catalogue-container">
+                            <p class="catalogue-element text_container_bis" id="no-filter">Sorry... It would seem nothing exists with your filters yet. Please try with different ones.</p>
+
+                            <a href="assets/traffic_cone_LP.html" class="catalogue-element tuto blender beginner">
+                                <img class="img-fluid img_games pb-3" src="medias/assets/traffic_cone_LP/traffic_cone_LP_1.png" alt="Traffic Cone Low Poly Blender Beginner Tutorial - Theana Productions" title="Traffic Cone Low-Poly - Blender Beginner Tutorial" />
+                                <div class="ruban_price">5:21</div>
+                            </a>
+                            <a href="games/ltw_full.html" class="catalogue-element trailer">
+                                <img class="img-fluid img_games pb-3" src="medias/games/ltw_full/ltw_full_1.png" alt="Trailer Lead the Way Full Collection - Theana Productions" title="Trailer Lead the Way Full Collection" />
+                                <div class="ruban_price">2:50</div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-
                 <img class="footer-logo mx-auto my-3" src="medias/logo_theana.png" alt="Theana Logo" />
             </div>
         </section>
     </div>
+
 
     <!--footer start-->
     <footer style="padding-top:20px; margin-top:80px;">
@@ -250,6 +304,8 @@
 
     <!--Language-->
     <!--<script src="js/language.js"></script>-->
+    <!-- Filter -->
+    <script src="js/filter.js"></script>
 
 </body>
 </html>
