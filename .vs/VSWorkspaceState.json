@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\js"
+    "\\medias",
+    "\\medias\\assets",
+    "\\medias\\assets\\traffic_cone_LP"
   ],
-  "SelectedNode": "\\js\\filter.js",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
