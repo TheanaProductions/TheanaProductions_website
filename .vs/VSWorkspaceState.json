@@ -1,11 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\games",
-    "\\medias",
-    "\\medias\\games",
-    "\\medias\\games\\destiny_card"
+    "\\articles"
   ],
-  "SelectedNode": "\\credits.html",
+  "SelectedNode": "\\blog.html",
   "PreviewInSolutionExplorer": false
 }
