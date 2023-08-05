@@ -40,3 +40,5 @@ https://theanaproductions.com/games/mediskiv.html
 https://theanaproductions.com/games/destiny_card.html
 https://theanaproductions.com/games/connectrix.html
 https://theanaproductions.com/games/sudoku_chef.html
+https://theanaproductions.com/games/classic_sudoku.html
+https://theanaproductions.com/games/classic_snake.html
