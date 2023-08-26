@@ -29,12 +29,14 @@ https://theanaproductions.com/games/hide_and_seek_food.html
 https://theanaproductions.com/games/legacy_puzzle.html
 https://theanaproductions.com/games/ltw_full.html
 https://theanaproductions.com/games/space_chicken.html
+https://theanaproductions.com/games/pride_space_chicken.html
 https://theanaproductions.com/games/amindstal.html
 https://theanaproductions.com/games/fruitymemory.html
 https://theanaproductions.com/games/fishymemory.html
 https://theanaproductions.com/games/pixelymemory.html
 https://theanaproductions.com/games/emotionmemory.html
 https://theanaproductions.com/games/ballmemory.html
+https://theanaproductions.com/games/pridememory.html
 https://theanaproductions.com/games/memorycollection.html
 https://theanaproductions.com/games/mediskiv.html
 https://theanaproductions.com/games/destiny_card.html
@@ -42,3 +44,4 @@ https://theanaproductions.com/games/connectrix.html
 https://theanaproductions.com/games/sudoku_chef.html
 https://theanaproductions.com/games/classic_sudoku.html
 https://theanaproductions.com/games/classic_snake.html
+https://theanaproductions.com/games/the_collector.html
