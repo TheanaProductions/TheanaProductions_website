@@ -1,0 +1,140 @@
+/* Latest Games Section */
+#latest-games {
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between items */
+}
+
+.game-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.game-item img {
+    width: 100%;
+    height: auto;
+}
+
+.game-item h3 {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.game-item a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: #BF7C41; /* Orange */
+    text-decoration: none;
+    background: #fff;
+}
+
+.game-item a:hover {
+    background: #BF7C41; /* Orange */
+    color: #fff;
+}
+
+.game-item:hover {
+    transform: scale(1.05);
+}
+
+/* Team Section */
+#team {
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background for contrast */
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between items */
+}
+
+.team-member {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team-member h4 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.team-member p {
+    margin: 0;
+    color: #666;
+}
+
+.team-social-media {
+    margin-top: 10px;
+}
+
+.team-social-media a {
+    margin: 0 5px;
+    color: #BF7C41; /* Orange */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.team-social-media a:hover {
+    color: #C4CBF2; /* Light Blue */
+}
+
+/* Contact Form Section */
+#contact-form {
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background for contrast */
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .games-container,
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-item,
+    .team-member {
+        width: 90%;
+    }
+
+    .games-container {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .game-item {
+        width: 100%;
+    }
+}
