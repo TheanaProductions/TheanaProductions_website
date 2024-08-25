@@ -66,9 +66,40 @@
     justify-items: center;
 }
 
+.screenshots-container a {
+    display: block;
+    position: relative;
+}
+
 .screenshots-container img {
     max-width: 100%;
     border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.screenshots-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Overlay Styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay-img {
+    max-width: 90%;
+    max-height: 80%;
+    border: 2px solid #BF7C41;
 }
 
 /* Video Section */

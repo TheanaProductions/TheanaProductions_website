@@ -60,14 +60,19 @@
     <section id="game-screenshots">
         <h2 class="game-title">Screenshots</h2>
         <div class="screenshots-container" id="screenshots-container">
-            <img src="../medias/games/ltw_full/ltw_full_2.png">
-            <img src="../medias/games/ltw_full/ltw_full_3.png">
-            <img src="../medias/games/ltw_full/ltw_full_4.png">
-            <img src="../medias/games/ltw_full/ltw_full_5.png">
-            <img src="../medias/games/ltw_full/ltw_full_6.png">
-            <img src="../medias/games/ltw_full/ltw_full_7.png">
+            <a onclick="openOverlay('../medias/games/ltw_full/ltw_full_2.png')"><img src="../medias/games/ltw_full/ltw_full_2.png"></a>
+            <a onclick="openOverlay('../medias/games/ltw_full/ltw_full_3.png')"><img src="../medias/games/ltw_full/ltw_full_3.png"></a>
+            <a onclick="openOverlay('../medias/games/ltw_full/ltw_full_4.png')"><img src="../medias/games/ltw_full/ltw_full_4.png"></a>
+            <a onclick="openOverlay('../medias/games/ltw_full/ltw_full_5.png')"><img src="../medias/games/ltw_full/ltw_full_5.png"></a>
+            <a onclick="openOverlay('../medias/games/ltw_full/ltw_full_6.png')"><img src="../medias/games/ltw_full/ltw_full_6.png"></a>
+            <a onclick="openOverlay('../medias/games/ltw_full/ltw_full_7.png')"><img src="../medias/games/ltw_full/ltw_full_7.png"></a>
         </div>
     </section>
+
+    <!-- Overlay for displaying screenshots -->
+    <div id="overlay" class="overlay">
+        <img class="overlay-img" id="overlay-img" src="" alt="Screenshot">
+    </div>
 
     <section id="game-trailer">
         <h2 class="game-title">Trailer</h2>
@@ -102,5 +107,6 @@
 
     <script src="../js/header.js"></script>
     <script src="../js/footer.js"></script>
+    <script src="../js/screenshotOverlay.js"></script>
 </body>
 </html>
