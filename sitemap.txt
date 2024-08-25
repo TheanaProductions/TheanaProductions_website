@@ -9,6 +9,8 @@ https://theanaproductions.com/partnerships.html
 https://theanaproductions.com/credits.html
 https://theanaproductions.com/legal_notice.html
 https://theanaproductions.com/privacy_policy.html
+https://theanaproductions.com/about.html
+https://theanaproductions.com/latestNews.html
 
 https://theanaproductions.com/assets/chicken_astronaut.html
 https://theanaproductions.com/assets/love_bg.html
@@ -45,3 +47,5 @@ https://theanaproductions.com/games/sudoku_chef.html
 https://theanaproductions.com/games/classic_sudoku.html
 https://theanaproductions.com/games/classic_snake.html
 https://theanaproductions.com/games/the_collector.html
+
+https://theanaproductions.com/news/00_theana_new_website.html

@@ -1,14 +1,19 @@
 /* Latest Games Section */
 #latest-games {
     padding: 20px;
-    background-color: #f4f4f4; /* Light background for contrast */
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#latest-games h2 {
+    font-size: 50px;
 }
 
 .games-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Space between items */
+    gap: 20px; 
 }
 
 .game-item {
@@ -34,13 +39,13 @@
     display: block;
     padding: 10px;
     text-align: center;
-    color: #BF7C41; /* Orange */
+    color: #BF7C41; 
     text-decoration: none;
     background: #fff;
 }
 
 .game-item a:hover {
-    background: #BF7C41; /* Orange */
+    background: #BF7C41;
     color: #fff;
 }
 
@@ -51,15 +56,19 @@
 /* Team Section */
 #team {
     padding: 20px;
-    background-color: #f4f4f4; /* Light background for contrast */
+    background-color: #f4f4f4; 
     text-align: center;
+}
+
+#team h2 {
+    font-size: 50px;
 }
 
 .team-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Space between items */
+    gap: 20px; 
 }
 
 .team-member {
@@ -94,20 +103,24 @@
 
 .team-social-media a {
     margin: 0 5px;
-    color: #BF7C41; /* Orange */
+    color: #BF7C41; 
     text-decoration: none;
     font-size: 1.2em;
 }
 
 .team-social-media a:hover {
-    color: #C4CBF2; /* Light Blue */
+    color: #C4CBF2; 
 }
 
 /* Contact Form Section */
 #contact-form {
     padding: 20px;
-    background-color: #f4f4f4; /* Light background for contrast */
+    background-color: #f4f4f4; 
     text-align: center;
+}
+
+#contact-form h2 {
+    font-size: 50px;
 }
 
 .contact-form {
@@ -115,7 +128,6 @@
     margin: 0 auto;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .games-container,
     .team-container {
@@ -129,7 +141,7 @@
     }
 
     .games-container {
-        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+        grid-template-columns: 1fr;
     }
 }
 

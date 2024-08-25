@@ -1,44 +1,31 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Existing code...
-
     // Team section with social media links
     const teamMembers = [
         {
-            src: 'https://via.placeholder.com/150',
-            name: 'Alice',
-            text: 'Lead Developer',
+            src: 'medias/team/icon_singala.png',
+            name: 'SinGala',
+            text: 'Founder<br/>Lead Developer',
             socialMedia: [
-                { href: 'https://facebook.com/alice', iconClass: 'fab fa-facebook-f', title: 'Facebook' },
-                { href: 'https://twitter.com/alice', iconClass: 'fab fa-twitter', title: 'Twitter' },
-                { href: 'https://linkedin.com/in/alice', iconClass: 'fab fa-linkedin-in', title: 'LinkedIn' }
+                { href: 'https://www.linkedin.com/in/singala/', iconClass: 'fab fa-linkedin-in', title: 'LinkedIn' },
+                { href: 'https://github.com/Sin-Gala', iconClass: 'fa-brands fa-github', title: 'Github' },
+                { href: 'https://x.com/sin_gala', iconClass: 'fab fa-twitter', title: 'Twitter' }
             ]
         },
         {
-            src: 'https://via.placeholder.com/150',
-            name: 'Bob',
-            text: 'Designer',
+            src: 'medias/team/icon_arcodeprata.png',
+            name: 'Arcodeprata',
+            text: '2D Artist<br/>Game Designer<br/>Translator',
             socialMedia: [
-                { href: 'https://instagram.com/bob', iconClass: 'fab fa-instagram', title: 'Instagram' },
-                { href: 'https://dribbble.com/bob', iconClass: 'fab fa-dribbble', title: 'Dribbble' }
+                { href: 'https://www.linkedin.com/in/emy-rufino-gunji-95b634163/', iconClass: 'fab fa-linkedin-in', title: 'LinkedIn' },
+                { href: 'https://x.com/arcodeprata', iconClass: 'fab fa-twitter', title: 'Twitter' }
             ]
         },
         {
-            src: 'https://via.placeholder.com/150',
-            name: 'Charlie',
-            text: 'Product Manager',
+            src: 'medias/team/icon_raposo.png',
+            name: 'GraystainedRain',
+            text: 'Pixel Artist',
             socialMedia: [
-                { href: 'https://twitter.com/charlie', iconClass: 'fab fa-twitter', title: 'Twitter' },
-                { href: 'https://linkedin.com/in/charlie', iconClass: 'fab fa-linkedin-in', title: 'LinkedIn' }
-            ]
-        },
-        {
-            src: 'https://via.placeholder.com/150',
-            name: 'Diana',
-            text: 'Marketing Specialist',
-            socialMedia: [
-                { href: 'https://facebook.com/diana', iconClass: 'fab fa-facebook-f', title: 'Facebook' },
-                { href: 'https://twitter.com/diana', iconClass: 'fab fa-twitter', title: 'Twitter' },
-                { href: 'https://linkedin.com/in/diana', iconClass: 'fab fa-linkedin-in', title: 'LinkedIn' }
+                { href: 'https://x.com/Graystainedrain', iconClass: 'fab fa-twitter', title: 'Twitter' }
             ]
         }
     ];
@@ -59,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         memberDiv.appendChild(name);
 
         const text = document.createElement('p');
-        text.textContent = member.text;
+        text.innerHTML = member.text;
         memberDiv.appendChild(text);
 
         // Social media icons
