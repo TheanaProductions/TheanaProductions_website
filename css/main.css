@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Concert One", serif;
+    width: 100%;
+}
+
+html {
+    background-color: #E2E1E0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+nav{
+    background-image: url("/images/TopBorder.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+}
+
+nav a{
+    margin: auto;
+    width: 12%;
+}
+
+/* SECTIONS */
+section{
+    background-color: #f3b684;
+    min-height: 100px;
+    margin: 15px auto;
+    border-radius: 15px;
+    padding: 10px 20px;
+    text-align: justify;
+    max-width: 90vw;
+}
+
+section h3{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer{
+    background-image: url("/images/BottomBorder.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+}

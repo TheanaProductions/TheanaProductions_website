@@ -3,75 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theana Productions</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CDN -->
-
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
-
+    <title>Theana Productions</title>
 </head>
 <body>
-    <header class="header">
-        <img src="medias/logo_theana.png" alt="Theana Productions Logo">
-        <nav class="nav" id="nav"></nav>
-    </header>
+    <head>
+        <nav>
+            <a href="/">
+                <img id="logo" src="/images/Logo.png" alt="Theana Productions Logo" title="Theana Productions">
+            </a>
+        </nav>
+    </head>
+    
+    <main>
+        <section id="section_about">
+            <!-- About section -->
+             <h3>About</h3>
+             <p>&emsp;&emsp;Theana Productions is a french-based company whose whole purpose is to allow the "not-as-visible" games to get into the public's hearts.</p>
+             <br/>
+             <p>&emsp;&emsp;Through the creation of simple games, the porting of beloved Flash games, and the publishing of games on diverse platforms, Theana Productions helps bringing back to life a simpler way of playing.</p>
+        </section>
 
-    <section id="home" class="hero">
-        <h1>Welcome to Theana</h1>
-        <p>Discover our games and more</p>
-        <a href="#games" class="cta-button">Learn More</a>
-    </section>
+        <section id="section_games">
+            <!-- Latest games section -->
+             <h3>Latest Games</h3>
 
-    <section id="latest-games">
-        <h2>Latest Games</h2>
-        <div id="games-container" class="games-container">
-        </div>
-    </section>
+             <div id="gamesgrid">
+                <!-- Games -->
+                 <div class="game">
+                    <a href="/games/title.html">
+                        <img src="images/games/destinyscardtarot/1.png" title="Title of the Game" alt="Game Title Link">
+                    </a>
+                    <h5>Game Title</h5>
+                    <div class="platforms_icons">
+                        <img src="images/socials/logo_steam.png">
+                    </div>
+                 </div>
+                 <div class="game">
+                    <a href="/games/title.html">
+                        <img src="images/latest/1" title="Title of the Game" alt="Game Title Link">
+                    </a>
+                    <h5>Game Title</h5>
+                    <div class="platforms_icons">
+                        <img src="images/social/steam.png">
+                    </div>
+                 </div>
+                 <div class="game">
+                    <a href="/games/title.html">
+                        <img src="images/latest/1" title="Title of the Game" alt="Game Title Link">
+                    </a>
+                    <h5>Game Title</h5>
+                    <div class="platforms_icons">
+                        <img src="images/social/steam.png">
+                    </div>
+                 </div>
+                 <div class="game">
+                    <a href="/games/title.html">
+                        <img src="images/latest/1" title="Title of the Game" alt="Game Title Link">
+                    </a>
+                    <h5>Game Title</h5>
+                    <div class="platforms_icons">
+                        <img src="images/social/steam.png">
+                    </div>
+                 </div>
+                 <div class="game">
+                    <a href="/games/title.html">
+                        <img src="images/latest/1" title="Title of the Game" alt="Game Title Link">
+                    </a>
+                    <h5>Game Title</h5>
+                    <div class="platforms_icons">
+                        <img src="images/social/steam.png">
+                    </div>
+                 </div>
+                 <div class="game">
+                    <a href="/games/title.html">
+                        <img src="images/latest/1" title="Title of the Game" alt="Game Title Link">
+                    </a>
+                    <h5>Game Title</h5>
+                    <div class="platforms_icons">
+                        <img src="images/social/steam.png">
+                    </div>
+                 </div>
+             </div>
 
-    <section id="team">
-        <h2>Meet Our Team</h2>
-        <div id="team-container" class="team-container">
-        </div>
-    </section>
+             <a href="/games.html"><button>See all games</button></a>
+        </section>
 
-    <section id="contact-form">
-        <h2>Contact Us</h2>
-        <div class="contact-form">
-            <form id="plz-form-bbdc1b95-c94b-4dc8-9607-f7d5935e0af2"></form>
-            <script async src="https://brain.plezi.co/api/v1/web_forms/scripts?content_web_form_id=bbdc1b95-c94b-4dc8-9607-f7d5935e0af2"></script>
-        </div>
-    </section>
+        <section id="section_contact">
+            <!-- Contact section -->
+            <h3>Contact Us</h3>
+        </section>
+    </main>
 
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-category">
-                <h3>Contact</h3>
-                <p>theanaproductions.games@gmail.com</p>
-            </div>
-            <div class="footer-category">
-                <h3>Follow Us</h3>
-                <div class="social-media" id="social-media"></div>
-            </div>
-            <div class="footer-category" id="quick-links">
-                <h3>Quick Links</h3>
-            </div>
-            <div class="footer-category">
-                <h3>Newsletter</h3>
-                <div class="newsletter">
-                    <form id="plz-form-6912077c-13d2-4350-b6d4-bbee31b3173d"></form>
-                    <script async src="https://brain.plezi.co/api/v1/web_forms/scripts?content_web_form_id=6912077c-13d2-4350-b6d4-bbee31b3173d"></script>
-                </div>
-            </div>
-        </div>
-        <p>&copy; 2021-2024 Theana Productions. All rights reserved.</p>
+    <footer>
+
     </footer>
-
-    <script src="js/header.js"></script>
-    <script src="js/footer.js"></script>
-    <script src="js/latestgames.js"></script>
-    <script src="js/team.js"></script>
 </body>
 </html>
