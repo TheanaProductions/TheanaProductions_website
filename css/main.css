@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: "Concert One", serif;
     width: 100%;
+    font-size: 26px;
 }
 
 html {
@@ -30,6 +31,10 @@ main{
 
 a{
     color: black;
+}
+
+a, button{
+    cursor: pointer;
 }
 
 /* HEADER */
