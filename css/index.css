@@ -1,17 +1,24 @@
 /* GAMES */
+#section_games
+{
+    display: flex;
+    flex-direction: column;
+}
+
 #gamesgrid{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 15px 0px;
+    margin: 15px auto;
 }
 
 #gamesgrid .game
 {
-    margin: 5px auto;
+    margin: 25px auto;
     width: 170px;
     height: 230px;
-    background-color: #E2E1E0;
+    min-height: fit-content;
+    background-color: #df9e65;
     border-radius: 5px;
     text-align: center;
     transition: transform .2s;
@@ -37,6 +44,8 @@
 
 .platforms_icons {
     display: flex;
+    background-color: #8C6A4C;
+    padding: 5px;
 }
 
 .platforms_icons img {
@@ -44,9 +53,39 @@
     margin: auto;
 }
 
-#section_games a button{
+#section_games .btn{
     width: 200px;
     margin: auto;
 }
 
+#section_games .btn button{
+    height: 30px;
+    border-radius: 50px;
+    border-color: #332A22;
+    background-color: #BF7C41;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#section_games .btn button:hover{
+    transform: scale(1.2);
+}
+
 /* CONTACT */
+#section_contact{
+    width: 70%;
+    min-width: min-content;
+}
+
+.contact_infos{
+    margin: auto;
+    display: flex;
+}
+
+.contact_infos p{
+    text-align: center;
+    margin: auto;
+}

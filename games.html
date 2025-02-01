@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Theana Productions</title>
+</head>
+<body>
+    <header id="header">
+    </header>
+    
+    <main>
+        <section id="filters">
+            <div class="filter_datas">
+                <label for="platform">Platform:</label>
+
+                <select name="platform" id="platform" onchange="updateShownElements()">
+                    <option value="all">All</option>
+                    <option value="itchio">Itch.io</option>
+                    <option value="playstore">Playstore</option>
+                    <option value="steam">Steam</option>
+                </select>
+            </div>
+
+            <div class="filter_datas">
+                <label for="genre">Genre:</label>
+
+                <select name="genre" id="genre" onchange="updateShownElements()">
+                    <option value="all">All</option>
+                    <option value="arcade">Arcade</option>
+                    <option value="casual">Casual</option>
+                    <option value="luck">Luck</option>
+                    <option value="reflexion">Reflexion</option>
+                    <option value="other">Others</option>
+                </select>
+            </div>
+
+            <div class="filter_datas">
+                <label for="price">Price:</label>
+
+                <select name="price" id="price" onchange="updateShownElements()">
+                    <option value="all">All</option>
+                    <option value="free">Free</option>
+                    <option value="paid">Paid</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="section_games">
+            <!-- Latest games section -->
+             <h3>Our Games</h3>
+             <div id="gamesgrid">
+                <!-- Games -->
+             </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+
+    </footer>
+</body>
+
+<script src="/js/header.js"></script>
+<script src="/js/footer.js"></script>
+<script src="/js/filter.js"></script>
+<script src="/js/games.js"></script>
+<script>
+    instantiateGames(0);
+</script>
+</html>

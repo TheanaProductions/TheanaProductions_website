@@ -3,18 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/index.css">
     <title>Theana Productions</title>
 </head>
 <body>
-    <head>
-        <nav>
-            <a href="/">
-                <img id="logo" src="/images/Logo.png" alt="Theana Productions Logo" title="Theana Productions">
-            </a>
-        </nav>
-    </head>
+    <header id="header">
+    </header>
     
     <main>
         <section id="section_about">
@@ -31,73 +26,34 @@
 
              <div id="gamesgrid">
                 <!-- Games -->
-                 <div class="game">
-                    <a href="/games/title.html">
-                        <img src="images/games/destinyscardtarot/1.png" title="Title of the Game" alt="Game Title Link">
-                    </a>
-                    <h5>Game Title</h5>
-                    <div class="platforms_icons">
-                        <img src="images/socials/logo_steam.png">
-                    </div>
-                 </div>
-                 <div class="game">
-                    <a href="/games/title.html">
-                        <img src="images/latest/1" title="Title of the Game" alt="Game Title Link">
-                    </a>
-                    <h5>Game Title</h5>
-                    <div class="platforms_icons">
-                        <img src="images/social/steam.png">
-                    </div>
-                 </div>
-                 <div class="game">
-                    <a href="/games/title.html">
-                        <img src="images/latest/1" title="Title of the Game" alt="Game Title Link">
-                    </a>
-                    <h5>Game Title</h5>
-                    <div class="platforms_icons">
-                        <img src="images/social/steam.png">
-                    </div>
-                 </div>
-                 <div class="game">
-                    <a href="/games/title.html">
-                        <img src="images/latest/1" title="Title of the Game" alt="Game Title Link">
-                    </a>
-                    <h5>Game Title</h5>
-                    <div class="platforms_icons">
-                        <img src="images/social/steam.png">
-                    </div>
-                 </div>
-                 <div class="game">
-                    <a href="/games/title.html">
-                        <img src="images/latest/1" title="Title of the Game" alt="Game Title Link">
-                    </a>
-                    <h5>Game Title</h5>
-                    <div class="platforms_icons">
-                        <img src="images/social/steam.png">
-                    </div>
-                 </div>
-                 <div class="game">
-                    <a href="/games/title.html">
-                        <img src="images/latest/1" title="Title of the Game" alt="Game Title Link">
-                    </a>
-                    <h5>Game Title</h5>
-                    <div class="platforms_icons">
-                        <img src="images/social/steam.png">
-                    </div>
-                 </div>
              </div>
 
-             <a href="/games.html"><button>See all games</button></a>
+             <a href="/games.html" class="btn"><button>See all games</button></a>
         </section>
 
         <section id="section_contact">
             <!-- Contact section -->
             <h3>Contact Us</h3>
+            <!--Script du formulaire de contact-->
+            <div class="contact_infos">
+                <p>Do you have a question, want us to publish your game, or want a quote for our services? Then you're at the right place! Contact us through this form (or send us an email at <a href="mailto:theanaproductions.games@gmail.com">theanaproductions.games@gmail.com</a>) and we'll come back to you as soon as possible.</p>
+                <div>
+                    <form id="plz-form-bbdc1b95-c94b-4dc8-9607-f7d5935e0af2"></form>
+                    <script async src="https://brain.plezi.co/api/v1/web_forms/scripts?content_web_form_id=bbdc1b95-c94b-4dc8-9607-f7d5935e0af2"></script>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer id="footer">
 
     </footer>
 </body>
+
+<script src="/js/header.js"></script>
+<script src="/js/footer.js"></script>
+<script src="/js/games.js"></script>
+<script>
+    instantiateGames(6);
+</script>
 </html>
