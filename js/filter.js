@@ -1,62 +1,34 @@
-// Gets all the datas to filter
-var catalogueElements = document.getElementsByClassName('catalogue-element');
-var checkboxDatas = document.getElementsByClassName('catalogue-checkbox');
-var noFilterElements = document.getElementById('no-filter');
+let games = document.getElementsByClassName("game");
+let platformDropdown = document.getElementById("platform");
+let genreDropdown = document.getElementById("genre");
+let priceDropdown = document.getElementById("price");
 
-var currentCheckboxDatas = [];
-var currentElementsToShow = [];
+let currentPlatform = "all";
+let currentgenre = "all";
+let currentPrice = "all";
 
-function setCheckboxCurrentDatas() {
-    console.log("Change");
+function updateShownElements()
+{
+    currentPlatform = platformDropdown.options[platformDropdown.selectedIndex].value;
+    currentgenre = genreDropdown.options[genreDropdown.selectedIndex].value;
+    currentPrice = priceDropdown.options[priceDropdown.selectedIndex].value;
 
-    currentCheckboxDatas = [];
-    currentElementsToShow = [];
+    Array.prototype.forEach.call(games, function(game) {
+        if (currentPlatform == "all" &&
+            currentgenre == "all" &&
+            currentPrice == "all"
+            )
+        {
+            game.style.display = "block";
+            return;
+        }
 
-    for (var i = 0; i < checkboxDatas.length; i++) {
-        if (!checkboxDatas[i].checked) continue;
+        if ((currentPlatform == "all" || (currentPlatform != "all" && game.classList.contains(currentPlatform))) && (currentgenre == "all" || (currentgenre != "all" && game.classList.contains(currentgenre))) && (currentPrice == "all" || (currentPrice != "all" && game.classList.contains(currentPrice))))
+        {
+            game.style.display = "block";
+            return;
+        }
 
-        currentCheckboxDatas.push(checkboxDatas[i].value);
-    }
-
-    for (var j = 0; j < catalogueElements.length; j++) {
-        if (!currentCheckboxDatas.every(e => catalogueElements[j].classList.contains(e))) continue;
-
-        currentElementsToShow.push(catalogueElements[j]);
-    }
-
-    updateCatalogue();
-}
-
-function updateCatalogue() {
-    if (currentCheckboxDatas.length == 0) {
-        showAll();
-        noFilterElements.style.display = 'none';
-        return;
-    }
-
-    hideAll();
-
-    if (currentElementsToShow.length == 0) {
-        noFilterElements.style.display = 'block';
-    }
-
-    for (var i = 0; i < currentElementsToShow.length; i++) {
-        currentElementsToShow[i].style.display = 'block';
-    }
-}
-
-function showAll() {
-    for (var i = 0; i < catalogueElements.length; i++) {
-        catalogueElements[i].style.display = 'block';
-    }
-
-    for (var i = 0; i < noFilterElements.length; i++) {
-        noFilterElements[i].style.display = 'none';
-    }
-}
-
-function hideAll() {
-    for (var i = 0; i < catalogueElements.length; i++) {
-        catalogueElements[i].style.display = 'none';
-    }
+        game.style.display = "none";
+    });
 }
