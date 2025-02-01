@@ -119,7 +119,7 @@ const games = {
         rating: "3+",
         metaDesc: "Need a chill and relaxing break? Legacy Puzzle got you! With its numerous gorgeous oil paintings from a french artist, you're sure to calm your brain.",
         desc: "<p>&emsp;&emsp;Need a chill and relaxing break? Legacy Puzzle got you! With its numerous gorgeous oil paintings from a french artist, you're sure to calm your brain.<br/><br/><i>All the paintings are from François Poirel, a french painter. Please do not reuse those paintings without authorization and proper credits.</i>",
-        screenshotsAmount: 3,
+        screenshotsAmount: 4,
         videoLinks: [],
         downloads:
         [
